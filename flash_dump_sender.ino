@@ -1,3 +1,6 @@
+//This code is to be uploaded to the ESP32
+//must be put in a file with the same name on the ESP32, such as /ESP32_Flash_Dumper/ESP32_Flash_Dumper.ino
+
 #include <SPI.h>
 
 #define FLASH_CS 5  // Change to your flash chip's CS pin
