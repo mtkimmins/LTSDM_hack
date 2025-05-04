@@ -72,7 +72,7 @@ Had CHAT provide a preliminary scripts for datadumping the cartridge onto my com
 
 # RESOURCES:
 - ChatGPT conversation: https://chatgpt.com/share/6816df7a-c218-8006-b5d9-1f564e48376b
-  -**Last updated:** May 3 2025
+  - **Last updated:** May 3 2025
 - Reddit thread with originally-documented idea: https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/
 
 
