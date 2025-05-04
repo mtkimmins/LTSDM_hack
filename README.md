@@ -102,18 +102,32 @@ If successful, please do not create and distribute custom content to others. It 
 - Reddit thread with originally-documented idea: https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/
 
 # HOW A BOOK CARTRIDGE WORKS
+**How a cartridge is prepared for play**  
+**How frames move**  
+**Playing audio**  
+**Strobing lights**  
+
+
 # SUMMARY OF CUSTOMIZATION PROCESS
-**Preparation to extract data**  
-**Retrieving the data**  
+**Planning your story**  
 **Programming**  
 **Overwrite process**  
 **Physical alterations**  
 
 # HOW TO PROGRAM YOUR CUSTOM STORY
+**Planning out your story**  
+**Audio**  
+**Picture frames**  
+**Light strobing**  
 
 # HOW TO ADD YOUR STORY TO A CARTRIDGE
+**Getting the data**  
+**Editing the data**  
+**Compilation and overwrite**  
 
 # PHYSICAL MODIFICATIONS
+**Custom film frames**
+**Custom sticker label**
 
 # TESTING AND ASSURANCE
 **Durability**  
