@@ -102,8 +102,8 @@ If successful, please do not create and distribute custom content to others. It 
 
 ## HOW A BOOK CARTRIDGE WORKS
 ## SUMMARY OF CUSTOMIZATION PROCESS
-**Preparation to extract data**
-**Retrieving the data**
+**Preparation to extract data**  
+**Retrieving the data**  
 **Programming**  
 **Overwrite process**  
 **Physical alterations**  
