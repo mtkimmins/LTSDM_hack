@@ -10,6 +10,7 @@ Please do not use this information to create or sell unauthorized commercial pro
 
 Do not share the following directly to the public:
 - your raw extraction data at any stage of analysis
+- modified extraction data (it will have unaltered copyrighted sections)
 - microscopic decapping images
 
 ---
