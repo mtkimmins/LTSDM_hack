@@ -119,5 +119,5 @@ If successful, please do not create and distribute custom content to others. It 
 **Durability**  
 
 # COST ANALYSIS
-**Initial acquisition costs**
-**Cost per custom cartridge**
+**Initial acquisition costs**  
+**Cost per custom cartridge**  
