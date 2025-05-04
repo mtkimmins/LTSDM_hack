@@ -1,6 +1,16 @@
-# LTSDM_hack -- A HOW TO GUIDE FOR HACKING A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - customizing existing book cartridges [WORKING DOCUMENT]
+# LTSDM_hack -- A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - customizing existing book cartridges
+WORKING DOCUMENT
 
-## TO DO LIST:
+⚠️ DISCLAIMER  
+This repository is for **educational, non-commercial use only**.  
+No proprietary or copyrighted content is distributed.
+
+The scripts and tools provided here are intended to support legal reverse engineering, modding, or personal backups of content owned by the user.
+
+Please do not use this information to create or sell unauthorized commercial products.
+
+---
+# TO DO LIST:
 - get equipment to read and datadump
 - watch whole set of "junk" cartridges
   - record number of frames used
@@ -43,7 +53,7 @@
 - ??? replace frames with custom transparent film frames
 - durability testing (how many times can I play it without failure? Where are the failure points?)
 
-## COMPLETED:
+# COMPLETED:
 - order required equipment to read the cartridge
 
 
@@ -55,18 +65,18 @@ The materials are coming tomorrow evening.
 Had CHAT provide a preliminary scripts for datadumping the cartridge onto my computer for analysis.
 
 ---
-## CREDITS:
+# CREDITS:
 - CHATGPT -- spec info and howto
 - Reddit -- general confirmation and guide howto (https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
  
 
-## RESOURCES:
+# RESOURCES:
 - ChatGPT conversation: https://chatgpt.com/share/6816df7a-c218-8006-b5d9-1f564e48376b
   **Last updated:** May 3 2025
 - Reddit thread with originally-documented idea: https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/
 
 
-## Table of contents:
+# Table of contents:
 - prologue
 - equipment used
 - how a book cartridge works
@@ -75,3 +85,7 @@ Had CHAT provide a preliminary scripts for datadumping the cartridge onto my com
 - how to add your story to a cartridge
 - physical modifications
 - testing and assurance
+
+## PROLOGUE
+This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children.
+As this project is toeing the line of legality, a request: If successful, please do not create custom content and distribute it to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
