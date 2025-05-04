@@ -1,4 +1,4 @@
-# LTSDM_hack -- A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - customizing existing book cartridges
+# A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - customizing existing book cartridges
 
 
 [!] DISCLAIMER [!]
