@@ -8,7 +8,7 @@ No proprietary or copyrighted content is distributed.
 The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
 Please do not use this information to create or sell unauthorized commercial products.
 
-Do not share the following directly to the public:
+Do not share the following:
 - your raw extraction data at any stage of analysis
 - modified extraction data (it will have unaltered copyrighted sections)
 - microscopic decapping images of the hardware
