@@ -15,10 +15,11 @@ Do not share the following:
 
 ---
 # TO DO LIST:
-- get equipment to read and datadump
+- take pictures of box back, manual warranty, and gear compartment of cartridge
 - watch whole set of "junk" cartridges
   - record number of frames used
-  - record script
+  - record length of time for frame transitions and frame reads
+  - record script (Do not post)
   - record description of each frame
 - determine how to open a cartridge without damaging the case or components
 - determine how to re-close a cartridge without damaging the case or components
@@ -62,6 +63,7 @@ Do not share the following:
 
 # COMPLETED:
 - order required equipment to read the cartridge
+- get equipment to read and datadump
 
 
 # WORKING LOG
@@ -72,6 +74,9 @@ I already have an ESP32, so I will connect this to a breadboard and see if I can
 The ordered materials are coming from Amazon tomorrow evening.  
 Had ChatGPT provide preliminary scripts for datadumping the cartridge onto my computer for analysis.
 
+
+**4 May 2025** - 
+Received the shark book cartridges and the SOIC8 clip. Now to record the preliminary data about the books prior to cracking them open. I will also post pictures of fine print of the box rear and the generic limited warranty section of the manual - for reference purposes before I throw them out. I will also take photos of the gear and flash chip of one of the cartridges, as they are all the same structure.
 ---
 # ACKNOWLEDGEMENTS:
 - CHATGPT -- spec info and howto
