@@ -1,27 +1,45 @@
 import serial
+import time
 
-# === Configuration ===
-PORT = 'COM3'          # Replace with your ESP32's serial port (e.g. /dev/ttyUSB0 on Linux)
-BAUD_RATE = 115200     # Match the baud rate used in your ESP32 sketch
+# === Config ===
+PORT = 'COM3'              # Replace with your ESP32 serial port
+BAUD_RATE = 115200
 OUTPUT_FILE = 'dump.bin'
-CHUNK_SIZE = 1024      # bytes per read
-EXPECTED_SIZE = 1024 * 1024  # 1MB flash chip, adjust as needed
+EXPECTED_SIZE = 1024 * 1024  # 1MB
 
-# === Open Serial Port ===
+# === Connect ===
 ser = serial.Serial(PORT, BAUD_RATE, timeout=5)
-print(f"Listening on {PORT}...")
+print("Waiting for ESP32...")
 
-# === Read and Save Binary Data ===
+# === Wait for "READY" ===
+while True:
+    line = ser.readline().decode(errors='ignore').strip()
+    if "READY" in line:
+        print("ESP32 ready.")
+        break
+
+# === Trigger the ESP32 to start dump ===
+print("Sending DUMP command...")
+ser.write(b'DUMP\n')
+
+# === Receive the binary ===
 with open(OUTPUT_FILE, 'wb') as f:
     received = 0
     while received < EXPECTED_SIZE:
-        data = ser.read(CHUNK_SIZE)
-        if not data:
-            print("Timeout or end of transmission.")
+        chunk = ser.read(1024)
+        if not chunk:
+            print("Timeout or incomplete transfer.")
             break
-        f.write(data)
-        received += len(data)
+        f.write(chunk)
+        received += len(chunk)
         print(f"Received {received}/{EXPECTED_SIZE} bytes", end='\r')
 
+# Optional: check for completion message
+done_msg = ser.readline().decode(errors='ignore').strip()
+if "DONE" in done_msg:
+    print("\nDump completed successfully.")
+else:
+    print("\nUnexpected end. Check data integrity.")
+
 ser.close()
-print(f"\nDone. Data saved to {OUTPUT_FILE}")
+print(f"Saved to: {OUTPUT_FILE}")
