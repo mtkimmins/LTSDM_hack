@@ -6,9 +6,13 @@
 This repository is for **educational, non-commercial use only**.  
 No proprietary or copyrighted content is distributed.
 
-The scripts and tools provided here are intended to support legal reverse engineering, modding, or personal backups of content owned by the user.
+The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.
 
 Please do not use this information to create or sell unauthorized commercial products.
+
+Do not share the following directly to the public:
+- your personal .bin extraction data at any stage of analysis
+- microscopic decapping images
 
 ---
 # TO DO LIST:
@@ -91,4 +95,4 @@ Had CHAT provide a preliminary scripts for datadumping the cartridge onto my com
 This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children.
 
 
-As this project is toeing the line of legality, a request: If successful, please do not create custom content and distribute it to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
+As this project is toeing the line of legality, a request: If successful, please do not create and distribute custom content to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
