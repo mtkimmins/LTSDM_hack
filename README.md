@@ -1,7 +1,8 @@
 # LTSDM_hack -- A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - customizing existing book cartridges
-WORKING DOCUMENT
+
 
 [!] DISCLAIMER [!]
+
 This repository is for **educational, non-commercial use only**.  
 No proprietary or copyrighted content is distributed.
 
