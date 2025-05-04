@@ -1,0 +1,33 @@
+# Ignore binary dumps
+*.bin
+
+# Arduino/ESP32 build output
+*.elf
+*.hex
+*.eep
+*.map
+*.out
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# VSCode project settings (optional, if you use VSCode)
+.vscode/
+
+# Arduino-specific folders
+*.d
+*.o
+
+# MacOS metadata
+.DS_Store
+
+# Windows metadata
+Thumbs.db
+desktop.ini
