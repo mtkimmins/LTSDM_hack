@@ -101,9 +101,9 @@ If successful, please do not create and distribute custom content to others. It 
 
 ## HOW A BOOK CARTRIDGE WORKS
 ## SUMMARY OF CUSTOMIZATION PROCESS
-**Programming**
-**Overwrite process**
-**Physical alterations**
+**Programming**  
+**Overwrite process**  
+**Physical alterations**  
 ## HOW TO PROGRAM YOUR CUSTOM STORY
 ## HOW TO ADD YOUR STORY TO A CARTRIDGE
 ## PHYSICAL MODIFICATIONS
