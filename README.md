@@ -78,7 +78,7 @@ Had ChatGPT provide preliminary scripts for datadumping the cartridge onto my co
 - Reddit -- general confirmation and guide howto (https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
  
 # PROLOGUE
-This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children. Explicitely, I cannot show raw data on the chip to the public, so I will have to coach others through personal extractions to get their own modification blueprint, analysis and interpretation, and programming to make changes.
+This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children. Explicitely, I cannot show raw data on the chip to the public, so I will have to coach others through personal extractions to get their own modification blueprint, analysis and interpretation, and programming to make changes. Hopefully, I can figure out how to reduce the data analysis to something modifiable -- like a data map or something -- without breaching any laws.
 
 
 As this project is toeing the line of legality, a request:   
@@ -108,7 +108,16 @@ If successful, please do not create and distribute custom content to others. It 
 **Programming**  
 **Overwrite process**  
 **Physical alterations**  
+
 # HOW TO PROGRAM YOUR CUSTOM STORY
+
 # HOW TO ADD YOUR STORY TO A CARTRIDGE
+
 # PHYSICAL MODIFICATIONS
+
 # TESTING AND ASSURANCE
+**Durability**  
+
+# COST ANALYSIS
+**Initial acquisition costs**
+**Cost per custom cartridge**
