@@ -75,7 +75,8 @@ The ordered materials are coming from Amazon tomorrow evening.
 Had ChatGPT provide preliminary scripts for datadumping the cartridge onto my computer for analysis.  
 
 **4 May 2025** -  
-Received the shark book cartridges and the SOIC8 clip. Now to record the preliminary data about the books prior to cracking them open. I will also post pictures of fine print of the box rear and the generic limited warranty section of the manual - for reference purposes before I throw them out. I will also take photos of the gear and flash chip of one of the cartridges, as they are all the same structure.  
+Received the shark book cartridges and the SOIC8 clip. Now to record the preliminary data about the books prior to cracking them open. I will also post pictures of fine print of the box rear and the generic limited warranty section of the manual - for reference purposes before I throw them out. I will also take photos of the gear and flash chip of one of the cartridges, as they are all the same structure (see Clip1.JPG, Clip2.JPG, Manual Warranty.JPG, Back of box.JPG).  
+Recorded all three shark stories, and analyzing them with Microsoft Clipchamp for timestamps of transitions and events that happen during the play of the cartridge (see "preliminary_data.md"). Got through half of a cartridge.
 
 
 ---
