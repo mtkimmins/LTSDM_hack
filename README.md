@@ -109,6 +109,8 @@ If successful, please do not create and distribute custom content to others. It 
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
+- Setting the cartridge to the first frame  
+
 **How frames move**  
 **Playing audio**  
 **Strobing lights**  
