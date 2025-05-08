@@ -1,10 +1,10 @@
 The following is a culmination of data from physical examination and the analysis of recorded video (not posted) with video editing software (Microsoft Clipchamp).
-
-Big Shark, Little Shark
-# Frames = 12
-No figurine mount used
+___
+# Big Shark, Little Shark
+#Frames = 12  
+No figurine mount used  
 |Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
-|*----------------*|
+|:-:|:-:|:-:|:-:|:-:|
 |Display first frame|0:00|
 
 
@@ -111,7 +111,9 @@ No figurine mount used
 
 
 
-Big Shark, Little Shark Go to School
-# Frames = 12
-No figurine mount used
-|Audio Event|Timestamps|Description|
+# Big Shark, Little Shark Go to School
+#Frames = 12  
+No figurine mount used  
+|Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
+|:-:|:-:|:-:|:-:|:-:|
+|Display first frame|0:00|
