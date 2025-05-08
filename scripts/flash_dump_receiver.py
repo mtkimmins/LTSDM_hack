@@ -1,4 +1,5 @@
 # UNTESTED!!! 3May2025
+# ChatGPT generated (see link to chat in README)
 # This is to be run on the computer first before the ESP32 is connected to the cartridge flash usb
 
 import serial
