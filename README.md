@@ -15,7 +15,6 @@ Do not share the following:
 
 ---
 # TO DO LIST:
-- take pictures of box back, manual warranty, and gear compartment of cartridge
 - watch whole set of "junk" cartridges
   - record number of frames used
   - record length of time for frame transitions and frame reads
@@ -64,12 +63,13 @@ Do not share the following:
 # COMPLETED:
 - order required equipment to read the cartridge
 - get equipment to read and datadump
+- take pictures of box back, manual warranty, and gear compartment of cartridge
 
 
 # WORKING LOG
 **3 May 2025** -  
-Ordered the cheapest set of cartridges for the LTSDM. Its the big shark series that comes with 3 cartridges (https://www.amazon.ca/Big-Shark-Little-Collection-PDQ/dp/B0BN4VSTRD?ref_=ast_sto_dp). It was on sale at the time.  
-Additionally, talked with ChatGPT and it mentioned to buy a SOIC8 clip to read the flash chip that is on all the cartridges (https://www.amazon.ca/Socket-Adpter-Programming-Adapter-Module/dp/B0892F713P/ref=sr_1_4_sspa?crid=34KHMA61T4S67&dib=eyJ2IjoiMSJ9.mC08kwn61HkPPj9OyWiaQiaexOSTiIbrIbWkNJuUiUJWL-rj8zriF_CtHZB_dJEwGccV5Z-IaPXFyiM8ZqBoEWk1r6MaEw1SZewn75uuxzkGVin0vIKFYcpDJxdYBc4YEVETOraVi4Hjf5007HDtKL9LhasBA2qtsNs7hhpbsKpq2qdpkxBsq0ol1bNRKwfajpP_jj0DsYBsmOhVsStWr-ik8XXgIxwdLabAh9rzMi94R59F-jP1cZxA0877Zqp-qu5OR4CQxffm7-wKi4L1mvPtm84SgFY4gew4XUPxJ28.wHFSvEb5untDLOGg4DbpsbbsGeQvo544EsMaGk4qaU8&dib_tag=se&keywords=soic8+clip&qid=1746330275&sprefix=soic8%2Caps%2C118&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1). I assume you could use little probes for each lead on the chip (x8), but perhaps would need a secondary board to interpret the electrical pulses. A clip seems much more efficient at this stage. This decision is based on three source consultations (1 user in the reddit thread identified the flash chip as a rewritable p25d80sh 3h1pb1a flash chip, another user in the reddit thread used ChatGPT to elaborate on the first-user's findings, and I also performed a secondary ChatGPT elaboration based on the first-user's findings).  
+Ordered the cheapest set of cartridges for the LTSDM. Its the big shark series that comes with [3 cartridges](https://www.amazon.ca/Big-Shark-Little-Collection-PDQ/dp/B0BN4VSTRD?ref_=ast_sto_dp). It was on sale at the time.  
+Additionally, talked with ChatGPT and it mentioned to buy a [SOIC8 clip](https://www.amazon.ca/Socket-Adpter-Programming-Adapter-Module/dp/B0892F713P/ref=sr_1_4_sspa?crid=34KHMA61T4S67&dib=eyJ2IjoiMSJ9.mC08kwn61HkPPj9OyWiaQiaexOSTiIbrIbWkNJuUiUJWL-rj8zriF_CtHZB_dJEwGccV5Z-IaPXFyiM8ZqBoEWk1r6MaEw1SZewn75uuxzkGVin0vIKFYcpDJxdYBc4YEVETOraVi4Hjf5007HDtKL9LhasBA2qtsNs7hhpbsKpq2qdpkxBsq0ol1bNRKwfajpP_jj0DsYBsmOhVsStWr-ik8XXgIxwdLabAh9rzMi94R59F-jP1cZxA0877Zqp-qu5OR4CQxffm7-wKi4L1mvPtm84SgFY4gew4XUPxJ28.wHFSvEb5untDLOGg4DbpsbbsGeQvo544EsMaGk4qaU8&dib_tag=se&keywords=soic8+clip&qid=1746330275&sprefix=soic8%2Caps%2C118&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) to read the flash chip that is on all the cartridges. I assume you could use little probes for each lead on the chip (x8), but perhaps would need a secondary board to interpret the electrical pulses. A clip seems much more efficient at this stage. This decision is based on three source consultations (1 user in the reddit thread identified the flash chip as a rewritable p25d80sh 3h1pb1a flash chip, another user in the reddit thread used ChatGPT to elaborate on the first-user's findings, and I also performed a secondary ChatGPT elaboration based on the first-user's findings).  
 I already have an ESP32, so I will connect this to a breadboard and see if I can pull any data from it without frying the cartridge or microcontroller. This will be my first attempt working with an ESP32 ever. The odds are against me on this one.  
 The ordered materials are coming from Amazon tomorrow evening.  
 Had ChatGPT provide preliminary scripts for datadumping the cartridge onto my computer for analysis.  
@@ -78,12 +78,10 @@ Had ChatGPT provide preliminary scripts for datadumping the cartridge onto my co
 Received the shark book cartridges and the SOIC8 clip. Now to record the preliminary data about the books prior to cracking them open. I will also post pictures of fine print of the box rear and the generic limited warranty section of the manual - for reference purposes before I throw them out. I will also take photos of the gear and flash chip of one of the cartridges, as they are all the same structure (see Clip1.JPG, Clip2.JPG, Manual Warranty.JPG, Back of box.JPG).  
 Recorded all three shark stories, and analyzing them with Microsoft Clipchamp for timestamps of transitions and events that happen during the play of the cartridge (see "preliminary_data.md"). Got through half of a cartridge.
 
+**8 May 2025** -  
+Completed the previous catalogue and created a table and preliminary data in preliminary_data.md. I plan to do the same for the other two stories likely after disassembling one of the cartridges. It is quite tedious work looking over a video -- however small -- and recording all flashes of light, film changes, and sound effect timing. Since the lights are timed with the audio and the film changes are during when the audio is off, I have a feeling that an audio file is compiled and uploaded to the cartridge along with a matching program code to execute certain commands. In creation, Little Tikes likely has a custom program like clipchamp that can edit an audio stream (combination of voice reading and sfx) next to transitions and light colours. I feel I may be able to replicate such program to facilitate the making of custom .bin files. This could circumvent the legal issue of sharing raw .bin files while also allowing a broader audience to create and upload custom stories to these cartridges. It appears that all stories have a 12-frame capacity. My father mentioned that they look like View-Masters in design. I also found a Reddit thread consulting about [View-Master-like film printing](https://www.reddit.com/r/toycameras/comments/12womtd/how_to_replicate_viewmaster_reels_with_my_own/).
 
----
-# ACKNOWLEDGEMENTS:
-- CHATGPT -- spec info and howto
-- Reddit -- general confirmation and guide howto (https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
- 
+___
 # PROLOGUE
 This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children. Explicitely, I cannot show raw data on the chip to the public, so I will have to coach others through personal extractions to get their own modification blueprint, analysis and interpretation, and programming to make changes. Hopefully, I can figure out how to reduce the data analysis to something modifiable -- like a data map or something -- without breaching any laws. I will attempt to circumvent the headache of analyzing data oneself before any customization.
 
@@ -106,7 +104,8 @@ If successful, please do not create and distribute custom content to others. It 
 **List of informational resources consulted:**
 - ChatGPT conversation: https://chatgpt.com/share/6816df7a-c218-8006-b5d9-1f564e48376b
   - **Last updated:** May 3 2025
-- Reddit thread with originally-documented idea: https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/
+- Reddit thread with originally-documented idea: [Hack the Little Tikes Dream Machine](https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
+- Reddit thread about custom film printing: [View-Master-like printing](https://www.reddit.com/r/toycameras/comments/12womtd/how_to_replicate_viewmaster_reels_with_my_own/)
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
