@@ -15,12 +15,14 @@ Do not share the following:
 
 ---
 # TO DO LIST:
-- watch whole set of "junk" cartridges
+- watch whole set of "junk" cartridges (1/3)
   - record number of frames used
   - record length of time for frame transitions and frame reads
   - record script (Do not post)
   - record description of each frame
+- measure dimensions of outer cartridge with calipers and post
 - determine how to open a cartridge without damaging the case or components
+- measure dimensions of inner cartridge with calipers and post
 - determine how to re-close a cartridge without damaging the case or components
 - Datadump all 3 cartridges in the "junk" set
   - open a cartridge with heat or solvent
