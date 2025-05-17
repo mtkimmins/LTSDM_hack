@@ -26,6 +26,7 @@ Do not share the following:
 - Datadump all 3 cartridges in the "junk" set
   - open a cartridge with heat or solvent
   - document inside chip (photos and text)
+  - study the datasheet for the target flash chip
   - connect an ESP32 to the breadboard
   - ??? configure the ESP32 power and data lines appropriately
     - use 3.3V only (CHATGPT SUGGESTION)
