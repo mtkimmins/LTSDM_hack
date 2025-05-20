@@ -18,14 +18,9 @@ Do not share the following:
 - watch whole set of "junk" cartridges (1/3)
   - record number of frames used
   - record length of time for frame transitions and frame reads
-  - record script (Do not post)
   - record description of each frame
-- determine how to open a cartridge without damaging the case or components
 - measure dimensions of inner cartridge with calipers and post
-- determine how to re-close a cartridge without damaging the case or components
 - Datadump all 3 cartridges in the "junk" set
-  - open a cartridge with heat or solvent
-  - document inside chip (photos and text)
   - study the datasheet for the target flash chip
   - connect an ESP32 to the breadboard
   - ??? configure the ESP32 power and data lines appropriately
@@ -67,6 +62,9 @@ Do not share the following:
 - get equipment to read and datadump
 - take pictures of box back, manual warranty, and gear compartment of cartridge
 - measure dimensions of outer cartridge with calipers and post
+- determine how to open a cartridge without damaging the case or components/determine how to re-close a cartridge without damaging the case or components (you don't)
+- open a cartridge with heat or solvent
+- document inside chip (photos and text)
 
 
 # WORKING LOG
@@ -95,7 +93,7 @@ The projector will always undergo its protocol to seek the black initialization 
 After the cartridge is opened, I plan to post the video of the opening and take specific pictures of the inside. Prior to hooking up the the ESP32 to power, I will wire up the data-dump clip setup and perhaps ask /r/electronics about what they think. A review of its datasheet would also help figuring out what I need to do to dump a .bin file.
 
 **19 May 2025** -  
-I have taken the cartridge apart with much effort. I had used a plastic lever to pry the casing apart where the flash chip sticks out, used the leads of my voltmeter to keep the case open, then finished it off with two butter knives slowly prying the case apart the top. Recording a video of the opening was unsuccessful due to the effort required to pry the cartridge necessitated the removal of the cartridge out of frame of the video -- it wasn't capturing much of the "opening" part. Pictures are stored under the "internal" folder in this repo. It seems that the case is made of 2 parts snapped together by pillar-structures in the 4 corners, as well as glued around the pillars and seams -- some stringy substance revealed itself around the seams as I was trying to pry it open. The inner components are very bare: a chip, a wheel, and two halves of circular film. A reverse-image search of the circular film carousel only dug up images of viewmaster reels. A reverse-image search of the chip board also did not reveal anything useful -- just other small boards with small chips on them for cameras and flash drives. A reverse-image search of the whole internal picture revealed many images of yellow plastic toy casings, some toy camera internals, and the like. However, I have, presumably, found the datasheet for the flash chip, and have uploaded a copy to this repo.  
+I have taken the cartridge apart with much effort. I had used heat gun to (try to) soften the plastic seam around the edges of the cartridge. Then I used a plastic lever to pry the casing apart where the flash chip sticks out, used the leads of my voltmeter to keep the case open, then finished it off with two butter knives to slowly pry the case apart the top. Recording a video of the opening was unsuccessful due to the effort required to pry the cartridge necessitated the removal of the cartridge out of frame of the video -- it wasn't capturing much of the "opening" part. Pictures are stored under the "internal" folder in this repo. It seems that the case is made of 2 parts snapped together by pillar-structures in the 4 corners, as well as glued around the pillars and seams -- some stringy substance revealed itself around the seams as I was trying to pry it open. The inner components are very bare: a chip, a wheel, and two halves of circular film. A reverse-image search of the circular film carousel only dug up images of viewmaster reels. A reverse-image search of the chip board also did not reveal anything useful -- just other small boards with small chips on them for cameras and flash drives. A reverse-image search of the whole internal picture revealed many images of yellow plastic toy casings, some toy camera internals, and the like. However, I have, presumably, found the datasheet for the flash chip, and have uploaded a copy to this repo.  
 Borrowing some magnifying glasses, I have also identified that the chip itself has two lines of writing on it, with a divet in the bottom-left corner. The top line of writing is "P25D80SH" -- which corroborates what u/recursivemachines listed in the original thread. However, the bottom number varies from what was mentioned -- "4B1PN1F" (as opposed to the cited "3h1pb1a" by u/recursivemachines)-- I assume its a serial number for that manufactured part.  
 The film carousel wheel (the white plastic reel) has the external cog on one end, and a series of nodules in a circle, some different sizes, some in different locations along the circumference. These nodules -- or raised bumps of plastic -- seem to be pegs where the two film hemispheres bite onto the wheel for it to turn and function. The nodule pattern is specific as to only allow the film hemispheres to be arranged in one enantiomeric configuration.  
 A curiosity to discover -- why are there two halves of film? The circle of film is divided into two sections -- hemispheres, that make it more difficult to assemble and orient with the carousel. Perhaps it is a printing limitation, or an automated-assembly workaround. There is enough room for the film to be placed down as a whole piece under the carousel wheel, so it is unclear as to why its divided.  
