@@ -15,7 +15,7 @@ Do not share the following:
 
 ---
 # MILESTONES:
-- **Chip data dump**
+- ***Chip data dump***
 - Identify modifiable data
 - Reupload mod data
 - Create new film
