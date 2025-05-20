@@ -14,6 +14,14 @@ Do not share the following:
 - microscopic decapping images of the hardware
 
 ---
+# MILESTONES:
+- **Chip data dump**
+- Identify modifiable data
+- Reupload mod data
+- Create new film
+- 3D printing a new case
+
+
 # TO DO LIST:
 - watch whole set of "junk" cartridges (1/3)
   - record number of frames used
