@@ -106,6 +106,9 @@ Borrowing some magnifying glasses, I have also identified that the chip itself h
 The film carousel wheel (the white plastic reel) has the external cog on one end, and a series of nodules in a circle, some different sizes, some in different locations along the circumference. These nodules -- or raised bumps of plastic -- seem to be pegs where the two film hemispheres bite onto the wheel for it to turn and function. The nodule pattern is specific as to only allow the film hemispheres to be arranged in one enantiomeric configuration.  
 A curiosity to discover -- why are there two halves of film? The circle of film is divided into two sections -- hemispheres, that make it more difficult to assemble and orient with the carousel. Perhaps it is a printing limitation, or an automated-assembly workaround. There is enough room for the film to be placed down as a whole piece under the carousel wheel, so it is unclear as to why its divided.  
 
+**20 May 2025** -  
+Prior to attempting a datadump with the sketchy code ChatGPT vomited up, my father and I paroused the Little Tikes site for a patent number. This search was for the intent to uncover a patent diagram of the projector itself to lend some clue as to how the flash chips is naturally read. Perhaps this would reveal some hint as to a correct method for such a datadump. In curiosity, I directly contacted Little Tikes requesting directions to the patent along with directions to this repository in hopes that such patent information can be traded for transparency with Little Tikes. I feel it may be a risky move, however, I am more comfortable with revealing all my cards than attempting secrecy. Worst case scenario: something along the lines of a cease-and-desist. Best case senario, Little Tikes assists in the project. I do desire to take this project as far as I can run with it. Only one way to find out the outcome. I will post any answers received.
+
 
 ___
 # PROLOGUE
