@@ -111,7 +111,7 @@ Prior to attempting a datadump with the sketchy code ChatGPT vomited up, my fath
 
 
 **24 May 2025** -  
-I have just realized as I attempted to clamp on the clip to the chip that the lead on the p25d80sh is way bigger than the SOIC8 clip leads I have bought. I will have to reassess how I will attach the chip to the ESP32. Maybe taping wires to the chip's leads -- I don't want to solder anything to this chip as I want to reuse it and have little experience with solder. Lead comparison photo uploaded as "faulty_chip_clip.png."
+I have just realized as I attempted to clamp on the clip to the chip that the lead on the p25d80sh is way bigger than the SOIC8 clip leads I have bought. I will have to reassess how I will attach the chip to the ESP32. Maybe taping wires to the chip's leads -- I don't want to solder anything to this chip as I want to reuse it and have little experience with solder. Lead comparison photo uploaded as "faulty_chip_clip.jpg."
 
 ___
 # PROLOGUE
