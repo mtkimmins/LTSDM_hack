@@ -29,9 +29,10 @@ Do not share the following:
   - record description of each frame
 - measure dimensions of inner cartridge with calipers and post
 - Datadump all 3 cartridges in the "junk" set
+  - buy an appropriate edge adapter for the pcb thickness
   - study the datasheet for the target flash chip
-  - connect an ESP32 to the breadboard
-  - ??? configure the ESP32 power and data lines appropriately
+  - connect an Uno to the breadboard
+  - ??? configure the Uno power and data lines appropriately
     - use 3.3V only (CHATGPT SUGGESTION)
     - use capacitors on breadboard between ESP32 and the SOIC8 clip for voltage stability - flash chip is very sensitive to voltage changes, readonly mode also voltage-dependant (CHATGPT SUGGESTION)
   - power on ESP32 via USB-computer
@@ -42,7 +43,7 @@ Do not share the following:
     - test to see its function upon failure
   - connect the SOIC8 clip to the cartridge flash chip
   - connect the SOIC8 clip to a breadboard
-  - read data through ESP32 and Python script
+  - read data through Uno and Python script
   - use hex reader to analyze resulting .bin file
   - identify any file types used
   - identify any string text
