@@ -23,7 +23,6 @@ void loop() {
     cmd.trim();
 
     if (cmd.equalsIgnoreCase("START")) {
-      Serial.println("Beginning data dump...");
       dumpFlash();
       Serial.println("Dump complete.");
     } else {
