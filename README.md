@@ -136,7 +136,7 @@ I will eventually upload a schematic for how I wired the chip to the uno. Refere
 
 *Jumper wiring between chip, pcb, and uno:*  
 |Chip pin|PCB lead|Arduino pin|Divider required?|
-|*-*|*-*|*-*|*-*|
+|:-:|:-:|:-:|:-:|
 |CS (Chip Select)|/CS (front, middle left)|Arduino pin 10|YES|
 |MOSI (SI)|SI (front, far right)|Arduino pin 11|YES|
 |MISO (SO)|SO (front, far left)|Arduino pin 12|NO-straight from chip to uno|
