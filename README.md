@@ -180,7 +180,7 @@ If successful, please do not create and distribute custom content to others. It 
 
 **List of informational resources consulted:**
 - ChatGPT conversation: https://chatgpt.com/share/6816df7a-c218-8006-b5d9-1f564e48376b
-  - **Last updated:** 26 May 2025
+  - **Last updated:** 30 May 2025
 - Reddit thread with originally-documented idea: [Hack the Little Tikes Dream Machine](https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
 - Reddit thread about custom film printing: [View-Master-like printing](https://www.reddit.com/r/toycameras/comments/12womtd/how_to_replicate_viewmaster_reels_with_my_own/)
 - Reddit thread about measuring found objects: [Measure and recreate real objects](https://www.reddit.com/r/AskEngineers/comments/ijsk7c/how_can_i_learn_to_measure_and_recreate_real/)
