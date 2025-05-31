@@ -125,12 +125,12 @@ The next step is to reduce the 5V of the uno to 3.3V for the p25d80sh. For that,
 
 
 **30 May 2025** -  
-I have finally received the .bin file! It took quite some time conversing with ChatGPT, but we made it work. From some preliminary checkup, it appears to be a genuine dump. I have posted the first 11 lines of the .bin file as hex. It primarily looks like a bunch of jumbled garbage.  
-Reflections on electronic preparation:
-Divider setup and fix:
-Connection arrangement:
+I have finally received the .bin file! It took quite some time conversing with ChatGPT, but we made it work. From some preliminary checkup, it appears to be a genuine dump. I have posted the first 11 lines of the .bin file as hex. It primarily looks like a bunch of jumbled garbage. I have deleted the scripts that I did not use/work, and have uploaded the two scripts that actually did pull the data in (see under scripts; flash_dump_chip_to_uno.ino and flash_dump_uno_to_pc.py).  
+Reflections on electronic preparation: Because of the temperment of the binary dump, I am glad that I had explicitely soldered the jumper leads directly to the pcb. This helped confirm that it was not my leads falling off that made the program stop. It really helped with keeping focus on programming instead of verifying continuity continually.  
+Divider setup and fix: Also had to reverse the orientation of the divider connections (the divider layout -- series of resistors in the breadboard --  depicted in soldered_back.jpg and soldered_front.jpg are correct), I just had to reconnect the jumper wires at the front and back to reverse the flow through just the 2k ohm resistor first.  
+Connection arrangement: I will eventually upload a schematic for how I wired the chip to the uno. Reference the ChatGPT conversation to see the wiring suggested.
 How to procedurally dump the data:
-Reading the .bin file:
+Reading the .bin file/preliminary observations:
 Moving forward:
 
 
