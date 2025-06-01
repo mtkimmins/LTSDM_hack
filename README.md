@@ -167,9 +167,40 @@ As this project is toeing the line of legality, a request:
 If successful, please do not create and distribute custom content to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
 
 
-# PICTURE DIRECTORY
+# REPOSITORY DEFINITIONS
 |Name of File|Description|
 |:-:|:-:|
+|11_back.JPG||
+|11_front.JPG||
+|12_back.JPG||
+|12_front.JPG||
+|Back of Box.JPG||
+|Clip1.JPG||
+|Clip2.JPG||
+|Manual Warranty.JPG||
+|P25D80SH.pdf||
+|README.md||
+|back-measurements.png||
+|entropy.PNG||
+|faulty_chip_clip.JPG||
+|final_setup1.JPG||
+|final_setup2.JPG||
+|internal_casing1.JPG||
+|internal_casing2.JPG||
+|internal_chip_back.JPG||
+|internal_chip_front.JPG||
+|internal_dissembled.JPG||
+|internal_film_wheel.JPG||
+|internal_flash_chip_back_with_wheel.JPG||
+|internals_11.JPG||
+|internals_12.JPG||
+|limited_hex_dump.txt||
+|orientation_of_pcb.JPG||
+|port-end-measurements.png||
+|preliminary_data.md||
+|side-measurements.png||
+|soldered_back.JPG||
+|soldered_front.JPG||
 
 
 # RESOURCES USED
