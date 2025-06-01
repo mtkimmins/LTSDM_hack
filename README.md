@@ -166,6 +166,12 @@ This is a good place to define some expectations and goals. Firstly, this will s
 As this project is toeing the line of legality, a request:   
 If successful, please do not create and distribute custom content to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
 
+
+# PICTURE DIRECTORY
+|Name of File|Description|
+|:-:|:-:|
+
+
 # RESOURCES USED
 **List of physical materials used:**
 - Arduino Uno R3
