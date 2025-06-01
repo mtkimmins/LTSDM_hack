@@ -1,17 +1,21 @@
 The following is a culmination of data from physical examination and the analysis of recorded video (not posted) with video editing software (Microsoft Clipchamp).
 ___
 # Big Shark, Little Shark
+pcb label number (back): 11
 #Frames = 12  
 No figurine mount used  
 |Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
 |:-:|:-:|:-:|:-:|:-:|
 |Display first frame|0:00|
+Number on back of cartridge: W34J071
+
 
 
 
 
 
 # Big Shark, Little Shark, Baby Shark
+PCB label number (back): 12
 #Frames = 12  
 No figurine mount used  
 |Audio Event|Timestamp Begun |Timestamp End|Duration (Seconds)|Description|
@@ -106,14 +110,17 @@ No figurine mount used
 |Light - white/blue + baseball bat sfx|2:24|2:26|2|baseball bat hitting a ball sfx + changed to white for a while, then flashed blue before off|
 |Light off, hide + change frame|2:26|2:29|3|
 |Finished sound|2:29|
+Number on backof cartridge: W34F171
 
 
 
 
 
 # Big Shark, Little Shark Go to School
+PCB label number (back): 13
 #Frames = 12  
 No figurine mount used  
 |Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
 |:-:|:-:|:-:|:-:|:-:|
 |Display first frame|0:00|
+Number on back of cartridge: W34F171
