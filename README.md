@@ -158,6 +158,11 @@ It appears that the file uploaded to the chip must -- by mandate -- equal 1MB pr
 *Moving forward:*  
 I am now thinking I can make a little mixtape for my daughter. I want to test several hypothesis in the projector: how long can I play sound? How many times can I rotate the image carousel before the projector stops (is it 12 hardstop)? How quickly can I change light colours? How many colours can I change the light to? Can I play sound as the carousel is rotating? Can I use the lights when the carousel is rotating?
 
+
+*1 June 2025* -  
+Soldered and dumped the other two chips into .bin files. Now i can diff the three together to isolate what is firmware code and what are variables. The serial numbers for the chips were the following: Big Shark, Little Shark (chip 12) = 4B1PN1F; Big Shark, Little Shark, Baby Shark (chip 11) = 4D1HZ2F.
+
+
 ___
 # PROLOGUE
 This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children. Explicitely, I cannot show raw data on the chip to the public, so I will have to coach others through personal extractions to get their own modification blueprint, analysis and interpretation, and programming to make changes. Hopefully, I can figure out how to reduce the data analysis to something modifiable -- like a data map or something -- without breaching any laws. I will attempt to circumvent the headache of analyzing data oneself before any customization.
