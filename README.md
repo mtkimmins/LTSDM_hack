@@ -75,6 +75,9 @@ Do not share the following:
 - open a cartridge with heat or solvent
 - document inside chip (photos and text)
 
+# TEST QUERIES
+- Can I turn the carousel <1 complete turn from the chip?
+
 
 # WORKING LOG
 **3 May 2025** -  
