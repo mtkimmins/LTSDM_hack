@@ -99,7 +99,7 @@ I will eventually upload a schematic for how I wired the chip to the uno. Refere
 *Voltage divider wiring:*  
 Top resistor (R1) from Arduino signal pin to chip input
 Bottom resistor (R2) from chip input to GND
-R1 = 3k ohms; R2 = 2k ohms
+R1 = 2k ohms; R2 = 3k ohms
 
 *How to procedurally dump the data:*  
 Refer to the conversation had with ChatGPT. Several scripts were generated that did not work, so focus on the uploaded copies of the scripts.
