@@ -167,7 +167,7 @@ Soldered and dumped the other two chips into .bin files. Now i can diff the thre
 
 
 3 June 2025 -  
-Diffing 12_chip and 13_chip, I found the exact same ending with the following hex: 1E 79 30 78 66 2F 3D 40 3D 14 81 0F 23 53 17 FE B9 CF C3 43 50 06 F9 92 CA F6 D4 33 4C D4 D5 7E 12 53 53 BF 42 2C C6 80 8E AD 40 C4 8C 0B 4C 9F DA D7 C6 02 9D D4 92 FE 5F DC BB 22 00 AF 06 31 20 C8 C4 2C AC 22 29 67 44 C6 0B E8 31 9D 86 74 3A C0 E9 D2 B3 6E 1B DD 04 49 EF 3B C3 8F DC 4E. However, 11_chip is very dissimilar to 12_chip and 13_chip. Maybe different programmers?
+Diffing 12_chip and 13_chip, I found the exact same ending with the following hex: 1E 79 30 78 66 2F 3D 40 3D 14 81 0F 23 53 17 FE B9 CF C3 43 50 06 F9 92 CA F6 D4 33 4C D4 D5 7E 12 53 53 BF 42 2C C6 80 8E AD 40 C4 8C 0B 4C 9F DA D7 C6 02 9D D4 92 FE 5F DC BB 22 00 AF 06 31 20 C8 C4 2C AC 22 29 67 44 C6 0B E8 31 9D 86 74 3A C0 E9 D2 B3 6E 1B DD 04 49 EF 3B C3 8F DC 4E. However, 11_chip is very dissimilar to 12_chip and 13_chip. Maybe different programmers? Perhaps a bad dump from 11_chip...
 
 
 ___
