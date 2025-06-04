@@ -16,64 +16,13 @@ Do not share the following:
 ---
 # MILESTONES:
 - ***Chip data dump***
-- Identify modifiable data
+- **Identify modifiable data**
 - Reupload mod data
 - Create new film
 - 3D printing a new case
 
-
-# TO DO LIST:
-- watch whole set of "junk" cartridges (1/3)
-  - record number of frames used
-  - record length of time for frame transitions and frame reads
-  - record description of each frame
-- measure dimensions of inner cartridge with calipers and post
-- Datadump all 3 cartridges in the "junk" set
-  - buy an appropriate edge adapter for the pcb thickness
-  - study the datasheet for the target flash chip
-  - connect an Uno to the breadboard
-  - ??? configure the Uno power and data lines appropriately
-    - use 3.3V only (CHATGPT SUGGESTION)
-    - use capacitors on breadboard between ESP32 and the SOIC8 clip for voltage stability - flash chip is very sensitive to voltage changes, readonly mode also voltage-dependant (CHATGPT SUGGESTION)
-  - power on ESP32 via USB-computer
-  - create a python script that will datadump the contents of the flash chip into a .bin
-  - create a copy of the cartridge data that can be restored back onto the cartridge in case of compilation failure
-  - ??? figure out how to restore cartridge data (in case of catastrophic failure)
-    - upload a complete overwrite of cartridge data
-    - test to see its function upon failure
-  - connect the SOIC8 clip to the cartridge flash chip
-  - connect the SOIC8 clip to a breadboard
-  - read data through Uno and Python script
-  - use hex reader to analyze resulting .bin file
-  - identify any file types used
-  - identify any string text
-  - identify any patterns
-  - determine how it triggers moving to the next frame
-  - determine when and how it plays sound
-  - determine when and how it flashes LTSDM lights
-- cross reference data between all 3 cartridges
-- ??? determine what places I need to edit to make:
-  - different sounds
-  - different LTSDM light strobe patterns
-- ??? determine how to edit .bin file target places
-- ??? determine how to upload and overwrite the custom code back onto the cartridge
-- test the custom cartridge (audio patterns only)
-- ??? make new transparent film frames
-  - use transparency film, print at a photolab (CHATGPT SUGGESTION)
-- ??? replace frames with custom transparent film frames
-- Determine the dimensions of the book cartridge sticker label
-- Design a custom adhesive label
-- Print and afix a custom adhesive label for the book cartridge
-- durability testing (how many times can I play it without failure? Where are the failure points?)
-
-# COMPLETED:
-- order required equipment to read the cartridge
-- get equipment to read and datadump
-- take pictures of box back, manual warranty, and gear compartment of cartridge
-- measure dimensions of outer cartridge with calipers and post
-- determine how to open a cartridge without damaging the case or components/determine how to re-close a cartridge without damaging the case or components (you don't)
-- open a cartridge with heat or solvent
-- document inside chip (photos and text)
+# CURRENT FOCUS
+- My focus is to isolate similarities between the three chip dumps and create a template for my own data
 
 # TEST QUERIES
 - Can I turn the carousel <1 complete turn from the chip?
