@@ -23,5 +23,5 @@ See [file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) for
 |STRING|1|#!|4|none were #!AMR or #!SILK␊ indicating ACELP or Skype audio respectively|
 |BINARY|1|43 72 65 61 74 69 76 65 20 56 6F 69 63 65 20 46 69 6C 65 1A 1A 00|0|could reveal Creative Voice File format|
 |BINARY|1|52 49 46 46|0|could reveal .wav|
-|BINARY|1|08 80|261|appears in high entropy patches in regular intervals, always followed by 3 bits, then sandwiched with another 08 80|
+|BINARY|1|08 80|261|appears in low entropy patches in regular intervals, always followed by 3 bits, then sandwiched with another 08 80|
 
