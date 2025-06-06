@@ -26,6 +26,12 @@ Do not share the following:
 
 # TEST QUERIES
 - Can I turn the carousel <1 complete turn from the chip?
+- How long can I play sound?
+- How many times can I rotate the image carousel before the projector stops (is it 12 hardstop)?
+- How quickly can I change light colours?
+- How many colours can I change the light to?
+- Can I play sound as the carousel is rotating?
+- Can I use the lights when the carousel is rotating?
 
 
 # WORKING LOG
@@ -64,7 +70,8 @@ Prior to attempting a datadump with the sketchy code ChatGPT vomited up, my fath
 
 
 **24 May 2025** -  
-I have just realized as I attempted to clamp on the clip to the chip that the lead on the p25d80sh is way bigger than the SOIC8 clip leads I have bought. I will have to reassess how I will attach the chip to the ESP32. Maybe taping wires to the chip's leads -- I don't want to solder anything to this chip as I want to reuse it and have little experience with solder. Lead comparison photo uploaded as "faulty_chip_clip.jpg."
+I have just realized as I attempted to clamp on the clip to the chip that the lead on the p25d80sh is way bigger than the SOIC8 clip leads I have bought. I will have to reassess how I will attach the chip to the ESP32. Maybe taping wires to the chip's leads -- I don't want to solder anything to this chip as I want to reuse it and have little experience with solder. Lead comparison photo uploaded as *[removed]*.  
+*EDIT: I have since realized that this clip is not meant to go on the custom pcb golden fingers, but on the chip itself directly. Embarassing.*  
 
 
 **26 May 2025** -  
@@ -107,9 +114,6 @@ Refer to the conversation had with ChatGPT. Several scripts were generated that 
 *Reading the .bin file/preliminary observations:*  
 It appears that the file uploaded to the chip must -- by mandate -- equal 1MB precisely. So, this can result in a small amount of data uploaded with the rest of the bytes written as padding "FF" which makes up about 75%-80% of this cartridge. With this rough estimation, I would say that the maximum length of story based on the original length is between 9:56 - 12:25 (2:29 * 4 or 5). This obviously depends on other variables like projector limits.
 
-*Moving forward:*  
-I am now thinking I can make a little mixtape for my daughter. I want to test several hypothesis in the projector: how long can I play sound? How many times can I rotate the image carousel before the projector stops (is it 12 hardstop)? How quickly can I change light colours? How many colours can I change the light to? Can I play sound as the carousel is rotating? Can I use the lights when the carousel is rotating?
-
 
 **1 June 2025** -  
 Soldered and dumped the other two chips into .bin files. Now i can diff the three together to isolate what is firmware code and what are variables. The serial numbers for the chips were the following: Big Shark, Little Shark (chip 12) = 4B1PN1F; Big Shark, Little Shark, Baby Shark (chip 11) = 4D1HZ2F.
@@ -121,6 +125,10 @@ Diffing 12_chip and 13_chip, I found the exact same ending with the following he
 
 **4 June 2025** -  
 The difference in 11_chip.bin definitely was due to some data interruption. It looked like swiss cheese -- littered with holes of "00". A second dump revealed just strips of data surrounded by 00s, leaving some strips completely blank with FF. Now, a third dump changed the binary in those strips, so I knew it was unreliable. After replugging and recompiling the program, I got a fourth dump with gibberish. Just incoherent binary dotted with 00s again. A fifth dump revealed an initial structure similar to 12_chip and 13_chip, but still with glaring lines or holes of 00. A sixth dump on a different USB port showed a similar structure to 13_dump, however all the binary was really different except for periodic binary strips. This is much different than when I compare 12_chip to 13_chip where most of it is identical except for a handful of lines spread out where they differ. The first half of the written chips seem like directories to files later embedded in the chip, and then it hits a wall halfway through of dissimilarity. However, I believe this chunk is the actual audio file. Looking at the endings prior to the rest of the blank padding for each chip, they share the exact same ending sequence as well. 
+
+
+**5 June 2025** -  
+I have caved and bought another projector. It was on sale from amazon, and the ones on marketplace were selling for much more. It is coming tomorrow, so hopefully I can figure out what plays the cartridges, what architecture it is, and I get an official pcb clip that fits (no more soldering hopefully).
 
 
 ___
@@ -186,6 +194,7 @@ If successful, please do not create and distribute custom content to others. It 
 - Reddit thread with originally-documented idea: [Hack the Little Tikes Dream Machine](https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
 - Reddit thread about custom film printing: [View-Master-like printing](https://www.reddit.com/r/toycameras/comments/12womtd/how_to_replicate_viewmaster_reels_with_my_own/)
 - Reddit thread about measuring found objects: [Measure and recreate real objects](https://www.reddit.com/r/AskEngineers/comments/ijsk7c/how_can_i_learn_to_measure_and_recreate_real/)
+- Reddit thread asking about gleaning information from a binary differential: [Patterns in the Diff](https://www.reddit.com/r/HowToHack/comments/1l3pz6m/finding_patterns_using_imhex_in_a_differential/)
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
