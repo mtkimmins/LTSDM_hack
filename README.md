@@ -185,6 +185,7 @@ If successful, please do not create and distribute custom content to others. It 
 - Reddit thread about measuring found objects: [Measure and recreate real objects](https://www.reddit.com/r/AskEngineers/comments/ijsk7c/how_can_i_learn_to_measure_and_recreate_real/)
 - Reddit thread asking about gleaning information from a binary differential: [Patterns in the Diff](https://www.reddit.com/r/HowToHack/comments/1l3pz6m/finding_patterns_using_imhex_in_a_differential/)
 - Wikipedia: [Binary File](https://en.wikipedia.org/wiki/Binary_file)
+- Wikipedia: [File Signatures](https://en.wikipedia.org/wiki/List_of_file_signatures)
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
