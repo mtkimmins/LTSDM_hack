@@ -81,7 +81,7 @@ The next step is to reduce the 5V of the uno to 3.3V for the p25d80sh. For that,
 
 ## 30 May 2025 -  
 I have finally received the .bin file! It took quite some time conversing with ChatGPT, but we made it work. From some preliminary checkup, it appears to be a genuine dump. I have posted the first 11 lines of the .bin file as hex. It primarily looks like a bunch of jumbled garbage. I have deleted the scripts that I did not use/work, and have uploaded the two scripts that actually did pull the data in (see under scripts; flash_dump_chip_to_uno.ino and flash_dump_uno_to_pc.py).  
-Reflections on electronic preparation: Because of the temperment of the binary dump, I am glad that I had explicitely soldered the jumper leads directly to the pcb. This helped confirm that it was not my leads falling off that made the program stop. It really helped with keeping focus on programming instead of verifying continuity continually. Also had to reverse the orientation of the divider connections (the divider layout -- series of resistors in the breadboard --  depicted in soldered_back.jpg and soldered_front.jpg are correct), I just had to reconnect the jumper wires at the front and back to reverse the flow through just the 2k ohm resistor first. It appears that the file uploaded to the chip must -- by mandate -- equal 1MB precisely. So, this can result in a small amount of data uploaded with the rest of the bytes written as padding "FF" which makes up about 75%-80% of this cartridge. With this rough estimation, I would say that the maximum length of story based on the original length is between 9:56 - 12:25 (2:29 * 4 or 5). This obviously depends on other variables like projector limits.  
+Reflections on electronic preparation: Because of the temperment of the binary dump, I am glad that I had explicitely soldered the jumper leads directly to the pcb. This helped confirm that it was not my leads falling off that made the program stop. It really helped with keeping focus on programming instead of verifying continuity continually. Also had to reverse the orientation of the divider connections (the divider layout -- series of resistors in the breadboard --  depicted in soldered_back.jpg and soldered_front.jpg are correct), I just had to reconnect the jumper wires at the front and back to reverse the flow through just the 2k ohm resistor first. It appears that the file uploaded to the chip must -- by mandate -- equal 1MB precisely. So, this can result in a small amount of data uploaded with the rest of the bytes written as padding "FF" which makes up about 75%-80% of this cartridge. With this rough estimation, I would say that the maximum length of story based on the original length is about 10 minutes (2:29 * 4). This obviously depends on other variables like projector limitations.  
 **Jumper wiring between chip, pcb, and uno:**  
 |Chip pin|PCB lead|Arduino pin|Divider required?|
 |:-:|:-:|:-:|:-:|
@@ -167,10 +167,15 @@ If successful, please do not create and distribute custom content to others. It 
 - breadboard
 - jumper wires
 - Windows computer
+- 2k ohm resistors
+- 1k ohm resistors
 
 **List of third-party software and programs used:**
 - ChatGPT
 - VSCode
+- ImHex
+- Ghidra
+- Arduino IDE
 
 **List of informational resources consulted:**
 - ChatGPT conversation: https://chatgpt.com/share/6816df7a-c218-8006-b5d9-1f564e48376b
