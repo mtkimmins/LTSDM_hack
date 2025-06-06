@@ -128,7 +128,7 @@ The difference in 11_chip.bin definitely was due to some data interruption. It l
 
 
 **5 June 2025** -  
-I have caved and bought another projector. It was on sale from amazon, and the ones on marketplace were selling for much more. It is coming tomorrow, so hopefully I can figure out what plays the cartridges, what architecture it is, and I get an official pcb clip that fits (no more soldering hopefully).
+I have caved and bought another projector. It was on sale from amazon, and the ones on marketplace were selling for much more. It is coming tomorrow, so hopefully I can figure out what plays the cartridges, what architecture it is, and I get an official pcb clip that fits (no more soldering hopefully). I have also uploaded a picture of a handwritten wiring diagram depicting the pc-arduino-pcb circuit ("arduino_wiring_diagram.jpg").
 
 
 ___
