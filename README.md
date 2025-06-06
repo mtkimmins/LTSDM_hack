@@ -184,6 +184,7 @@ If successful, please do not create and distribute custom content to others. It 
 - Reddit thread about custom film printing: [View-Master-like printing](https://www.reddit.com/r/toycameras/comments/12womtd/how_to_replicate_viewmaster_reels_with_my_own/)
 - Reddit thread about measuring found objects: [Measure and recreate real objects](https://www.reddit.com/r/AskEngineers/comments/ijsk7c/how_can_i_learn_to_measure_and_recreate_real/)
 - Reddit thread asking about gleaning information from a binary differential: [Patterns in the Diff](https://www.reddit.com/r/HowToHack/comments/1l3pz6m/finding_patterns_using_imhex_in_a_differential/)
+- Wikipedia: [Binary File](https://en.wikipedia.org/wiki/Binary_file)
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
