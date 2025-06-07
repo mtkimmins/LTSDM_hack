@@ -115,7 +115,8 @@ I have caved and bought another projector. It was on sale from amazon, and the o
 
 
 ## 6 June 2025 -
-I was skimming the binary 13_chip.bin and saw that every time there was a low entropy patch, there was a controlled patterns of 0481, 0880, 0C80 hex codes with about 3 bytes in between. It looked almost like a table or an array. I have bookmarked them for future reference. I have uploaded an example as "0880.png".
+I was skimming the binary 13_chip.bin and saw that every time there was a low entropy patch, there was a controlled patterns of 0481, 0880, 0C80 hex codes with about 3 bytes in between. It looked almost like a table or an array. I have bookmarked them for future reference. I have uploaded an example as "0880.png".  
+The extra projector came this morning, and I have disassembled it tonight. I have uploaded respective photos of the disassembly on the GitHub under the folder "projector_dissassembly." I am now attempting to identify the microcontroller used and its various parts. Luckily, the cartridge reader section has a detatcheable adapter to the main board. This means all I have to do now is re-route the out-pins through the arduino circuit I made earlier and dump literally all the books without even having to bust them open. After the corruption of 11_chip, I am hesitant to break any more cartridges and hand-solder leads.
 
 
 ___
