@@ -158,6 +158,7 @@ If successful, please do not create and distribute custom content to others. It 
 - Wikipedia: [Binary File](https://en.wikipedia.org/wiki/Binary_file)
 - Wikipedia: [File Signatures](https://en.wikipedia.org/wiki/List_of_file_signatures)
 - Wikipedia: [Pulse-Code-Modulation](https://en.wikipedia.org/wiki/Pulse-code_modulation)
+- GainSec: [Project Log](https://gainsec.com/2025/05/25/reverse-engineering-the-little-tikes-dream-machine-projector-part-1/)
 
 # HOW A BOOK CARTRIDGE WORKS
 **How a cartridge is prepared for play**  
