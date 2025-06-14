@@ -4,14 +4,8 @@
 [!] DISCLAIMER [!]
 
 This repository is for **educational, non-commercial use only**.  
-No proprietary or copyrighted content is distributed.  
 The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
 Please do not use this information to create or sell unauthorized commercial products.
-
-Do not share the following:
-- your full raw extraction data at any stage of analysis
-- modified extraction data (it will have unaltered copyrighted sections)
-- microscopic decapping images of the hardware
 
 ---
 # MILESTONES:
@@ -120,6 +114,9 @@ The extra projector came this morning, and I have disassembled it tonight. I hav
 
 ## 9 June 2025 -
 Seems like the projector controller is not standard -- may be proprietary. Chip numbers are listed in the photo uploaded in projector_board_chips.jpg. I must gather a plan of attack in order to figure out what the functions of the cartridge formats are. I will have to procedurally compare the chip dumps. Luckily, the adapter from the projector guts can be easily rewired to the arduino, so I will dump my other 6 books (and redump the 11_chip from my daughter's good copy). Now I don't have to crack open a cartridge to interact with it. I will have to make a huge spreadsheet for the listing of each deviant region, as well as low-entropy regions of each chip comparatively. I will also start to make a "template" hex code that will be the basis for a whole new story. I also had the idea to take two good dumps and swap inject one variable region into the other and play them -- then see what aspects of the injected cartridge data reveals itself. This means I will have to be familiar with the runtime events of each cartridge to effectively isolate the functions of each region of bytes. Its a lot of work, but I can slowly trudge through it.
+
+## 13 June 2025 -
+Found another individual who is working to reverse-engineer the cartridge and projector too. They are much more versed in electronics and security than I, which led to the discovery that these .bins are encrypted. With that realization, I will post my two verified .bin files. Unfortunately, I have not been so lucky to get any more successful .bin dumps.
 
 ___
 ___
