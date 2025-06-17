@@ -118,6 +118,9 @@ Seems like the projector controller is not standard -- may be proprietary. Chip 
 ## 13 June 2025 -
 Found another individual who is working to reverse-engineer the cartridge and projector too. They are much more versed in electronics and security than I, which led to the discovery that these .bins are encrypted. With that realization, I will post my two verified .bin files. Unfortunately, I have not been so lucky to get any more successful .bin dumps.
 
+## 16 June 2025 -
+Serially dumping the .bin files reveals slight changes to the binary when dumped. Verified GainSec's file - checked with muliple dumps. Seems to match my other "good" .bins except for the signature areas (beginning table, address 0x4EE8 onward). Must still padd a copy of a .bin to align with another to see how far the ending is similar from the back. The sign that my .bin is bad is if there are extra variation areas between the table and the shart of the custom audio (0x4EE8). The fact that my intact-cartridge dumps look similar to my chip-soldered dumps (most of them), suggests that there is variation in the dump, and requires further validation. I also realized that the .bin was absolute garbage until I powered both Vcc/HOLD/WP gold fingers and got the "good" copies consistently (with some slight variations).
+
 ___
 ___
 # PROLOGUE
