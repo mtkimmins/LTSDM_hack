@@ -123,6 +123,21 @@ Serially dumping the .bin files reveals slight changes to the binary when dumped
 The way that I validate my own dumps is if there is a perfect gap of identical bytes between the table and the 0x4EE8 address start (the unique data) between my dump and GainSec's. It also revealed that there were errors in my two previously "good" dumps labelled 12_dump.bin and 13_dump.bin. I will have to upload the better versions.
 Another check is if I get the exact same .bin file with two consecutive dumps of the same cartridge. Its getting better, but any slight bump to the arduino and circuit seems to elicit variant regions.
 
+## 17 June 2025 - 
+More .bin diffing creates more questions. It seems that every time I dump a .bin, it varies by some small degree from each other. Luckily I think I figured out how to circumvent this:  
+- I dump 5 consecutive dumps of 1 book
+- I dump 5 consecutive dumps of the same book, but another physical copy.
+- I choose 1 copy as my "base" copy
+- I compare this base copy to the other 4 copies
+- I mark and colour-code the unique changes between each copy-pair
+- I manually adjust the "base" copy to reflect the democratic result for each variation
+- I repeat these above steps for the second physical cartridge of the same story
+- I then diff these two amalgamated base copies against each other
+- I should get a purified version of the .bin that I can use as a gold standard  
+This approach incurs some assumptions: 1) that the variable regions between consecutive dumps are in different spots; 2) that the democratic average of what is mostly agreed upon by the most copies is the "right" binary sequence. If the two amalgamated copies do not match perfectly, I will be back to square one. I really, really, really hope it works and match at the end of this!
+At the moment, I have turned the baud rate down and takes about 10 minutes per dump. 5x10x2=100 minutes of straight downloading data. Then I have to manually go through these binaries and mark the diffs. I got this.  
+Additionally, I have taken down the 12_dump.bin and 13_dump.bin since I have discovered yesterday that they are not gold-standard bins. I will upload the groups of 5 consecutive dumps I will use to make the amalgamated diff.
+
 ___
 ___
 # PROLOGUE
