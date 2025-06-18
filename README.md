@@ -165,7 +165,6 @@ If successful, please do not create and distribute custom content to others. It 
 - ChatGPT
 - VSCode
 - ImHex
-- Ghidra
 - Arduino IDE
 
 **List of informational resources consulted:**
