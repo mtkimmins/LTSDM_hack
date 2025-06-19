@@ -141,6 +141,66 @@ This approach incurs some assumptions: 1) that the variable regions between cons
 At the moment, I have turned the baud rate down and takes about 10 minutes per dump. 5x10x2=100 minutes of straight downloading data. Then I have to manually go through these binaries and mark the diffs. I got this.  
 Additionally, I have taken down the 12_dump.bin and 13_dump.bin since I have discovered yesterday that they are not gold-standard bins. I will upload the groups of 5 consecutive dumps I will use to make the amalgamated diff.
 
+## 18 June 2025 - 
+Still grinding out file dumps. I have 1 set of "Big Shark, Little Shark, Baby Shark," 2 separate sets of "Pokey Little Puppy," and am now currently dumping a set of "Saggy, Baggy Elephant." I will dump a separate set of Elephant, 2 more Lion sets, and attempt another "Big Shark, Little Shark, Baby Shark" and 2 sets of "Big Shark, Little Shark Go To School." Additionally, I aim to quintuple-dump "The Very Quiet Cricket," "Slowly, Slowly, Slowly said the Sloth," and "Mister Seahorse" once each. I will upload my ImHex project files too.
+While I wait for the data to dump (calculated at 500 minutes or 8:20H of straight download time), I wanted to dream up some ideas that I could use for my first modded project. It should be very simple, like a solid light colour per slide, and a different voice per slide. It would also be useful to test all my questions in one go.
+
+
+TEST 1. AUDIO TIMING
+|SLIDE|LIGHTS|AUDIO|COMMENTS|
+|:-:|:-:|:-:|:-:|
+|1|red|10 sec reading clip||
+|2|red|8 sec reading clip||
+|3|red|6 sec reading clip||
+|4|red|4 sec reading clip||
+|5|red|2 sec reading clip||
+|6|red|1 sec reading clip||
+|7|red|0.5 sec reading clip||
+|8|red|0.1 sec reading clip||
+|9|red|no audio|Attempt to skip over a slide|
+|10|red|music|Attempt to play over the next slide change|
+|11|red|10 sec no audio||
+|12|red|music data to fill the rest of the chip|Attempt to turn the carousel a 13th time|  
+
+*The reading clips could be a verbal countdown of seconds*
+
+
+TEST 2. LIGHTS
+|SLIDE|LIGHTS|AUDIO|COMMENTS|
+|:-:|:-:|:-:|:-:|
+|1|red|3|Control variable|
+|2|orange|3|Attempt to keep the light on when changing slide|
+|3|yellow|3|
+|4|green|3|
+|5|cyan|3|
+|6|blue|3||
+|7|brown|3|
+|8|maroon|3|
+|9|red->purple smooth transition|10|
+|10|red->purple smooth transition|3|Attempting to see if the duration of lights are deduced by the duration of the slide|
+|11|red->purple stocastic transition|10|
+|12|red-> fast transition 0.1 sec between|10|Attempt to keep light on as long as possible|  
+
+*Known colours: red, yellow, white, green, cyan, blue, pink, purple*
+
+
+TEST 3. CAROUSEL
+|SLIDE|LIGHTS|AUDIO|COMMENTS|
+|:-:|:-:|:-:|:-:|
+|1|red strobe|2|
+|2|red strobe|2|Attempt to turn the carousel twice during next transition|
+|3|red strobe|2|Attempt to turn the carousel half a slide next transition|
+|4|red strobe|2|Turn the carousel another half a slide next transition|Normalize|
+|5|red strobe|2|Attempt to end the story after next transition||
+
+TEST 4. LENGTH
+|SLIDE|LIGHTS|AUDIO|COMMENTS|
+|:-:|:-:|:-:|:-:|
+|1|red strobe|as long as possible|Max out chip space|  
+
+*Finish with ending byte sequence*
+
+
 ___
 ___
 # PROLOGUE
