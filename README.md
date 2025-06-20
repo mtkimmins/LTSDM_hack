@@ -137,8 +137,12 @@ More .bin diffing creates more questions. It seems that every time I dump a .bin
 - I repeat these above steps for the second physical cartridge of the same story
 - I then diff these two amalgamated base copies against each other
 - I should get a purified version of the .bin that I can use as a gold standard  
-This approach incurs some assumptions: 1) that the variable regions between consecutive dumps are in different spots; 2) that the democratic average of what is mostly agreed upon by the most copies is the "right" binary sequence. If the two amalgamated copies do not match perfectly, I will be back to square one. I really, really, really hope it works and match at the end of this!
-At the moment, I have turned the baud rate down and takes about 10 minutes per dump. 5x10x2=100 minutes of straight downloading data. Then I have to manually go through these binaries and mark the diffs. I got this.  
+
+This approach incurs some assumptions: 
+  1) that the variable regions between consecutive dumps are in different spots;
+  2) that the democratic average of what is mostly agreed upon by the most copies is the "right" binary sequence.
+
+If the two amalgamated copies do not match perfectly, I will be back to square one. I really, really, really hope it works and match at the end of this! At the moment, I have turned the baud rate down and takes about 10 minutes per dump. 5x10x2=100 minutes of straight downloading data. Then I have to manually go through these binaries and mark the diffs. I got this.  
 Additionally, I have taken down the 12_dump.bin and 13_dump.bin since I have discovered yesterday that they are not gold-standard bins. I will upload the groups of 5 consecutive dumps I will use to make the amalgamated diff.
 
 ## 18 June 2025 - 
