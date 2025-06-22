@@ -10,3 +10,10 @@
 8) Diff the GS against the other file. If the diff does not reveal any point-changes, you have been successful (10-grade refined)
 9) The resulting GS is the gold-standard if it passed step 8
 10) If step 8 reveals any changes, this will have to be investigated for a certain specific stamp or wiring difficulty. Alternatively, the .bin could also be diffed with another GS if the variable region is fixed.
+
+# Dealing With Disrepancies
+|CONDITION|ACTION|
+|:-:|:-:|
+|BASE is the only outlier|Change to majority|
+|BASE only shares discrepancy with 1 other file|Check that address in other bins and confirm complete agreeance. Change to majority. If >1 files differ at this address from each other, defer to further workup|
+|2-3 files agree|Defer to further workup|
