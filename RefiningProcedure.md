@@ -17,3 +17,5 @@
 |BASE is the only outlier|Change to majority|
 |BASE only shares discrepancy with 1 other file|Check that address in other bins and confirm complete agreeance. Change to majority. If >1 files differ at this address from each other, defer to further workup|
 |2-3 files agree|Defer to further workup|
+
+In ImHex, delete the single disagree bookmarks. Use the Hide feature for quad differences. Flag partial discrepancy.
