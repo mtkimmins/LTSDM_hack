@@ -204,6 +204,9 @@ TEST 4. LENGTH
 
 *Finish with ending byte sequence*
 
+## 24 June 2025 - 
+I have painstakingly manually edited a pure copy of "**Big Shark, Little Shark, Baby Shark.**" Its uploaded now in Binary. I will now have to refine the other copy of the same book, then compare both good copies. I hope they match without any differences. I am unsure where to go if there are genuine differences between the two (not due to me being dumb and injecting errors).  
+A list of changes is catalogued in **DiffSheet.xls**
 
 ___
 ___
