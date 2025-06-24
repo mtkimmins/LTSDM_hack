@@ -17,7 +17,7 @@ Please do not use this information to create or sell unauthorized commercial pro
 
 # CURRENT FOCUS
 - My focus is to isolate similarities between chip dumps and create a template for my own data
-**1) start with making gold standard bins**
+  1) **start with making gold standard bins**
   2) compare gold standard (GS) bins
   3) pad and diff ending of all GS bins
 
