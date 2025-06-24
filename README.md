@@ -206,7 +206,11 @@ TEST 4. LENGTH
 
 ## 24 June 2025 - 
 I have painstakingly manually edited a pure copy of "**Big Shark, Little Shark, Baby Shark.**" Its uploaded now in Binary. I will now have to refine the other copy of the same book, then compare both good copies. I hope they match without any differences. I am unsure where to go if there are genuine differences between the two (not due to me being dumb and injecting errors).  
-A list of changes is catalogued in **DiffSheet.xls**
+A list of changes is catalogued in **DiffSheet.xls**  
+UPDATE:  
+I was anticipating that the second dump set would be just as convoluted. However, all 5 copies were exactly the same when I diffed them! Horray! Further to my surprise, the second dump and the refined first dump were also exactly the same! Such a sigh of relief...  
+I now have evidence to suggest that I have purified the cartridge data for "Big Shark, Little Shark, Baby Shark" and purged the noise out.  
+Now I must complete another 10-fold gold standard, then diff the 10-fold gold-standards to see what is truly different between each cartridge.
 
 ___
 ___
