@@ -210,7 +210,8 @@ A list of changes is catalogued in **DiffSheet.xls**
 UPDATE:  
 I was anticipating that the second dump set would be just as convoluted. However, all 5 copies were exactly the same when I diffed them! Horray! Further to my surprise, the second dump and the refined first dump were also exactly the same! Such a sigh of relief...  
 I now have evidence to suggest that I have purified the cartridge data for "Big Shark, Little Shark, Baby Shark" and purged the noise out.  
-Now I must complete another 10-fold gold standard, then diff the 10-fold gold-standards to see what is truly different between each cartridge.
+Now I must complete another 10-fold gold standard, then diff the 10-fold gold-standards to see what is truly different between each cartridge.  
+The next one on my list is the "Tawny,Scrawny Lion," and its such a mess -- so much noise to sort through. Luckily, I may be able to simply delete quite a few of the differences as they will be point mutations of one file only. I hope its that simple...
 
 ___
 ___
