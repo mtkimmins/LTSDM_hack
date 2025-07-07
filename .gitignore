@@ -1,9 +1,5 @@
-# Ignore binary dumps
-*.bin
-
 # Arduino/ESP32 build output
 *.elf
-*.hex
 *.eep
 *.map
 *.out
