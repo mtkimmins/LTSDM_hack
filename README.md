@@ -213,16 +213,11 @@ I now have evidence to suggest that I have purified the cartridge data for "Big 
 Now I must complete another 10-fold gold standard, then diff the 10-fold gold-standards to see what is truly different between each cartridge.  
 The next one on my list is the "Tawny,Scrawny Lion," and its such a mess -- so much noise to sort through. Luckily, I may be able to simply delete quite a few of the differences as they will be point mutations of one file only. I hope its that simple...
 
+## 6 July 2025 -
+I have returned from vacation and am continuing to try to scrub the Lion book.  
+I have also realized that I had not properly uploaded the .bin files, so I have done so. I had to use GIT Desktop to upload so many files. I can't believe I was doing this manually before, it was such a mess.
 ___
 ___
-# PROLOGUE
-This is a good place to define some expectations and goals. Firstly, this will serve as a catalogue of my efforts to make a custom LTSDM book cartridge for my own daughter. If successful, I will not be accepting requests to make custom book cartridges for others. Since this journal is a legal grey area as it is, distributing custom content beyond this guide I feel is plainly illegal. This will simply serve as a a point of reference for modifying existing book cartridges to those with the urge, creativity, and determination to create a custom book cartridge themselves for personal use. I will attempt to reverse engineer the cartridge data, provide my tools here, and give as much description of the data (although likely vague) as open-source material for others to refer to. I hope my own pathway to success (hopefully) will enable others to make personal projects for their own children. Explicitely, I cannot show raw data on the chip to the public, so I will have to coach others through personal extractions to get their own modification blueprint, analysis and interpretation, and programming to make changes. Hopefully, I can figure out how to reduce the data analysis to something modifiable -- like a data map or something -- without breaching any laws. I will attempt to circumvent the headache of analyzing data oneself before any customization.
-
-
-As this project is toeing the line of legality, a request:   
-If successful, please do not create and distribute custom content to others. It may sound like a great business idea at first, but is plainly illegal and a breach of copyright law. I would also argue that such actions are unethical as this scheme would potentially undermine the profits of the original creators. In respect for Little Tikes who provided the original product, please do not distribute custom material. This information is meant to be publicly accessible for others' curiosity and ingenuity, albeit within the bounds of personal use.
-
-
 # RESOURCES USED
 **List of physical materials used:**
 - Arduino Uno R3
