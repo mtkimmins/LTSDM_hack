@@ -19,7 +19,8 @@ ___
 * If there is no discrepancy, pass byte to b
 * If discrepancy is 1:4, pass the democratic value to b
 * If discrepancy is 2:3, stop the program and throw a warning. Reveal the values of each file side-by-side. Offer to manually approve the most common value.
-* Write byte W to the new file
+* Write byte b to the new file
 * If discrepancy: write location, all file bytes, most democratic value entered.
 * Repeat until all bytes read
+
 * Provide sheet C
