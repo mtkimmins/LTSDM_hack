@@ -31,5 +31,4 @@ For a detailed list of what's done and what's next, see the **[Project Roadmap](
 
 * **[Technical Deep Dive](https://github.com/mtkimmins/LTSDM_hack/wiki/Technical-Deep-Dive)** (Chip info, file structure, etc.)
 * **[The Developer Log](https://github.com/mtkimmins/LTSDM_hack/wiki/Developer-Log)** (A detailed history log of the project)
-* **[How to Contribute](https://github.com/mtkimmins/LTSDM_hack/blob/main/CONTRIBUTING.md)**
 * **[Open Issues](https://github.com/mtkimmins/LTSDM_hack/issues)** (Where we need help!)
