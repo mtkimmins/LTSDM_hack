@@ -6,6 +6,7 @@
 ___
 # Assumptions
 * All .bins are the same length
+
 # Overview of Procedure
 * Open 5 .bin files
 * Create a list X 
@@ -22,5 +23,4 @@ ___
 * Write byte b to the new file
 * If discrepancy: write location, all file bytes, most democratic value entered.
 * Repeat until all bytes read
-
 * Provide sheet C
