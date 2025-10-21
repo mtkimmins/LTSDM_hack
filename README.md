@@ -231,6 +231,14 @@ For the time being, I will stratify the quality of the purifications into 4:1 an
 Another crappy part is how long the program takes to run. When I ran it last night on my known good copy (4:1 gold standard I already did manually), it took 5-10 minutes to create the purified file. Perhaps I could speed it up by eliminating all the print() commands, but I don't suspect it will be much faster (only one way to find out). Regardless, such docile speed is better than the eternity it takes to document, log, and change these files by hand. I shoulda done this from the start, what was I thinking!?  
 After reconciliation of gold standards and their respective accuracy stratification, I would like to tackle delineating the terminal section of the file. I will have to make a program that discovers the final byte written in that specific book's data body, then count backwards from each unique byte -- comparing them across 5 dissimilar .bins -- to discover the boundaries of the custom body data unique to each book. This will likely be much quicker long-term than, again, manually chopping up copies of these files to match bytes.  
 EDIT: I have uploaded the rudimentary program and have uploaded all the 4:1 gold standard .bins I could make. The rest have 3:2 or 3:1:1 comparisons I'll have to sort out later.
+
+# 21 October 2025
+Next steps moving forward would be to:  
+* Polish off PureBIN to produce that corrections log for each consolidation
+* Diff the purified BINS and make general obsrevations
+* Make a way in PureBIN to pause the process and make a decision for 3:2 or 3:1:1 conflicts. For 3:2 conflicts, I would like to diff against separate cartridge stories to hopefully see if these conflicts land in constant sections (that would be an easy fix). If they land in the unique section, then I am kinda out of luck right now.
+* I think it would be helpful to synthesize a visual image of what the data of the chip roughly looks like with its various regions.
+* I also think it would be valuable to make a visual flowchart explaining what the process is for data refinement.
 ___
 ___
 # RESOURCES USED
