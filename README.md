@@ -24,7 +24,7 @@ For a detailed list of what's done and what's next, see the **[Project Roadmap](
 ### **Path 1: I'm a Parent & I Want to Use This (The "User" Path)**
 
 * **[How it Works (Simple Version)](https://github.com/mtkimmins/LTSDM_hack/wiki/How-it-Works-(Simple-Version))**
-* **[Getting Started Guide (Coming Soon!)](https://github.com/mtkimmins/LTSDM_hack/wiki/Getting-Started-Guide)**
+* **[Getting Started Guide](https://github.com/mtkimmins/LTSDM_hack/wiki/Getting-Started-Guide)**
 * **[Frequently Asked Questions (FAQ)](https://github.com/mtkimmins/LTSDM_hack/wiki/FAQ)**
 
 ### **Path 2: I'm a Maker/Developer & I Want to Help (The "Contributor" Path)**
