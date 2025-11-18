@@ -7,6 +7,7 @@ This repository is for **educational, non-commercial use only**.
 The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
 Please do not use this information to create or sell unauthorized commercial products.
 </center>
+
 ---
 
 ## PROJECT STATUS: 
