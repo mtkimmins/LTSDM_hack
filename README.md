@@ -29,7 +29,7 @@ For a detailed list of what's done and what's next, see the **[Project Roadmap](
 
 ### **I'm a Maker/Developer & I Want to Help**
 
-* **[The Developer Log](https://github.com/mtkimmins/LTSDM_hack/wiki/Developer-Log)** (A detailed history log of the project)
+* **[The Developer Log](https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log)** (A detailed history log of the project)
 * **[Technical Deep Dive](https://github.com/mtkimmins/LTSDM_hack/wiki/Technical-Specifications)** (Chip info, physical measurements, etc.)
 * **[Cartridge Data Structure](https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis)** (Data structure, data template, etc.)
 * **[Open Issues](https://github.com/mtkimmins/LTSDM_hack/issues)** (Where help is wanted!)
