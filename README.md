@@ -1,7 +1,7 @@
 # A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - Customizing existing book cartridges
 **The Goal:** This project is a journey to reverse-engineer the Little Tikes Story Dream Machine cartridges. The ultimate goal is to create our own custom story cartridges for our kids.
-<center>
-⚠️ DISCLAIMER ⚠️
+
+<center>⚠️ DISCLAIMER ⚠️
 
 This repository is for **educational, non-commercial use only**.  
 The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
