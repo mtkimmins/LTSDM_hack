@@ -11,7 +11,7 @@ Please do not use this information to create or sell unauthorized commercial pro
 ---
 
 ## PROJECT STATUS: 
-⏳ Work in Progress ⏳
+⏳ **Work in Progress** ⏳
 
 This project is currently in the **reverse-engineering phase** actively figuring out data patterns.
 
