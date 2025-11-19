@@ -1,4 +1,4 @@
-<div align=center># A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - Customizing existing book cartridges</div>
+<div align=center> # A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - Customizing existing book cartridges</div>
 
 <div align=center>
 ⚠️ DISCLAIMER ⚠️
