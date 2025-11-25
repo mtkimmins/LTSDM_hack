@@ -6,6 +6,7 @@
 * Auto-validate length compatibility as you upload files as inputs
 * Cap the number of files you can input to 10
 * Popup window when 2:3 ratio mutation is found (implement pre-settings)
+* Display an accuracy assessment for each mutation choice
 * Make a way to alert me on my phone when consolidation is completed.
 ___
 # Assumptions
@@ -28,5 +29,6 @@ ___
 * If discrepancy: write location, all file bytes, most democratic value entered.
 * Repeat until all bytes read
 * Provide sheet C
+
 
 
