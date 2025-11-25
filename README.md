@@ -18,8 +18,6 @@ This project is currently in the **reverse-engineering phase** actively figuring
 
 **It is not yet possible to create custom stories.**
 
-For a detailed list of what's done and what's next, see the **[Project Roadmap](https://github.com/mtkimmins/LTSDM_hack/wiki/Project-Roadmap)**.
-
 ---
 ## Directory
 
