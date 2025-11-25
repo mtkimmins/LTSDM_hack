@@ -9,6 +9,7 @@
 * Display an accuracy assessment for each mutation choice
 * Make a way to alert me on my phone when consolidation is completed.
 * Suggest tie-breaker sample if even sampling
+* Option to read files to shortest length (show length)
 ___
 # Assumptions
 * All .bins are the same length
@@ -30,6 +31,7 @@ ___
 * If discrepancy: write location, all file bytes, most democratic value entered.
 * Repeat until all bytes read
 * Provide sheet C
+
 
 
 
