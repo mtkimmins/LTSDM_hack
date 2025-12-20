@@ -1,5 +1,5 @@
 # Procedure for Dumping Cartridge Data
-### With Projector Adapter
+### With Projector Adapter [INCOMPLETE]
 1) Plug in a cartridge into the projector-cartridge adapter
 2) Connect Arduino Uno to Adapter appropriately (see dev logs)
 3) Connect Arduino Uno to computer via USB
