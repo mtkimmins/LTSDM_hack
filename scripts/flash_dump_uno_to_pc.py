@@ -2,7 +2,7 @@
 import serial
 
 SERIAL_PORT = 'COM3'  # Change if needed
-BAUD_RATE = 115200
+BAUD_RATE = 19200
 OUTPUT_FILE = 'flash_dump.bin'
 CHIP_SIZE = 1024 * 1024
 
