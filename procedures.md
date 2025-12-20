@@ -1,3 +1,13 @@
+# Procedure for Dumping Cartridge Data
+### With Projector Adapter [INCOMPLETE]
+1) Plug in a cartridge into the projector-cartridge adapter
+2) Connect Arduino Uno to Adapter appropriately (see dev logs)
+3) Connect Arduino Uno to computer via USB
+4) Pick a baud rate (19200 for slower reads)
+6) In the Arduino IDE, verify and compile "flash_dump_chip_to_uno.ino" in folder /scripts (WITH THE RIGHT BAUD RATE before flashing)
+7) Ensure baud rate in the Arduino IDE, .ino file, and python script match to step (4)
+8) Run python script
+
 # Procedure for Gleaning Gold-Standard Binary Data Files
 
 1) Dump the same chip 5 separate times into different .bin files at Baud Rate 19200
