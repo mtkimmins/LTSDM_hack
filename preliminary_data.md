@@ -7,6 +7,7 @@ No figurine mount used
 |Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
 |:-:|:-:|:-:|:-:|:-:|
 |Display first frame|0:00|
+
 Number on back of cartridge: W34J071
 
 
@@ -35,7 +36,7 @@ No figurine mount used
 |Light - yellow|0:23|0:25|2|"fun"|
 |Light off, hide + change frame|0:25|0:28|3|
 |Display third frame|0:28|0:39|11|
-|Light - Blue|0:28|0:30|2|uh oh|
+|Light - Blue|0:28|0:30|2|"uh oh"|
 |Vocal reading|0:29|0:39|1|Reading third frame|
 |Light - pink|0:30|0:33|3|"baby shark"|
 |Light - blue|0:33|0:34|1|"Big Shark"|
@@ -110,6 +111,7 @@ No figurine mount used
 |Light - white/blue + baseball bat sfx|2:24|2:26|2|baseball bat hitting a ball sfx + changed to white for a while, then flashed blue before off|
 |Light off, hide + change frame|2:26|2:29|3|
 |Finished sound|2:29|
+
 Number on backof cartridge: W34F171
 
 
@@ -123,4 +125,5 @@ No figurine mount used
 |Audio Event|Timestamp Begun|Timestamp End|Duration (Seconds)|Description|
 |:-:|:-:|:-:|:-:|:-:|
 |Display first frame|0:00|
+
 Number on back of cartridge: W34F171
