@@ -2,8 +2,7 @@ import struct
 import wave
 
 BLOCK_SIZE = 256 # try 256, 512, 1024, etc.
-FILE_PATH = "TEST-BSLSBS-Region1-4ee8.bin"
-
+FILE_PATH = "RePulse\TEST-BSLSBS-Region1-4ee8.bin"
 
 # Standard IMA ADPCM tables
 INDEX_TABLE = [-1, -1, -1, -1, 2, 4, 6, 8,
@@ -17,6 +16,8 @@ STEP_TABLE = [
     3327, 3660, 4026, 4428, 4871, 5358, 5894, 6484, 7132, 7845, 8630, 9493, 10442, 11487, 12635, 13899,
     15289, 16818, 18500, 20350, 22385, 24623, 27086, 29794, 32767
 ]
+
+
 
 def clamp16(x: int) -> int:
     return max(-32768, min(32767, x))
@@ -84,5 +85,5 @@ def write_wav(path: str, pcm16le: bytes, sample_rate: int, channels: int = 1):
 
 # ---- usage example ----
 raw = open(FILE_PATH,"rb").read()
-pcm = decode_ima_stream(raw, block_size=BLOCK_SIZE)   # try 256, 512, 1024, etc.
+pcm = decode_ima_stream(raw, block_size=BLOCK_SIZE)
 write_wav("out.wav", pcm, sample_rate=16000)
