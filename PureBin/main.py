@@ -48,38 +48,129 @@ class MainWindow:
 
     # Remove Child Window
 
-class SegmentOne:
-    def __init__(self, raw_hex_list)->None:
+class Segment:
+    def __init__(self, name:str, raw_hex_list:list)->None:
+        self.name:str = name
         self.raw_hex_list:list = raw_hex_list
-        self.hex_size:list = []
+        self.size:int = self._getSize()
 
+    def _getSize(self)->int:
+        return len(self.raw_hex_list)
+
+
+
+class UniqueRegion(Segment):
+    def __init__(self, name:str, data:list)->None:
+        super().__init__(name, data)
+        self.table:list = []
+
+
+
+class SegmentOne(Segment):
+    def __init__(self, data)->None:
+        super().__init__("one", data)
+        self.ltsdm_magic_n:list = self._getLTSDMMagicNumberList()
+        self.cartridge_magic_n:list = self._getCartridgeMagicNumberList()
+        self.segment_2_pointers:list = self._getPointers(2) # Segment 2.1 and 2.2
+        self.segment_3_pointers:list = self._getPointers(3) # Segment 3, Regions 1 - 12
+        self.segment_4_pointers:list = self._getPointers(4) # Segment 4, Regions 13 - 24
+        self.pointer_frame:int = 4
+        self.total_pointers_n:int = 26
+    
+    def _getPointers(self, segment_n:int)->list:
+        pointers:list = []
+        for i in range(self.total_pointers_n):
+            # Segment 2.1 = 0; Segment 2.2 = 1; Region 1 = 2; Region 2 = 3; ... Region 24 = 25
+            match segment_n:
+                case 2: # Get segment2 pointers (x2)
+                    if i > 1: break
+                case 3: # Get segment3 pointers (Regions 1-12, unique)
+                    if i < 2: continue
+                    if i > 13: break
+                case 4: # Getm segment4 pointers (Regions 13-24, conserved)
+                    if i < 14: continue
+                case _:
+                    print("UNKNOWN SEGMENT")
+            address:list = []
+            for b in range(self.pointer_frame):
+                address.append(self.raw_hex_list[self.pointer_frame + (self.pointer_frame*i+(b))])
+            pointers.append(address)
+        return pointers
+    
+    def _getLTSDMMagicNumberList(self)->list:
+        ltsdm_magic_n:list = [self.raw_hex_list[0], self.raw_hex_list[1]]
+        return ltsdm_magic_n
+    
+    def _getCartridgeMagicNumberList(self)->list:
+        cart_magic_n = [self.raw_hex_list[2], self.raw_hex_list[3]]
+        return cart_magic_n
+    
     def getSize(self)->int:
         return len(self.raw_hex_list)
-    
-    def _getHexSize(self)->list:
+
+
+
+class SegmentSized(Segment):
+    def __init__(self, name, data)->None:
+        super().__init__(name, data)
+        self.hex_length:list = self._getHexLength()
+
+    def _getHexLength(self)->list:
         return [self.raw_hex_list[0], self.raw_hex_list[1], self.raw_hex_list[2], self.raw_hex_list[3]]
 
 
 
-class BinaryFile:
-    def __init__(self, raw_hex_list)->None:
+class SegmentRegions(Segment):
+    def __init__(self, name, data)->None:
+        super().__init__(name, data)
+        self.regions:list = []
+        self.size:int = 0
+
+    def addRegion(self, region:Segment)->None:
+        if self.size < 12:
+            self.regions.append(region)
+            self._updateSize()
+        else:
+            print("CANNOT ADD REGION TO ",self,". >> FULL.")
+
+
+    # def removeRegion(self, region:Segment)->None:
+
+    def _updateSize(self)->None:
+        self.size = len(self.regions)
+
+class SegmentSix:
+    def __init__(self)->None:
+        self.name:str = "six"
+
+
+class HexFile:
+    def __init__(self, raw_hex_list, one:SegmentOne, two_one:SegmentSized, two_two:SegmentSized, three:SegmentRegions, four:SegmentRegions, five:Segment, six:SegmentSix, seven:Segment)->None:
         self.raw_hex_list:list = raw_hex_list
+        self.segment_1:SegmentOne = one
+        self.segment_2_1:SegmentSized = two_one
+        self.segment_2_2:SegmentSized = two_two
+        self.segment_3:SegmentRegions = three
+        self.segment_4:SegmentRegions = four
+        self.segment_5:Segment = five
+        self.segment_6:SegmentSix = six
+        self.segment_7:Segment = seven
 
-    def getLTSDMMagicNumberList(self, raw_hex_list)->list:
-        ltsdm_magic_n:list = [raw_hex_list[0], raw_hex_list[1]]
-        return ltsdm_magic_n
-    
-    def getCartridgeMagicNumberList(self, raw_hex_list)->list:
-        cart_magic_n = [raw_hex_list[2], raw_hex_list[3]]
-        return cart_magic_n
+    def getRange(self, start:int, end:int)->list:
+        hex_list:list = []
+        for h in range(start,end):
+            hex_list.append(self.raw_hex_list[h])
+        return hex_list
 
-class BinaryMachine:
+
+
+class HexManager:
     def __init__(self)->None:
         self.address_frame = 4
         self.line_frame = 16
 
     # Loading Binary
-    def loadBinarytoMatrix(self, file_path)->list[list]: # Validated
+    def loadBinarytoMatrix(self, file_path:str)->list: # Validated
         file_list:list = []
         with open(file_path,"rb") as file:
             for line in file:
@@ -112,7 +203,7 @@ class Communicator:
 
 
 # OnStart announce what to do -> "OK"
-def open_run_window():
+def open_run_window(root):
     runWindow = tk.Toplevel(root)
     runInstructions = tk.Label(runWindow, text=runOpeningText)
     runOkButton = tk.Button(runWindow, text="OK", command=select_file)
@@ -191,8 +282,10 @@ def clear_reset():
 ##########################################
 #   RUNTIME
 ##########################################
-bin = BinaryMachine()
-bin.loadBinarytoMatrix(REFERENCE_FILE_1)
+bin = HexManager()
+hex_area = bin.loadBinarytoMatrix(REFERENCE_FILE_1)
+segment = SegmentOne()
+print(segment._getPointers(4))
 # Make main window
 # root = tk.Tk()
 # root.title("Pure-BIN 5-to-1 Transformer")
