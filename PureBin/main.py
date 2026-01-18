@@ -5,6 +5,12 @@ import os
 from collections import Counter
 import datetime
 
+#######################################
+#   CONSTANTS/VARS
+#######################################
+REFERENCE_FILE_1 = "PureBin/samples/BSLSBSBaseM.bin"
+REFERENCE_FILE_2 = "PureBin/samples/MLionGS.bin"
+
 OUTPUT_FILE_NAME = "goldStandardBin"
 
 runOpeningText = "Here is the text for the new window. There should be a run function afterward an assignment of 5 bins."
@@ -15,6 +21,95 @@ newByte = None
 reportCSVFile = None
 reportCSVLocation = None
 reportCSVBytesList = []
+
+#######################################
+#   CLASSES/FUNC
+#######################################
+
+class Settings:
+    def __init__(self)->None:
+        pass
+
+    # Add Setting
+
+    # Remove Setting
+
+    # Reset Setting
+
+    # Set Setting
+
+class MainWindow:
+    def __init__(self)->None:
+        pass
+
+    # Init Main Window
+
+    # Add Child Window
+
+    # Remove Child Window
+
+class SegmentOne:
+    def __init__(self, raw_hex_list)->None:
+        self.raw_hex_list:list = raw_hex_list
+        self.hex_size:list = []
+
+    def getSize(self)->int:
+        return len(self.raw_hex_list)
+    
+    def _getHexSize(self)->list:
+        return [self.raw_hex_list[0], self.raw_hex_list[1], self.raw_hex_list[2], self.raw_hex_list[3]]
+
+
+
+class BinaryFile:
+    def __init__(self, raw_hex_list)->None:
+        self.raw_hex_list:list = raw_hex_list
+
+    def getLTSDMMagicNumberList(self, raw_hex_list)->list:
+        ltsdm_magic_n:list = [raw_hex_list[0], raw_hex_list[1]]
+        return ltsdm_magic_n
+    
+    def getCartridgeMagicNumberList(self, raw_hex_list)->list:
+        cart_magic_n = [raw_hex_list[2], raw_hex_list[3]]
+        return cart_magic_n
+
+class BinaryMachine:
+    def __init__(self)->None:
+        self.address_frame = 4
+        self.line_frame = 16
+
+    # Loading Binary
+    def loadBinarytoMatrix(self, file_path)->list[list]: # Validated
+        file_list:list = []
+        with open(file_path,"rb") as file:
+            for line in file:
+                for byte in line:
+                    h = hex(byte)
+                    file_list.append(h)
+        return file_list
+
+    # Tag Binary
+
+    # Saving Binary
+
+    # Checking Binary
+
+    # Translating Binary
+
+class Communicator:
+    def __init__(self)->None:
+        pass
+
+    # Detect Completion
+
+    # Add Signal Target
+
+    # Remove Signal Target
+
+    # Transmit Signal
+
+    
+
 
 # OnStart announce what to do -> "OK"
 def open_run_window():
@@ -91,20 +186,26 @@ def open_files(filePaths, outputFile):
 def clear_reset():
     pass
 
-#---------------------------------------------------------------------------------
+
+
+##########################################
+#   RUNTIME
+##########################################
+bin = BinaryMachine()
+bin.loadBinarytoMatrix(REFERENCE_FILE_1)
 # Make main window
-root = tk.Tk()
-root.title("Pure-BIN 5-to-1 Transformer")
+# root = tk.Tk()
+# root.title("Pure-BIN 5-to-1 Transformer")
 
-mainframe = ttk.Frame(root, padding=(3,3,12,12))
-mainframe.grid(column=0,row=0,sticky=("N","W","E","S"))
+# mainframe = ttk.Frame(root, padding=(3,3,12,12))
+# mainframe.grid()
 
-# Make the buttons (Start, Exit)
-startButton = tk.Button(mainframe, text="Start", command=open_run_window)
-startButton.grid(column=0,row=0, sticky=("W","E"))
-exitButton = tk.Button(mainframe, text="Exit", command=exit)
-exitButton.grid(column=0,row=1)
-root.mainloop()
+# # Make the buttons (Start, Exit)
+# startButton = tk.Button(mainframe, text="Start", command=open_run_window)
+# startButton.grid()
+# exitButton = tk.Button(mainframe, text="Exit", command=exit)
+# exitButton.grid(column=0,row=1)
+# root.mainloop()
 
 # Upload exactly 5 (can upload many, but will overwrite the current arrangement and populate from 0)
 # Display paths beside assigned name
