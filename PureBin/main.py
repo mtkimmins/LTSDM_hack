@@ -87,16 +87,14 @@ class HexFile:
 
     def build(self)->None:
         # Check if data is compatible
-        # get pointer table set up
-        seg1 = SegmentOne(self.hex[0:(112 - 1)])
 
-    def _stratifyByPointerTable(self, hex:list, pointer_table:list)->list[list]:
-        # Take raw hex and chop it up to each segment/region raw hex
-        for pointer in pointer_table:
-            start:int = 0
-            end:int = 0
-        
-        return [[]]
+        # Create pointer table
+        self.segment_1 = SegmentOne(self.hex[0:(112 - 1)])
+        # break out all starting addresses
+        #TODO
+
+    def _mapHexToRegion(self, hex, region):
+        pass
 
     def getRange(self, start:int, end:int)->list:
         hex_list:list = []
@@ -126,14 +124,15 @@ class HexFile:
 # This is a special segment with magic numbers and a pointer table 
 class SegmentOne:
     def __init__(self, hex:list)->None:
+        self.pointer_frame:int = 4
+        self.total_pointers_n:int = 26
         self.hex:list = hex
         self.ltsdm_magic_n:list = self._getLTSDMMagicNumberList()
         self.cartridge_magic_n:list = self._getCartridgeMagicNumberList()
         self.segment_2_pointers:list = self._getPointers(2) # Segment 2.1 and 2.2
         self.segment_3_pointers:list = self._getPointers(3) # Segment 3, Regions 1 - 12
         self.segment_4_pointers:list = self._getPointers(4) # Segment 4, Regions 13 - 24
-        self.pointer_frame:int = 4
-        self.total_pointers_n:int = 26
+
     
     def _getPointers(self, segment_n:int)->list:
         pointers:list = []
@@ -185,5 +184,6 @@ class UniqueRegion(Region):
 #######################################
 #   RUNTIME
 #######################################
-hexfile = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
-print(DataLoader().verifyLength(hexfile))
+hex_data = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
+print(DataLoader().verifyLength(hex_data))
+hex_file = HexFile(hex_data)
