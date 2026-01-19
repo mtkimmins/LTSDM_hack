@@ -33,8 +33,11 @@ ___
 * Repeat until all bytes read
 * Provide sheet C
 
-
-
+# Official Documentation
+## Required Concepts
+Hex file
+Segment 1 (magic numbers x2, list of pointers)
+Segment 2.1, Segment 2.2, Regions
 
 
 

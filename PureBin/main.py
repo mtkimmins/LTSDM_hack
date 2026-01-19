@@ -48,6 +48,7 @@ class MainWindow:
 
     # Remove Child Window
 
+# Base class. All Segments will have a name, hex, and size
 class Segment:
     def __init__(self, name:str, raw_hex_list:list)->None:
         self.name:str = name
@@ -58,14 +59,14 @@ class Segment:
         return len(self.raw_hex_list)
 
 
-
+# This will have Segment's name, hex, size. It will also have a pointer and a table
 class UniqueRegion(Segment):
     def __init__(self, name:str, data:list)->None:
         super().__init__(name, data)
         self.table:list = []
 
 
-
+# This
 class SegmentOne(Segment):
     def __init__(self, data)->None:
         super().__init__("one", data)
@@ -110,12 +111,12 @@ class SegmentOne(Segment):
 
 
 
-class SegmentSized(Segment):
+class SegmentPointered(Segment):
     def __init__(self, name, data)->None:
         super().__init__(name, data)
-        self.hex_length:list = self._getHexLength()
+        self.pointer:list = self._getPointer()
 
-    def _getHexLength(self)->list:
+    def _getPointer(self)->list:
         return [self.raw_hex_list[0], self.raw_hex_list[1], self.raw_hex_list[2], self.raw_hex_list[3]]
 
 
