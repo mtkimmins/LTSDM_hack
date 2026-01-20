@@ -143,6 +143,25 @@ class HexFile:
         cart_magic_n = [seg_1_hex[2], seg_1_hex[3]]
         return cart_magic_n
     
+    def _ToNumberHex(self, item:str)->int:
+        digit = 0
+        match item:
+            case "a":
+                digit = 10
+            case "b":
+                digit = 11
+            case "c":
+                digit = 12
+            case "d":
+                digit = 13
+            case "e":
+                digit = 14
+            case "f":
+                digit = 15
+            case _:
+                digit = int(item)
+        return digit
+    
     def getRange(self, start:int, end:int)->list:
         hex_list:list = []
         for h in range(start,end):
@@ -152,13 +171,32 @@ class HexFile:
     def getSize(self)->int:
         return len(self.hex)
     
-    def hexStringToDecimal(self, hex_string:str)->int:
-        # Can get an address/index from any size hex string
-        # Is the hex within length of a file?
-        # I
+    def hexStringToDecimal(self, hex_string:str)->int: #Validated
         decimal = 0
-        
+        # Cut off the "0x" beginning
+        cropped_hex:str = hex_string[2:]
+        # Check if a hex
+        decimal_parts = map(self._ToNumberHex, cropped_hex)
+        # Times the parts accordingly
+        ramp:int = len(cropped_hex)-1
+        for part in decimal_parts:
+            print(part)
+            decimal += part * pow(16,ramp) 
+            ramp -= 1
         return decimal
+    
+    def listToHexString(self, hex:list[str])->str: # Validated
+        # LITTLE ENDIAN
+        prefix:str = "0x"
+        hex_string:str = ""
+        hex_string_list:list = []
+        for h in hex:
+            cropped_hex:str = h[2:]
+            hex_string_list.append(cropped_hex)
+        for i in range(len(hex_string_list)):
+            hex_piece = hex_string_list.pop()
+            hex_string += hex_piece
+        return prefix + hex_string
 
 
 
@@ -168,4 +206,4 @@ class HexFile:
 #######################################
 hex_data = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
 hex_file = HexFile(hex_data)
-print(hex_file._getSegmentSeven())
+print(hex_file.hexStringToDecimal(hex_file.listToHexString(["0xff","0x1c","0x00","0xa4"])))
