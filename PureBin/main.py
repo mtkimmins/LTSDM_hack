@@ -62,45 +62,41 @@ class DataLoader:
                     file_list.append(h)
         return file_list
     
-    def verifyLength(self, hex:list)->bool:
-        verified:bool = False
-        # is it the right size?
-        if (len(hex) == 1048576):
-            verified = True
-        return verified
-
 
 
 class HexFile:
     def __init__(self, hex:list)->None:
         self.hex:list = hex
         self.length:int =  1048576 # constant, files should be 1Mib exactly
-        self.segment_1:SegmentOne|None = None
-        self.segment_2_1:Region|None = None
-        self.segment_2_2:Region|None = None
-        self.segment_3:list[UniqueRegion] = []
-        self.segment_4:list[Region] = []
-        self.segment_5:list = [] # this will be empty w 0xff
-        self.segment_6:list = []
-        self.segment_7:list = ['0xff'] # this will be empty w 0xff, this is constant
-        self.build()
+        self.pointer_frame:int = 4
+        self.total_pointers_n:int = 26
+                
+        self.segment_1_hex:list = self._getSegmentOneHex(self.hex)
+        self.ltsdm_magic_n:list = self._getLTSDMMagicNumberList(self.segment_1_hex)
+        self.cartridge_magic_n:list = self._getCartridgeMagicNumberList(self.segment_1_hex)
+        self.segment_2_pointers:list = self._getPointers(self.segment_1_hex, 2) # Segment 2.1 and 2.2
+        self.segment_3_pointers:list = self._getPointers(self.segment_1_hex, 3) # Segment 3, Regions 1 - 12
+        self.segment_4_pointers:list = self._getPointers(self.segment_1_hex, 4) # Segment 4, Regions 13 - 24
+                
+        self.segment_2_1_hex:list = []
+        self.segment_2_2_hexlist = []
+        self.segment_3_regions:list = []
+        self.segment_4_regions:list = []
+        self.segment_5_hex:list = [] # this will be empty w 0xff
+        self.segment_6_hex:list = self._getSegmentSix(self.hex)
+        self.segment_7_hex:list = self._getSegmentSeven() # this will be empty w 0xff, this is constant
 
-    def build(self)->None:
-        # Check if data is compatible
-
-        # Create pointer table
-        self.segment_1 = SegmentOne(self.hex[0:(112 - 1)])
-        # break out all starting addresses
-        #TODO
-
-    def _mapHexToRegion(self, hex, region):
-        pass
-
-    def getRange(self, start:int, end:int)->list:
-        hex_list:list = []
-        for h in range(start,end):
-            hex_list.append(self.hex[h])
-        return hex_list
+    def _getSegmentOneHex(self, full_hex:list)->list:
+        return full_hex[0:108]
+    
+    def _getSegmentSeven(self)->list:
+        seg_7_hex:list = []
+        for i in range(112):
+            seg_7_hex.append("0xff")
+        return seg_7_hex
+    
+    def _getSegmentSix(self, full_hex:list)->list: #Verified
+        return full_hex[1048448:1048464]
     
     def _compareAgainstGS(self, raw_hex:list)->bool:
         is_compatible:bool = False
@@ -118,23 +114,8 @@ class HexFile:
         verified:bool = False
         # are the constant regions the same as GS? [Magic LTSDM, first 3 pointers, segment 2.1, segment 2.2, segment 4, segment 7]
         return verified
-
-
-
-# This is a special segment with magic numbers and a pointer table 
-class SegmentOne:
-    def __init__(self, hex:list)->None:
-        self.pointer_frame:int = 4
-        self.total_pointers_n:int = 26
-        self.hex:list = hex
-        self.ltsdm_magic_n:list = self._getLTSDMMagicNumberList()
-        self.cartridge_magic_n:list = self._getCartridgeMagicNumberList()
-        self.segment_2_pointers:list = self._getPointers(2) # Segment 2.1 and 2.2
-        self.segment_3_pointers:list = self._getPointers(3) # Segment 3, Regions 1 - 12
-        self.segment_4_pointers:list = self._getPointers(4) # Segment 4, Regions 13 - 24
-
     
-    def _getPointers(self, segment_n:int)->list:
+    def _getPointers(self, seg_1_hex:list, segment_n:int)->list:
         pointers:list = []
         for i in range(self.total_pointers_n):
             # Segment 2.1 = 0; Segment 2.2 = 1; Region 1 = 2; Region 2 = 3; ... Region 24 = 25
@@ -150,40 +131,41 @@ class SegmentOne:
                     print("UNKNOWN SEGMENT")
             address:list = []
             for b in range(self.pointer_frame):
-                address.append(self.hex[self.pointer_frame + (self.pointer_frame*i+(b))])
+                address.append(seg_1_hex[self.pointer_frame + (self.pointer_frame*i+(b))])
             pointers.append(address)
         return pointers
     
-    def _getLTSDMMagicNumberList(self)->list:
-        ltsdm_magic_n:list = [self.hex[0], self.hex[1]]
+    def _getLTSDMMagicNumberList(self, seg_1_hex:list)->list:
+        ltsdm_magic_n:list = [seg_1_hex[0], seg_1_hex[1]]
         return ltsdm_magic_n
     
-    def _getCartridgeMagicNumberList(self)->list:
-        cart_magic_n = [self.hex[2], self.hex[3]]
+    def _getCartridgeMagicNumberList(self, seg_1_hex:list)->list:
+        cart_magic_n = [seg_1_hex[2], seg_1_hex[3]]
         return cart_magic_n
+    
+    def getRange(self, start:int, end:int)->list:
+        hex_list:list = []
+        for h in range(start,end):
+            hex_list.append(self.hex[h])
+        return hex_list
     
     def getSize(self)->int:
         return len(self.hex)
+    
+    def hexStringToDecimal(self, hex_string:str)->int:
+        # Can get an address/index from any size hex string
+        # Is the hex within length of a file?
+        # I
+        decimal = 0
+        
+        return decimal
 
 
 
-
-class Region:
-    def __init__(self, hex:list):
-        self.hex:list = hex
-        self.pointer:list = [hex[0],hex[1],hex[2],hex[3]]
-
-
-
-
-class UniqueRegion(Region):
-    def __init__(self, hex:list, table:list):
-        super().__init__(hex)
-        self.table:list = table
 
 #######################################
 #   RUNTIME
 #######################################
 hex_data = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
-print(DataLoader().verifyLength(hex_data))
 hex_file = HexFile(hex_data)
+print(hex_file._getSegmentSeven())
