@@ -74,30 +74,46 @@ class HexFile:
         self.segment_1_hex:list = self._getSegmentOneHex(self.hex)
         self.ltsdm_magic_n:list = self._getLTSDMMagicNumberList(self.segment_1_hex)
         self.cartridge_magic_n:list = self._getCartridgeMagicNumberList(self.segment_1_hex)
-        self.segment_2_pointers:list = self._getPointers(self.segment_1_hex, 2) # Segment 2.1 and 2.2
-        self.segment_3_pointers:list = self._getPointers(self.segment_1_hex, 3) # Segment 3, Regions 1 - 12
-        self.segment_4_pointers:list = self._getPointers(self.segment_1_hex, 4) # Segment 4, Regions 13 - 24
+        self.segment_2_pointers:list = self._getPointers(self.segment_1_hex, 2) # Segment 2.1 and 2.2 :: Validated
+        self.segment_3_pointers:list = self._getPointers(self.segment_1_hex, 3) # Segment 3, Regions 1 - 12 :: Validated
+        self.segment_4_pointers:list = self._getPointers(self.segment_1_hex, 4) # Segment 4, Regions 13 - 24 :: Validated
                 
-        self.segment_2_1_hex:list = []
-        self.segment_2_2_hexlist = []
-        self.segment_3_regions:list = []
-        self.segment_4_regions:list = []
+        self.segment_2_1_hex:list = self._getSegment(self.hex, self.segment_2_pointers[0],self.segment_2_pointers[1]) #Validated
+        self.segment_2_2_hex:list = self._getSegment(self.hex, self.segment_2_pointers[1], self.segment_3_pointers[0]) #Validated
+        self.segment_3_regions:list[list] = []
+        self.segment_4_regions:list[list] = []
         self.segment_5_hex:list = [] # this will be empty w 0xff
         self.segment_6_hex:list = self._getSegmentSix(self.hex)
         self.segment_7_hex:list = self._getSegmentSeven() # this will be empty w 0xff, this is constant
 
-    def _getSegmentOneHex(self, full_hex:list)->list:
+    def _getSegmentOneHex(self, full_hex:list)->list: # Validated
         return full_hex[0:108]
     
-    def _getSegmentSeven(self)->list:
+    def _getSegment(self, full_hex:list, start_pointer:list, end_pointer:list)->list: #Validated
+        start_address:int = self.listToDecimal(start_pointer)
+        end_address:int = self.listToDecimal(end_pointer)
+        seg_2_1_hex = full_hex[start_address:end_address]
+        return seg_2_1_hex
+    
+    #TODO
+    def _getSegmentThree(self, pointers:list, last_pointer:list)->list[list]:
+        seg3:list = []
+        all_pointers:list = pointers + last_pointer
+        for i in range(len(all_pointers)):
+            if i == len(all_pointers)-1:continue
+            region_hex:list = self._getSegment(self.hex, all_pointers[i], all_pointers[i+1])
+            seg3.append(region_hex)
+        return seg3
+        
+
+    def _getSegmentSix(self, full_hex:list)->list: #Verified
+        return full_hex[1048448:1048464]
+    
+    def _getSegmentSeven(self)->list: # Validated
         seg_7_hex:list = []
         for i in range(112):
             seg_7_hex.append("0xff")
         return seg_7_hex
-    
-    def _getSegmentSix(self, full_hex:list)->list: #Verified
-        return full_hex[1048448:1048464]
-    
     def _compareAgainstGS(self, raw_hex:list)->bool:
         is_compatible:bool = False
         return is_compatible
@@ -143,7 +159,7 @@ class HexFile:
         cart_magic_n = [seg_1_hex[2], seg_1_hex[3]]
         return cart_magic_n
     
-    def _ToNumberHex(self, item:str)->int:
+    def _ToNumberHex(self, item:str)->int: # Validated
         digit = 0
         match item:
             case "a":
@@ -168,9 +184,6 @@ class HexFile:
             hex_list.append(self.hex[h])
         return hex_list
     
-    def getSize(self)->int:
-        return len(self.hex)
-    
     def hexStringToDecimal(self, hex_string:str)->int: #Validated
         decimal = 0
         # Cut off the "0x" beginning
@@ -180,7 +193,7 @@ class HexFile:
         # Times the parts accordingly
         ramp:int = len(cropped_hex)-1
         for part in decimal_parts:
-            print(part)
+            # print(part)
             decimal += part * pow(16,ramp) 
             ramp -= 1
         return decimal
@@ -198,7 +211,10 @@ class HexFile:
             hex_string += hex_piece
         return prefix + hex_string
 
-
+    def listToDecimal(self, hex:list[str])->int: #Validated
+        list_to_string:str = self.listToHexString(hex)
+        decimal = self.hexStringToDecimal(list_to_string)
+        return decimal
 
 
 #######################################
@@ -206,4 +222,4 @@ class HexFile:
 #######################################
 hex_data = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
 hex_file = HexFile(hex_data)
-print(hex_file.hexStringToDecimal(hex_file.listToHexString(["0xff","0x1c","0x00","0xa4"])))
+print(hex_file.segment_2_2_hex)
