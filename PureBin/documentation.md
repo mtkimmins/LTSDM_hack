@@ -1,8 +1,10 @@
-# PureBin - A Democratic Filter for Merging Multiple Binary Files
+# LTSDM PureBin - A Multipurpose Tool for Handling LTSDM Cartridge Data Dumps
 
 
 ## In Progress
 ## To Do
+* Be able to consolidate gold standards
+* Be able to sense arduino, trigger dump cartridges
 * Have a console-based navigation system, no GUI yet
 * Auto-validate length compatibility as you upload files as inputs
 * Cap the number of files you can input to 10
@@ -34,8 +36,13 @@ ___
 * Repeat until all bytes read
 * Provide sheet C
 
-
-
+# Official Documentation
+## Required Concepts: children (attributes)
+Hex file: segments 1-7 (codified segment attributes)
+Hex Body: segment 5, segment 6, segment 7 (list of hex)
+Segment 1: LTSDM magic, cartridge magic, pointer table (magic numbers x2, list of pointers)
+Conserved Areas: Segment 2.1, Segment 2.2, Regions 13-24 (initial pointer, hex body)
+Unique Areas: Regions 1-12 (conserved area, table hex)
 
 
 
