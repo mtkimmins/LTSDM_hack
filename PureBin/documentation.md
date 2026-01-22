@@ -5,6 +5,7 @@
 ## To Do
 * Be able to consolidate gold standards
 * Be able to sense arduino, trigger dump cartridges
+* Have a console-based navigation system, no GUI yet
 * Auto-validate length compatibility as you upload files as inputs
 * Cap the number of files you can input to 10
 * Popup window when 2:3 ratio mutation is found (implement pre-settings)
