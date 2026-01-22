@@ -88,9 +88,12 @@ class HexFile:
         self.segment_7_hex:list = self._getSegmentSeven() # this will be empty w 0xff, this is constant #TODO: for the future, we should switch to an initializing loop that assigns a starting address and a length in bytes
 
         # Signal that the hex is compiled
-        self.built = True
+        if self._verifySelf():
+            self.built = True
+        else:
+            print(">>ERROR hex:",self,"failed to validate self.")
 
-    def __eq__(self, other)->bool:
+    def __eq__(self, other)->bool: #Verified
         if isinstance(other, HexFile):
             if self.hex == other.hex:
                 return True
@@ -147,7 +150,7 @@ class HexFile:
     def _isBuilt(self)->bool:
         return self.built
  
-    def _verifySelf(self, hex_reference:HexFile)->bool:
+    def _verifySelf(self)->bool:
         verified:bool = False
         # are the constant regions the same as GS? [Magic LTSDM, first 3 pointers, segment 2.1, segment 2.2, segment 4, segment 7]
         # Does the LTSDM magic number match?

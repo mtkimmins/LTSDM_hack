@@ -1,8 +1,10 @@
-# PureBin - A Democratic Filter for Merging Multiple Binary Files
+# LTSDM PureBin - A Multipurpose Tool for Handling LTSDM Cartridge Data Dumps
 
 
 ## In Progress
 ## To Do
+* Be able to consolidate gold standards
+* Be able to sense arduino, trigger dump cartridges
 * Auto-validate length compatibility as you upload files as inputs
 * Cap the number of files you can input to 10
 * Popup window when 2:3 ratio mutation is found (implement pre-settings)
