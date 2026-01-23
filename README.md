@@ -5,6 +5,7 @@
   <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure</a><br>
 </nav>
 *This repository is intended for educational purposes only*
+
 ---
 <h1 align=center>A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - Customizing existing book cartridges</h1>
 
