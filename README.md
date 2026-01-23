@@ -1,8 +1,8 @@
 Little Tikes Story Dream Machine cartridge reverse engineering
 <nav>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/discussions">Questions, Comments, Discussion, & Forum</a>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">The Developer Log</p>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure(</p>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/discussions">* Questions, Comments, Discussion, & Forum</a>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">* The Developer Log</a>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">* Cartridge Data Structure(</a>
 </nav>
 *This repository is intended for educational purposes only*
 ---
