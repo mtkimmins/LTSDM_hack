@@ -1,6 +1,6 @@
 # LTSDM_hack — Little Tikes Story Dream Machine (LTSDM) Cartridge Reverse Engineering
 
-Reverse engineering the **Little Tikes Story Dream Machine** cartridge format (SPI flash dumps), with tooling and notes for **dumping**, **format analysis**, and **audio/asset extraction**.
+Reverse engineering the **Little Tikes Story Dream Machine** cartridge format (SPI flash dumps), with tooling and notes for **data dumping**, **format analysis**, and **audio/asset extraction**.
 
 > **Scope & ethics:** This project focuses on **interoperability, preservation, and research**. It does **not** provide instructions intended to bypass access controls for infringing distribution. Use your own hardware and legally obtained media.
 
