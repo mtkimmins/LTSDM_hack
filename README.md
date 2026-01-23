@@ -1,3 +1,11 @@
+Little Tikes Story Dream Machine cartridge reverse engineering
+<nav>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/discussions">Questions, Comments, Discussion, & Forum</a>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">The Developer Log</p>
+  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure(</p>
+</nav>
+*This repository is intended for educational purposes only*
+---
 <h1 align=center>A JOURNEY TO HACK A "LITTLE TIKES STORY DREAM MACHINE" BOOK CARTRIDGE - Customizing existing book cartridges</h1>
 
 <div align=center>
