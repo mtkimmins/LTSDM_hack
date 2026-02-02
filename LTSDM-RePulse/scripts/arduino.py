@@ -35,3 +35,28 @@ with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=5) as ser:
                 break
 
     print(f"[✓] Dump complete: {OUTPUT_FILE}")
+
+
+
+#########################
+#   Classes/Functions
+#########################
+class ArduinoInterface:
+    def __init__(self):
+        self.baud_rate = BAUD_RATE
+        self.serial_port = SERIAL_PORT
+
+    def handshake(self, signal):
+        pass
+
+    def readByte(self):
+        pass
+
+    def writeByte(self, byte):
+        pass
+
+
+
+
+# if sent a particular signal, return a paritcular signal back to do handshake
+

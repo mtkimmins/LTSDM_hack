@@ -1,8 +1,11 @@
+from serial.tools import list_ports
+
 #######################################
 #   CONSTANTS/VARS
 #######################################
-REFERENCE_FILE_1 = "PureBin/samples/BSLSBSBaseM.bin"
-REFERENCE_FILE_2 = "PureBin/samples/MLionGS.bin"
+REFERENCE_PATH_1 = "PureBin/samples/BSLSBSBaseM.bin"
+REFERENCE_PATH_2 = "PureBin/samples/MLionGS.bin"
+BAUD_RATES:list = [9600, 14400, 19200, 28800, 38400, 57600, 115200]
 
 
 #######################################
@@ -45,7 +48,7 @@ class DataLoader:
         return file_list
     
 
-
+#TODO -- streamline hexfile creation (pointer, length, ->hex)
 class HexFile:
     def __init__(self, hex:list)->None:
         self.built:bool = False
@@ -298,10 +301,154 @@ class HexFile:
         hex_list:list = self.hexStringToList(hex_string)
         return hex_list
 
+
+
+class Repulse:
+    def __init__(self)->None:
+        self.arduino = None
+        self.arduino_connected:bool = False
+        self.cartridge_connected:bool = False
+        self.data_references:list[HexFile] = [reference1, reference2]
+        self.baud_rate:int = 0
+        self.dump_n:int = 5
+
+    
+    def dumpData(self, baud_rate:int, file_path:str)->bool:
+        return True
+
+    def dumpCartridge(self)->None:
+        # Detect Arduino
+        self.selectArduinoPort()
+        # Check if Arduino flashed w right program
+        if self.arduinoIsFlashed(self.arduino):
+            # Get baud rate from Arduino
+            pass
+        else:
+            # Select baud rate
+            self.flashArduino(self.arduino, self.baud_rate)
+
+        # If not flashed, select baud rate, flash, sync
+        # If flashed, get baud rate, sync
+        # Check if cartridge attached to arduino
+        if self.cartridgeIsConnected(self.arduino):
+            # start dumping
+            pass
+        else:
+            # return no cartridge connected or wait for cartridge
+            pass
+        # dump x5 
+        dumps:list = []
+        for i in range(self.dump_n):
+            dumps.append(self.dumpData(self.baud_rate, f"dump_{i}.bin"))
+        # compare among dumps (90% match)
+        self.holisticMatchDumps(dumps)
+        for dump in dumps:
+            # validate each dump as a potential LTSDM cartridge data
+            self.validateHex(dump)
+        self.consolidate(dumps)
+        # check if point mutations only
+        # If vague mutations, slow baud rate, re-dump
+        # If still not valid, alert user
+        pass
+
+    #TODO
+    def scanForArduinoPorts(self)->list:
+        port_list:list = []
+        for port in list_ports.comports():
+            port_list.append(port.hwid)
+        print(port_list)
+        return port_list
+
+    def selectArduinoPort(self)->object|None:
+        port = None
+
+        # Scan for arduinos
+        arduino_port_list:list = self.scanForArduinoPorts()
+
+        # List and select arduinos
+        if len(arduino_port_list) > 1:
+            # User select Arduino
+            port = self.inputSelectArduinoPort(arduino_port_list)
+        
+        # Confirm arduino
+        if self.confirmArduinoSelect(port):
+                # continue
+                pass
+        
+        # Return Arduino
+        return port
+
+    def confirmArduinoSelect(self, port_index)->bool:
+        return True
+
+    def inputSelectArduino(self, arduino_list:list)->int:
+        # If there are more than 1 arduino, ask user to select
+        return 0
+
+    def handshakeArduino(self, arduino, signal:str)->bool:
+        return True
+
+    def arduinoIsFlashed(self, arduino)->bool:
+        pass
+
+    def checkArduinoFlash(self, arduino)->bool:
+        return True
+    
+    def flashArduino(self, arduino, baud_rate:int)->bool:
+        return True
+    
+    def cartridgeIsConnected(self, arduino)->bool:
+        return True
+    
+    def getDataDump(self, arduino)->list:
+        data:list = []
+        return data
+    
+    def saveDataDump(self, data:list, file_path:str)->bool:
+        return True
+    
+    def holisticMatchDumps(self, dumps:list[list])->bool:
+        #90% consisted between dumps
+        return True
+    
+    def getDiffsBetweenDumps(self, dumps:list[list])->list:
+        diffs:list = []
+        return diffs
+    
+    def getDiffSection(self, dump1:list, dump2:list)->list:
+        diffs:list = []
+        return diffs    
+
+    def validateHex(self,hex:list)->bool:
+        # Check length
+        # Ceck magic numbers
+        # Check segment 1 length
+        # Check sepointer
+        # Check conserved region positions (segment 2.1, 2.2, segment 6, segment 7)
+        # Check conserved lengths (segment 1, segment 2.1, 2.2, segment 6, segment 7)
+        # Check 
+        return True
+    
+    def validateSection(self, hex_section:list):
+        pass
+
+    
+    def consolidate(self, hex_dumps:list[list])->list:
+        gold_standard:list = []
+        # this will build and return a hexfile
+        return gold_standard
+
+    def extract(self):
+        pass
+
 #######################################
 #   RUNTIME
 #######################################
-hex_data1 = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_1)
-hex_data2 = DataLoader().loadBinarytoMatrix(REFERENCE_FILE_2)
-hex_file1 = HexFile(hex_data1)
-hex_file2 = HexFile(hex_data2)
+hex_data1 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_1)
+hex_data2 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_2)
+reference1 = HexFile(hex_data1)
+reference2 = HexFile(hex_data2)
+
+# TESTS
+repulse = Repulse()
+repulse.scanForArduinoPorts()

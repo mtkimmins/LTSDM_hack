@@ -3,12 +3,13 @@
 #define CHIP_SELECT 10  // CS pin connected to Arduino pin 10
 
 const uint32_t chipSize = 0x100000; // 8 Mbit = 1 MByte
+//break out the baud rate
 
 void setup() {
   Serial.begin(115200);
   while (!Serial) ; // Wait for Serial to be ready
   delay(1000);
-  Serial.println("READY");
+  Serial.println("READY"); //send signal for ready
 
   pinMode(CHIP_SELECT, OUTPUT);
   digitalWrite(CHIP_SELECT, HIGH);
@@ -56,4 +57,8 @@ void dumpFlash() {
   }
 
   digitalWrite(CHIP_SELECT, HIGH);
+}
+
+bool validateDumpInit() {
+  return true;
 }
