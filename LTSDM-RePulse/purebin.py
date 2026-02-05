@@ -1,10 +1,11 @@
+import serial
 from serial.tools import list_ports
 
 #######################################
 #   CONSTANTS/VARS
 #######################################
-REFERENCE_PATH_1 = "PureBin/samples/BSLSBSBaseM.bin"
-REFERENCE_PATH_2 = "PureBin/samples/MLionGS.bin"
+REFERENCE_PATH_1 = "LTSDM-RePulse/samples/BSLSBSBaseM.bin"
+REFERENCE_PATH_2 = "LTSDM-RePulse/samples/MLionGS.bin"
 BAUD_RATES:list = [9600, 14400, 19200, 28800, 38400, 57600, 115200]
 
 
@@ -311,32 +312,33 @@ class Repulse:
         self.data_references:list[HexFile] = [reference1, reference2]
         self.baud_rate:int = 0
         self.dump_n:int = 5
+        self.arduino_port:str = ""
 
-    
+    def printPorts(self)->None:
+        port_list:list = self.listPorts()
+        for port in port_list:
+            print(port.device)
+  
+    def setPort(self)->bool:
+        port_string:str = input("Select port")
+        port_list:list = self.listPorts()
+        port_paths:list = []
+        if port_string in self.listPortPaths:
+            self.arduino_port = port_string
+        else:
+            print("NOT A PORT. Selection failed.")
+
+    def listPortPaths(self)->list:
+        port_list = self.listPorts()
+        paths:list = []
+        for port in port_list:
+            paths.append(port.device)
+        return paths
+
     def dumpData(self, baud_rate:int, file_path:str)->bool:
         return True
 
     def dumpCartridge(self)->None:
-        # Detect Arduino
-        self.selectArduinoPort()
-        # Check if Arduino flashed w right program
-        if self.arduinoIsFlashed(self.arduino):
-            # Get baud rate from Arduino
-            pass
-        else:
-            # Select baud rate
-            self.flashArduino(self.arduino, self.baud_rate)
-
-        # If not flashed, select baud rate, flash, sync
-        # If flashed, get baud rate, sync
-        # Check if cartridge attached to arduino
-        if self.cartridgeIsConnected(self.arduino):
-            # start dumping
-            pass
-        else:
-            # return no cartridge connected or wait for cartridge
-            pass
-        # dump x5 
         dumps:list = []
         for i in range(self.dump_n):
             dumps.append(self.dumpData(self.baud_rate, f"dump_{i}.bin"))
@@ -352,11 +354,8 @@ class Repulse:
         pass
 
     #TODO
-    def scanForArduinoPorts(self)->list:
-        port_list:list = []
-        for port in list_ports.comports():
-            port_list.append(port.hwid)
-        print(port_list)
+    def listPorts(self)->list:
+        port_list:list = list_ports.comports()
         return port_list
 
     def selectArduinoPort(self)->object|None:
@@ -451,4 +450,4 @@ reference2 = HexFile(hex_data2)
 
 # TESTS
 repulse = Repulse()
-repulse.scanForArduinoPorts()
+repulse.printPorts()

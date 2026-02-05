@@ -1,1 +1,2 @@
-serial.py
+serial
+pyserial
