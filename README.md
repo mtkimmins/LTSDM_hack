@@ -17,6 +17,11 @@ The scripts and tools provided here are intended to support legal reverse engine
 Please do not use this information to create or sell unauthorized commercial products.
 
 ---
+Links to similar projects:
+* [GainSec](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
+* [John-K](https://github.com/John-K/LittleTikesDreamProjector/)
+
+---
 
 ## PROJECT STATUS: 
 ### ⏳ **Work in Progress** ⏳
@@ -59,5 +64,5 @@ To start: open an Issue with what you’re testing
 
 
 ---
-## Keywords (for search)
+## Keywords
 Little Tikes Story Dream Machine, LTSDM, custom cartridge, SPI flash, P25D80SH, reverse engineering, file format, ADPCM, audio extraction, embedded, Arduino.
