@@ -5,36 +5,31 @@
 </h1>
 <div align="center">
   Creating custom stories for Little Tikes Story Dream Machine
+  <br><br>
+  
+  [![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)]()
+  [![License](https://img.shields.io/badge/License-GPL--3.0-blue)]()
+
+  <b>It is not yet possible to create custom stories.</b>
+
   <br>
-  <a href="">[Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)</a>
-  <br>
-  <nav markdown="1">
-    [![QCDF](https://img.shields.io/badge/Questions%2C_Comments%2C_Discussion%2C_and_Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)
-    <br>
-    <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">The Developer Log</a><br>
-    <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure</a><br>
-  </nav>
+  
+  ## ⚠️ DISCLAIMER ⚠️ 
+  This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized commercial products.
 </div>
 
-⚠️ DISCLAIMER ⚠️
-This repository is for **educational, non-commercial use only**.  
-The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
-Please do not use this information to create or sell unauthorized commercial products.
+---
+
+## Directory
+  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)  
+  [![Wiki](https://img.shields.io/badge/Wiki-Home-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/)
+
+
 
 ---
 Links to similar projects:
 * [GainSec](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
 * [John-K](https://github.com/John-K/LittleTikesDreamProjector/)
-
----
-
-## PROJECT STATUS: 
-### ⏳ **Work in Progress** ⏳
-
-**The Goal:** To create our own custom story cartridges for our kids.
-This project is currently in the **reverse-engineering phase** actively figuring out data patterns.
-
-**It is not yet possible to create custom stories.**
 
 ---
 
