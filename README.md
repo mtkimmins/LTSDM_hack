@@ -1,17 +1,22 @@
-# LTSDM_hack — Little Tikes Story Dream Machine (LTSDM) Cartridge Reverse Engineering
-
-Reverse engineering the **Little Tikes Story Dream Machine** cartridge format (SPI flash dumps), with tooling and notes for **data dumping**, **format analysis**, and **audio/asset extraction**.
-
-> **Scope & ethics:** This project focuses on **interoperability, preservation, and research**. It does **not** provide instructions intended to bypass access controls for infringing distribution. Use your own hardware and legally obtained media.
-
-<nav>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/discussions">Questions, Comments, Discussion, & Forum</a><br>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">The Developer Log</a><br>
-  <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure</a><br>
-</nav>
+<h1 align="center">
+  Little Tikes Story Dream Machine (LTSDM)
+  <br>
+  Cartridge Reverse Engineering
+</h1>
+<div align="center">
+  Creating custom stories for Little Tikes Story Dream Machine
+  <br>
+  <a href="">[Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)</a>
+  <br>
+  <nav markdown="1">
+    [![QCDF](https://img.shields.io/badge/Questions%2C_Comments%2C_Discussion%2C_and_Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)
+    <br>
+    <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log">The Developer Log</a><br>
+    <a href="https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis">Cartridge Data Structure</a><br>
+  </nav>
+</div>
 
 ⚠️ DISCLAIMER ⚠️
-
 This repository is for **educational, non-commercial use only**.  
 The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user.  
 Please do not use this information to create or sell unauthorized commercial products.
