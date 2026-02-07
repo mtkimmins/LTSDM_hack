@@ -8,8 +8,8 @@
   Creating custom stories for Little Tikes Story Dream Machine
   <br><br>
   
-  ![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)]
-  ![License](https://img.shields.io/badge/License-GPL--3.0-blue)]
+  ![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)
+  ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
   <b>It is not yet possible to create custom stories.</b>
 
