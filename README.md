@@ -1,3 +1,4 @@
+<!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format ADPCM audio extraction embedded Arduino -->
 <h1 align="center">
   Little Tikes Story Dream Machine (LTSDM)
   <br>
@@ -18,51 +19,33 @@
   This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized commercial products.
 </div>
 
----
+<br><br><br>
 
-## Directory
-  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)  
+<div align="center">
+
+  ## Directory
+  [![Makers](https://img.shields.io/badge/Making_a_Cartridge-red)]()
+  [![Contributors](https://img.shields.io/badge/Contribute_to_Project-yellow)]()
+
+  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)
   [![Wiki](https://img.shields.io/badge/Wiki-Home-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/)
+  [![Todo](https://img.shields.io/badge/Repository-To_Do_List-purple)](https://github.com/mtkimmins/LTSDM_hack/issues)
 
+</div>
 
-
----
-Links to similar projects:
-* [GainSec](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
-* [John-K](https://github.com/John-K/LittleTikesDreamProjector/)
-
----
-
-## What this Repository Contains
+### What this Repository Contains
 - **Cartridge dumping** workflows (noise reduction, repeatability, verification)
 - **Container/region parsing** + documented hypotheses about pointers/regions/maps
 - **Audio pipeline experiments** (e.g., suspected ADPCM/codec investigations)
 - **Hardware notes** for reading cartridges (breakouts/shields, wiring, voltage sanity)
 
----
-## Directory
->### **I'm a Parent & I Want to Use This**
->* **[Getting Started Guide](https://github.com/mtkimmins/LTSDM_hack/wiki/Getting-Started-Guide)**
->* **[Questions, Comments, Discussion & Forum](https://github.com/mtkimmins/LTSDM_hack/discussions)**
-
-### **I'm a Maker/Developer & I Want to Help**
-* **[Technical Deep Dive](https://github.com/mtkimmins/LTSDM_hack/wiki/Technical-Specifications)** (Chip info, physical measurements, etc.)
-* **[The Developer Log](https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log)** (A detailed history log of the project)
-* **[Cartridge Data Structure](https://github.com/mtkimmins/LTSDM_hack/wiki/File-Structure-Analysis)** (Data structure, data template, etc.)
-* **[Open Issues](https://github.com/mtkimmins/LTSDM_hack/issues)** (Current "To Do" List)
-
----
-## How to contribute
-
-If you can help with any of the following, you’re extremely useful:
+## Wanted
 - additional **cartridge dumps** (with hashes + metadata)
 - **format validation** (pointer table / region boundaries)
 - codec identification (ADPCM variants, framing, sample rates)
 - firmware analysis / instrumentation notes
 
-To start: open an Issue with what you’re testing
 
-
----
-## Keywords
-Little Tikes Story Dream Machine, LTSDM, custom cartridge, SPI flash, P25D80SH, reverse engineering, file format, ADPCM, audio extraction, embedded, Arduino.
+## Links to similar projects:
+* [GainSec](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
+* [John-K](https://github.com/John-K/LittleTikesDreamProjector/)
