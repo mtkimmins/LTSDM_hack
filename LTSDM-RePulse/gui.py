@@ -5,10 +5,10 @@ class Window:
         self.components:list = []
         self.position:list = position
     
-    def addChildWindow(self, child:Window)->None:
+    def addChildWindow(self, child:"Window")->None:
         self.children.append(child)
 
-    def removeChildWindow(self, child:Window)->None:
+    def removeChildWindow(self, child:"Window")->None:
         self.children.remove(child)
 
     def addComponent(self, component)->None:
