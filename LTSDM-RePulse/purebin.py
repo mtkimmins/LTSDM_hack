@@ -443,11 +443,12 @@ class Repulse:
 #######################################
 #   RUNTIME
 #######################################
-hex_data1 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_1)
-hex_data2 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_2)
-reference1 = HexFile(hex_data1)
-reference2 = HexFile(hex_data2)
+if __name__ == "__main__":
+    hex_data1 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_1)
+    hex_data2 = DataLoader().loadBinarytoMatrix(REFERENCE_PATH_2)
+    reference1 = HexFile(hex_data1)
+    reference2 = HexFile(hex_data2)
 
-# TESTS
-repulse = Repulse()
-repulse.printPorts()
+    # TESTS
+    repulse = Repulse()
+    repulse.printPorts()

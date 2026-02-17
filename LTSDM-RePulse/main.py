@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import gui
+import a1800_codec
 
 #######################################
 #   CONSTANTS/VARS
