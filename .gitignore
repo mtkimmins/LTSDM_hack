@@ -27,3 +27,7 @@ __pycache__/
 # Windows metadata
 Thumbs.db
 desktop.ini
+
+# Virtual Environments
+.venv/
+venv/
