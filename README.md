@@ -12,6 +12,8 @@
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
   <b>It is not yet possible to create custom stories.</b>
+  <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
+  <p>WIP application to make one's own custom stories: <a href="github.com/mtkimmins/LTSDM-modder">HERE</a></p>
   <br><br><br>
   
   <h2>Project Roadmap</h2>
