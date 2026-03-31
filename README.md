@@ -24,7 +24,7 @@
   ~~Dump cartridge data~~  
   ~~Analyze dumped data~~  
   ~~Construct an encoder/decoder~~  
-  Package encoder/decoder  
+  ~~Package encoder/decoder~~  
   Upload custom data  
   Print custom film reel  
   Develop 3D cartridge case model  
