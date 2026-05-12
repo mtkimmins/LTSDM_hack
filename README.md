@@ -47,7 +47,7 @@
   [![Makers](https://img.shields.io/badge/Making_a_Cartridge-red)]()
   [![Contributors](https://img.shields.io/badge/Contribute_to_Project-yellow)]()
 
-  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)
+  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack/discussions)
   [![Wiki](https://img.shields.io/badge/Wiki-Home-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/)
   [![Todo](https://img.shields.io/badge/Repository-To_Do_List-purple)](https://github.com/mtkimmins/LTSDM_hack/issues)
 
