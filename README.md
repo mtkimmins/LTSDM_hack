@@ -14,7 +14,7 @@
   <b>It is not yet possible to create custom stories.</b>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>WIP application to make one's own custom stories: <a href="https://github.com/mtkimmins/LTSDM-modder">HERE</a></p>
-  <p>Frontier of progress to custom cartridges: [Video of custom audio playing with errors](https://youtube.com/shorts/xBY7eKp-tuU)</p>
+  <p>Frontier of progress to custom cartridges: <a href="https://youtube.com/shorts/xBY7eKp-tuU">Video of custom audio playing with errors</a></p>
   <br><br><br>
   
   <h2>Project Roadmap</h2>
