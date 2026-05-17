@@ -14,6 +14,7 @@
   <b>It is not yet possible to create custom stories.</b>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>WIP application to make one's own custom stories: <a href="https://github.com/mtkimmins/LTSDM-modder">HERE</a></p>
+  <p>Frontier of progress to custom cartridges: <a href="https://youtube.com/shorts/xBY7eKp-tuU">Video of custom audio playing with errors</a></p>
   <br><br><br>
   
   <h2>Project Roadmap</h2>
@@ -46,7 +47,7 @@
   [![Makers](https://img.shields.io/badge/Making_a_Cartridge-red)]()
   [![Contributors](https://img.shields.io/badge/Contribute_to_Project-yellow)]()
 
-  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack)
+  [![QCDF](https://img.shields.io/badge/Repository-Forum-blue)](https://github.com/mtkimmins/LTSDM_hack/discussions)
   [![Wiki](https://img.shields.io/badge/Wiki-Home-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/)
   [![Todo](https://img.shields.io/badge/Repository-To_Do_List-purple)](https://github.com/mtkimmins/LTSDM_hack/issues)
 
@@ -57,12 +58,6 @@
 - **Container/region parsing** + documented hypotheses about pointers/regions/maps
 - **Audio pipeline experiments** (e.g., suspected ADPCM/codec investigations)
 - **Hardware notes** for reading cartridges (breakouts/shields, wiring, voltage sanity)
-
-## Wanted
-- additional **cartridge dumps** (with hashes + metadata)
-- **format validation** (pointer table / region boundaries)
-- codec identification (ADPCM variants, framing, sample rates)
-- firmware analysis / instrumentation notes
 
 
 ## Links to similar projects:
