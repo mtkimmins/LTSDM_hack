@@ -1,0 +1,57 @@
+#pragma endian little
+
+// --- Color Palette (Hex Codes) ---
+#define COLOR_HEADER "E06C75"
+#define COLOR_TOC    "98C379"
+#define COLOR_AUDIO  "61AFEF"
+#define COLOR_IMAGE  "C678DD"
+#define COLOR_PAD    "5C6370"
+
+// --- 1. Define the Structures ---
+
+struct Header {
+    u16 ltsdm_magic_number      [[color("100000"), name("LTSDM Magic Number")]];
+    u16 casette_id              [[color("FFFF00"), name("Casette ID")]];
+    u32 segment_2_1_address     [[color("110000"), name("Segment 2.1 Address")]];
+    u32 segment_2_2_address     [[color("FFF000"), name("Segment 2.2 Address")]];
+    u8 region_table_offset      [[name("Region Table Begin")]];
+};
+
+struct PointerEntry {
+    u32 address[[name("Address")]];
+};
+
+struct Region<auto size> {
+    u32 audio_size[[name("Audio Size")]];
+    u16 hz[[name("Frequency")]];
+    u8 audio_data[audio_size-2] [[name("Audio Data")]];
+    u8 light_data[size-audio_size-4] [[name("Light Data")]];
+};
+
+struct ConstantRegion {
+    u32 size[[name("Size")]];
+    u16 hz[[name("Frequency")]];
+    u8 data[size-2] [[name("Data")]];
+};
+
+// --- 2. Map the Data to Memory Offsets ---
+
+Header header @ 0x00;
+PointerEntry pointers[24] @ 0x0C [[color(COLOR_TOC), name("Pointer Table")]];
+ConstantRegion segment_2_1 @ header.segment_2_1_address;
+ConstantRegion segment_2_2 @ header.segment_2_2_address;
+
+// --- 3. Payload Mapping Examples ---
+//TODO: turn this into a for loop
+Region<pointers[1].address-pointers[0].address> region_1 @ pointers[0].address [[color(COLOR_AUDIO), name("Region 1")]];
+Region<pointers[2].address-pointers[1].address> region_2 @ pointers[1].address [[color(COLOR_AUDIO), name("Region 2")]];
+Region<pointers[3].address-pointers[2].address> region_3 @ pointers[2].address [[color(COLOR_AUDIO), name("Region 3")]];
+Region<pointers[4].address-pointers[3].address> region_4 @ pointers[3].address [[color(COLOR_AUDIO), name("Region 4")]];
+Region<pointers[5].address-pointers[4].address> region_5 @ pointers[4].address [[color(COLOR_AUDIO), name("Region 5")]];
+Region<pointers[6].address-pointers[5].address> region_6 @ pointers[5].address [[color(COLOR_AUDIO), name("Region 6")]];
+Region<pointers[7].address-pointers[6].address> region_7 @ pointers[6].address [[color(COLOR_AUDIO), name("Region 7")]];
+Region<pointers[8].address-pointers[7].address> region_8 @ pointers[7].address [[color(COLOR_AUDIO), name("Region 8")]];
+Region<pointers[9].address-pointers[8].address> region_9 @ pointers[8].address [[color(COLOR_AUDIO), name("Region 9")]];
+Region<pointers[10].address-pointers[9].address> region_10 @ pointers[9].address [[color(COLOR_AUDIO), name("Region 10")]];
+Region<pointers[11].address-pointers[10].address> region_11 @ pointers[10].address [[color(COLOR_AUDIO), name("Region 11")]];
+Region<pointers[12].address-pointers[11].address> region_12 @ pointers[11].address [[color(COLOR_AUDIO), name("Region 12")]];
