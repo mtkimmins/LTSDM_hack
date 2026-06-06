@@ -18,7 +18,7 @@ This project contains:
 
 ## Important hardware note
 
-The P25D80SH is a 2.3 V to 3.6 V part. Do **not** connect Uno 5 V SPI lines directly to the flash chip unless your adapter already includes correct level shifting / resistor dividers and the flash itself is powered at 3.3 V.
+The P25D80SH is a 2.3 V to 3.6 V component. Do **not** connect Uno 5 V SPI lines directly to the flash chip unless your adapter already includes correct level shifting / resistor dividers and the flash itself is powered at 3.3 V.
 
 ## Default wiring assumptions
 
