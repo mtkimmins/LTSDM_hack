@@ -43,6 +43,8 @@ It is important to note that the P25D80SH chip is the black integrated circuit (
 
 *\*must use resistor dividers*
 
+Despite there being two sets of two bottom-facing fingers with WP/HOLD/VCC and GND, **both P25D80SH GND fingers must be connected to the arduino GND.
+
 ### Resistor Dividers
 > [!CAUTION]
 > Running 5V (PC USB voltage) through the P25D80SH will **fry the chip** making it potentially unusable.
