@@ -82,10 +82,10 @@ For convention, one may use the following pins on the arduino:
 **Arduino-P25D0SH-Divider Mapping**
 |P25D80SH pin|Arduino pin|Divider required?|
 |:-:|:-:|:-:|:-:|
-|CS (Chip Select)|Arduino pin 10|YES|
-|MOSI (SI)|11|YES|
-|MISO (SO)|12|NO|
-|SCLK (SCK)|13|YES|
+|CS|10|YES|
+|SI|11|YES|
+|SO|12|NO|
+|SCLK|13|YES|
 |GND|GND|NO|
 |VCC/HOLD/WP|3.3V|NO|
 
