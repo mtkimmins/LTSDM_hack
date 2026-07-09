@@ -59,7 +59,7 @@ Despite there being two sets of two bottom-facing fingers with WP/HOLD/VCC and G
 Resistor dividers are essential (but not the only option, see *level shifters*) for the protection and proper operation (dump/flash) of the P25D80SH chip. The following P25D80SH pins need to be connected to the arduino through resistor dividers: **MOSI**, **SLCK**, and **CS**.
 
 **Diagram of a Resistor Divider in the Context of the LTSDM Project**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/1-resistor-divider-circuit-diagram.png)
 
 Resistor dividers are partitioned into the "top resistor" and "bottom resistor." In the LTSDM project, we are reducing the voltage from the arduino pins (coming out at 5V; too high for the P25D80SH) to the operational ~3.3V.
 
@@ -93,7 +93,7 @@ For convention, one may use the following pins on the arduino:
 
 ## Hardware Setup Guide
 **Full Circuit Diagram**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/full-circuit-diagram.png)
 
 ### Breadboard or Protoboard
 Home circuity has been a messy endeavour, but using breadboards and then protoboards has connected the worlds of electronics and programming for me. Although I am quite awful with soldering, it has helped move this project along significantly even at my toddler-grade work. Consider soldering if connectivity is a bothersome issue. Alternatively, a solderless plastic breadboard is best to minimize health risk.
@@ -128,7 +128,7 @@ For protoboards one could use the above-described "breadboard method," however, 
 One may notice that once the socket is placed on the board the LTSDM cartridge can be plugged in two conformations. Only 1 conformation will work -- they are not interchangeable as the P25D80SH pins will be flipped. This is where the builder must choose what orientation they would like their cartridge to fit into their socket. It is recommended to make a marking on the board and cartridge that align them properly.
 
 **Photo of Cartridge in Socket**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/cartridge-socket.JPG)
 
 ### Resistor Dividers
 As illustrated above, resistor dividers are used to reduce the voltage sent out of the arduino and into the P2D80SH chip. This protects the chip and allows it to function properly where it sends out signals classified in two states, "high" and "low."
