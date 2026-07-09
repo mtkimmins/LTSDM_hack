@@ -114,9 +114,6 @@ Originally, I had thought that this part was a proprietary piece of electronics.
 **Photo of 8-pin Socket in Breadboard**
 ![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/placed-socket.JPG)
 
-**Photo of Soldered Socket in Protoboard**
-![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/soldered-socket.JPG)
-
 #### Checking Electrical Continuity
 In order to ensure that the socket works and is securely connected to the breadboard/protoboard a multimeter should be used to perform a continuity test on each of the socket's pins. If the socket passes the 
 
