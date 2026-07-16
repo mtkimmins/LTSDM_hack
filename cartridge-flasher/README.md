@@ -7,7 +7,7 @@
 # Official Documentation of the LTSDM Cartridge Flasher
 *The aim of this documentation is to explain this build so simply that a kid could build it like Legos. To report ambiguity, please submit a question to [the github](https://github.com/mtkimmins/LTSDM_hack/discussions/new?category=q-a).*
 
-## Forword
+## Foreword
 This is certainly not the only way to set up a communication channel with a cartridge ([see John-K's repo](https://github.com/John-K/LittleTikesDreamProjector)). For my own sanity, I will document a validated setup guide to at least get to where I am now, and as a way to "save" my progress more consistently.
 
 ---
