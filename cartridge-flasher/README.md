@@ -3,6 +3,8 @@
 - count the jumper wires, insert #
 - upload all pictures
 - verify formatting on github
+- continuity testing resistors will not beep
+- redo all pictures
 
 # Official Documentation of the LTSDM Cartridge Flasher
 *The aim of this documentation is to explain this build so simply that a kid could build it like Legos. To report ambiguity, please submit a question to [the github](https://github.com/mtkimmins/LTSDM_hack/discussions/new?category=q-a).*
