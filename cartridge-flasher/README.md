@@ -81,7 +81,7 @@ For convention, one may use the following pins on the arduino:
 
 **Arduino-P25D0SH-Divider Mapping**
 |P25D80SH pin|Arduino pin|Divider required?|
-|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|
 |CS|10|YES|
 |SI|11|YES|
 |SO|12|NO|
