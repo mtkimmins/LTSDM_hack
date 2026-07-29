@@ -3,11 +3,13 @@
 - count the jumper wires, insert #
 - upload all pictures
 - verify formatting on github
+- continuity testing resistors will not beep
+- redo all pictures
 
 # Official Documentation of the LTSDM Cartridge Flasher
 *The aim of this documentation is to explain this build so simply that a kid could build it like Legos. To report ambiguity, please submit a question to [the github](https://github.com/mtkimmins/LTSDM_hack/discussions/new?category=q-a).*
 
-## Forword
+## Foreword
 This is certainly not the only way to set up a communication channel with a cartridge ([see John-K's repo](https://github.com/John-K/LittleTikesDreamProjector)). For my own sanity, I will document a validated setup guide to at least get to where I am now, and as a way to "save" my progress more consistently.
 
 ---
@@ -81,7 +83,7 @@ For convention, one may use the following pins on the arduino:
 
 **Arduino-P25D0SH-Divider Mapping**
 |P25D80SH pin|Arduino pin|Divider required?|
-|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|
 |CS|10|YES|
 |SI|11|YES|
 |SO|12|NO|
