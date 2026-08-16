@@ -132,49 +132,36 @@ One may notice that once the socket is placed on the board the LTSDM cartridge c
 ### Resistor Dividers
 As illustrated above, resistor dividers are used to reduce the voltage sent out of the arduino and into the P2D80SH chip. This protects the chip and allows it to function properly where it sends out signals classified in two states, "high" and "low."
 
-**Photo of One Resistor Divider**
-![]()
+**Photo of Resistor Dividers**
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/shield/soldering/divider-wires.jpg)
 
 Ground (GND) will not need a divider as it receives any voltage of electricity sent through. Similarly, "master-in-slave-out" (MISO) will also conduct the output of the P25D80SH which will be within its tolerated 3.3V window by default. There also exists one 3.3V port on the arduino which can be used for the WP/HOLD/VCC. This leaves three P25D80SH pins: "master-out-slave-in (MOSI), "clock" (SCLK), and "chip select" (CS) to be reduced by resistor dividers. Three pins means three separate resistor dividers. One must connect each of those pins to a resistor divider *before* the arduino, thus positioning the resistor divider in the obligatory middle between the P25D80SH chip and the arduino.
 
-**Photo of All Three Resistor Dividers**
-![]()
-
 To connect the P25D80SH chip pin to a resistor divider, one may use *jumper wires* to allow electricity to pass from the pin breakout row to the appropriate position in the resistor divider. The position of jumper wire connection *does* matter, so following the circuit diagram above as well as observing the reference photos may be of help.
 
-**Photo of Chip-Resistor Divider Connection**
-![]()
+The position of each resistor also matters which are designated as *top* and *bottom*. As the formula for a resistor divider is the following:
+$$
+V_{out}=(V_{in}*R_{bottom})/(R_{top}+R_{bottom})
+$$
+If $R_{top}$ > $R_{bottom}$, then the $V_{in}$ will be reduced more than 50%, and vice-versa.
 
 **Photo of All Chip-Resistor Divider Connections**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/shield/soldering/pre-solder-bridges-top.jpg)
 
-### Arduino-P25D80SH Connection
-#### Resistor Dividers to Arduino
-**Photo of Resistor Divider Connection to an Arbitrary Arduino Pin**
-![]()
-
-#### Direct Connections Between P25D80SH and Arduino
-**Photo of Direct Connection Between P2D80SH and an Arbitrary Arduino Pin**
-![]()
-
-#### Complete Connection
+### Complete Connection
 **Photo of Physical Complete Connection Build**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/shield/soldering/final3.jpg)
 
 For a technical building overview, refer to the "Full Circuit Diagram" above.
 
 ### Arduino-PC Connection
-In order to control the flow of electricity (and thus information) one must plug in the Arduino to a PC where one can compile and upload a script the arduino may execute to push and pull data from the cartridge. Plug in the microcontroller to the PC.
-
-**Photo of Arduino-PC Cable**
-![]()
-
+In order to control the flow of electricity (and thus information) one must plug in the Arduino to a PC where one can compile and upload a script the arduino may execute to push and pull data from the cartridge. Plug in the microcontroller to the PC using the USB adapter that came with the microcontroller.
 
 ### Conclusion
 Congratulations! The physical build is completed. The rest of the guide will reference the software used to interact with the P25D80SH chip.
 
 **Photo of Overall Build**
-![]()
+![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/shield/final/final.jpg)
 
 ---
 
