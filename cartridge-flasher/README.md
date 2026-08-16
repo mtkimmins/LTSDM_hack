@@ -26,18 +26,16 @@ This is certainly not the only way to set up a communication channel with a cart
 - Arduino-PC USB cable (x1)
 - [8-Pin Card Edge Connector Socket](https://www.amazon.ca/PATIKIL-Connector-Straight-Connection-Circuit/dp/B0BPP6SVRD/ref=sr_1_1?crid=3SD5X5ZE4ARQY&dib=eyJ2IjoiMSJ9.GwywV7adNi4bYUKEnAmGwoi8Cj8R3xQ3hvfNcI7W1madQKybneZVJFmq_3QhZo086ZvpuwppzLwyx6cfYAMdagSz5YL3-p-RojX36wqo8GypOTVAj7BMh5GIyDzsTaOAU-L_v80p04X8ua0dWKxLngkS3MxeEbEbiH5x128v1e374qnpxnPub5-HPgonC0trm6rC3z-6e7B--lGVDYiN8Be14Cu1KETValOcx9J17ZRbT8I3pXa4jVzpdIFKeaZ9g2AUtCnL3m9RfMJd97r5HF1W6BG37RwkVGqBGhRbx-U.Is_Ho0oJNT0eKuzeMnKd80bbB8Ou6U4z0QKUGB79-yI&dib_tag=se&keywords=PATIKIL+Card+Edge+Connector+Black+Socket+Straight+Connection+8+Pin+2.54mm+Pitch+for+PCB+Circuit+Board%2C+Game+Console%2C+Pack+of+5&qid=1783467357&sprefix=patikil+card+edge+connector+black+socket+straight+connection+8+pin+2+54mm+pitch+for+pcb+circuit+board%2C+game+console%2C+pack+of+5%2Caps%2C132&sr=8-1) (Thanks to [John-K](https://github.com/John-K) for finding this part in the wild) (x1)
 - Breadboard/Protoboard (x1)
-- jumper wires
-    - female-male (arduino-breadboard; LTSDM port-breadboard) (x#)
-    - male-male (breadboard-breadboard) (x#)
-- 1k ohm resistors (x3)
-- 2k ohm resistors (x6)
+- 24G wires
+- 2k ohm resistors (x3)
+- 3k ohm resistors (x3)
 - intact LTSDM cartridge (x1)
 
 ---
 
 ## Circuitry Wiring
 ### P25D80SH PCB
-It is important to note that the P25D80SH chip is the black integrated circuit (IC) that sits on the topside of the green PCB inside the cartridge housing. The cartridge uses the PCB's golden fingers to conduct electrical information from the embedded chip (IC) and the projector.
+It is important to note that the P25D80SH chip is the black integrated circuit (IC) that sits on the topside of the green PCB inside the cartridge housing. The cartridge uses the PCB's golden fingers to conduct electrical information from the embedded chip (IC) and the projector. The golden fingers on the PCB found in the LTSDM cartridges *is not* a direct mapping to the P25D80SH pins (see [datasheet](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/Chips/P25D80SH.pdf) vs explanation below).
 
 #### **PINOUT** for P25D80SH *PCB*
 > [!NOTE]
