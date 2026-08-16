@@ -48,7 +48,7 @@ It is important to note that the P25D80SH chip is the black integrated circuit (
 |TOP-FACE|MISO|CS*|SLCK*|MOSI*|
 |BOTTOM-FACE|WP/HOLD/VCC|WP/HOLD/VCC|GND|GND|
 
-*\*must use resistor dividers*
+*\*must reduce the voltage from 5V to 3.3V*
 
 Despite there being two sets of two bottom-facing fingers with WP/HOLD/VCC and GND, **both P25D80SH GND fingers must be connected to the arduino GND.
 
@@ -65,7 +65,7 @@ Resistor dividers are partitioned into the "top resistor" and "bottom resistor."
 
 Our top resistor (R1) = 2k ohms
 
-Our bottom resistor (R2) = 3k ohms (direct chaining a 2k ohm resistor and a 1k ohm resistor together in series).
+Our bottom resistor (R2) = 3k ohms (direct chaining a 2k ohm resistor and a 1k ohm resistor together in series for the first breadboard prototype, then subbed them for a 3k resistor for the shield).
 
 This resistor divider produces a current of about 3.0V, which is sufficient for the P25D80SH to operate.
 
@@ -115,11 +115,13 @@ Originally, I had thought that this part was a proprietary piece of electronics.
 ![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/WiringSetup/official-guide/placed-socket.JPG)
 
 #### Checking Electrical Continuity
-In order to ensure that the socket works and is securely connected to the breadboard/protoboard a multimeter should be used to perform a continuity test on each of the socket's pins. If the socket passes the 
+In order to ensure that the socket works and is securely connected to the breadboard/protoboard a multimeter should be used to perform a continuity test on each of the socket's pins. It is essential to test if the soldering joints are actually touching. This testing helps prevent later confounding between hardware malfunction and software debugging.
 
 For breadboards one could use *header pins* to allow the multimeter leads to connect with the socket and the breadboard. Potentially, using two headers on either end of the breadboard's breakout rows can verify the validity of the *header pins* themselves. A disadvantage to plastic breadboards is the possibility of components shifting and slipping causing momentary or hidden circuit breaks.
 
 For protoboards one could use the above-described "breadboard method," however, protoboards have the advantage over breadboards in that they can be soldered to hold components in place and increase the chance of a complete circuit connection. An additional advantage of a protoboard over a breadboard is that often the breakout rows are exposed versus on a conventional breadboard, thus allowing one to continuity test without *header pins*.
+
+It is important to note that performing a continuity test through *resistors* will not trigger a signal. Resistors are meant to slow electricity, thus a continuity test will fail on a multimeter despite a circuit being physically complete. Using the Ohms setting on a multimeter can perform a continuity test through resistors if the meter reads the correct resistor value.
 
 ### Inserting the Cartridge, and Cartridge Orientation
 One may notice that once the socket is placed on the board the LTSDM cartridge can be plugged in two conformations. Only 1 conformation will work -- they are not interchangeable as the P25D80SH pins will be flipped. This is where the builder must choose what orientation they would like their cartridge to fit into their socket. It is recommended to make a marking on the board and cartridge that align them properly.
