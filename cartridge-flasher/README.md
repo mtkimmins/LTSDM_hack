@@ -164,22 +164,29 @@ Congratulations! The physical build is completed. The rest of the guide will ref
 ![](https://github.com/mtkimmins/LTSDM_hack/blob/main/Images/shield/final/final.jpg)
 
 ---
-
 ## Flasher GUI
-
+M0: Confirm SPI strategy (bitbang vs rewire) ──► M1
+M1: PC↔Arduino serial handshake ──► M2
+M2: Arduino low-level SPI primitives (CS assert, byte in/out) ──► M3
+M3: JEDEC ID read (0x9F) — confirms chip talks & IDs correctly ──► M4, M6
+M4: Bulk READ (0x03) — dump full 1MB to PC over serial ──► M5
+M5: PC-app: save dump, verify length/checksum ──► M7
+M6: Write-enable + status register polling (0x06, 0x05) ──► M6a
+M6a: Erase primitives (0x20 sector / 0xD8 block / 0xC7 chip) ──► M6b
+M6b: Page program (0x02) ──► M7
+M7: Full round-trip test: dump → erase → flash → re-dump → diff ──► M8
+M8: GUI polish (tkinter): progress bar, error states, retry logic
 
 ---
+## Preparing the Custom Audio/Light Data Payload to Flash onto the P25D80SH chip
+### Gathering Sources
+### Converting Audio
+### Defining Lights
+### Compiling Payload
+### Flashing Payload
 
+---
 ## Milestones
-TIER 0 — Hardware safety gate (must pass before ANY wiring)
- [0] Voltage-domain check: confirm 3.3V logic on chip, plan level-shifting
-      └─> feeds: 1, 2
-
-TIER 1 — Physical wiring
- [1] Build 3.3V rail for chip VCC (Uno's onboard 3.3V pin, NOT the 5V pin)
- [2] Level-shift Uno→chip lines (CS, SCK, MOSI, WP#, HOLD#); MISO chip→Uno can go direct
-      └─> feeds: 3, 4
-
 TIER 2 — Link verification (your requirement #1 and #2)
  [3] Arduino ⟷ PC serial link verified   (PING/PONG handshake)
  [4] Arduino ⟷ chip electrical link verified (JEDEC ID read ≠ 0x00/0xFF)
