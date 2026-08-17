@@ -8,7 +8,7 @@
   Creating custom stories for Little Tikes Story Dream Machine
   <br><br>
   
-  ![Status](https://img.shields.io/badge/Status-MVP_Achieved-green)
+  ![Status](https://img.shields.io/badge/Status-Data_MVP_Achieved-green)
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
   <h2>As of 16 August 2026, the first custom cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 13.5 months.</h2>
