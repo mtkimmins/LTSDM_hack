@@ -14,7 +14,9 @@
   <h2>As of 16 August 2026, the first custom cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>Frontier of progress of custom cartridges:</p>
+  
   [![Devlog](https://img.shields.io/badge/Devlog-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log)
+  
   [![YouTube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/1mn6X2Hxlck)
   <br><br><br>
   
