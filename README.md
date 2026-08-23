@@ -8,15 +8,16 @@
   Creating custom stories for Little Tikes Story Dream Machine
   <br><br>
   
-  ![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange)
+  ![Status](https://img.shields.io/badge/Status-Data_MVP_Achieved-green)
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
-  <b>It is not yet possible to create custom stories.</b>
+  <h2>As of 16 August 2026, the first custom cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
-  <p>WIP application to make one's own custom stories: <a href="https://github.com/mtkimmins/LTSDM-modder">HERE</a></p>
-  <p>Frontier of progress to custom cartridges:</p>
+  <p>Frontier of progress of custom cartridges:</p>
   
-  [![YouTube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/EmrJIOdSr3k)
+  [![Devlog](https://img.shields.io/badge/Devlog-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log)
+  
+  [![YouTube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/1mn6X2Hxlck)
   <br><br><br>
   
   <h2>Project Roadmap</h2>
@@ -28,7 +29,7 @@
   ~~Analyze dumped data~~  
   ~~Construct an encoder/decoder~~  
   ~~Package encoder/decoder~~  
-  Upload custom data  
+  ~~Upload custom data~~  
   Print custom film reel  
   Develop 3D cartridge case model  
   Develop case cover sticker template  
@@ -38,7 +39,7 @@
   <br><br><br>
   
   ## ⚠️ DISCLAIMER ⚠️ 
-  This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized commercial products.
+  This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized copyright products.
 </div>
 
 <br><br><br>
@@ -57,9 +58,9 @@
 
 ### What this Repository Contains
 - **Cartridge dumping** workflows (noise reduction, repeatability, verification)
-- **Container/region parsing** + documented hypotheses about pointers/regions/maps
-- **Audio pipeline experiments** (e.g., suspected ADPCM/codec investigations)
-- **Hardware notes** for reading cartridges (breakouts/shields, wiring, voltage sanity)
+- **Container/region parsing** (documentation about segments/regions/pointers/tables)
+- **Audio pipeline experiments** (codec investigations)
+- **Hardware notes** for reading cartridges (breakouts/shields, wiring, voltage)
 
 
 ## Links to similar projects:
