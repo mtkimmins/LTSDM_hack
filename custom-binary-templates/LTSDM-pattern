@@ -1,0 +1,260 @@
+#pragma endian little
+
+#define COLOR_HEADER "E06C75"
+#define COLOR_TOC    "98C379"
+#define COLOR_AUDIO  "61AFEF"
+#define COLOR_LIGHT  "E5C07B"
+#define COLOR_IMAGE  "C678DD"
+#define COLOR_PAD    "5C6370"
+
+
+// ============================================================
+// Header
+// ============================================================
+
+struct Header {
+    u16 magic
+        [[name("LTSDM Magic")]];
+
+    u16 cassette_id
+        [[name("Cassette ID")]];
+
+    u32 segment_2_1_address
+        [[name("Segment 2.1 Address")]];
+
+    u32 segment_2_2_address
+        [[name("Segment 2.2 Address")]];
+};
+
+
+// ============================================================
+// Pointer table
+// ============================================================
+
+struct PointerEntry {
+    u32 address
+        [[name("Address")]];
+};
+
+
+// ============================================================
+// Constant audio segment
+//
+// Total structure size = size + 4
+//
+// size includes:
+//     frequency (2)
+//     data
+//
+// ============================================================
+
+struct ConstantRegion {
+    u32 size
+        [[name("Size")]];
+
+    u16 hz
+        [[name("Frequency")]];
+
+    u8 data[size - 2]
+        [[name("Audio Data")]];
+};
+
+
+// ============================================================
+// Light commands
+// ============================================================
+
+struct LightCommand1 {
+    u8 length;
+    u8 channel;
+    u8 value;
+};
+
+struct LightCommand2 {
+    u8 length;
+    u8 channel_0;
+    u8 value_0;
+    u8 channel_1;
+    u8 value_1;
+};
+
+struct LightCommand3 {
+    u8 length;
+    u8 channel_0;
+    u8 value_0;
+    u8 channel_1;
+    u8 value_1;
+    u8 channel_2;
+    u8 value_2;
+};
+
+
+// ============================================================
+// A region containing audio + light data
+// ============================================================
+
+struct Region<auto size> {
+
+    u32 audio_size
+        [[name("Audio Size")]];
+
+    u16 hz
+        [[name("Frequency")]];
+
+    u8 audio_data[audio_size - 2]
+        [[name("Audio Data")]];
+
+    // The remainder of the region is light data.
+    u8 light_data[size - audio_size - 4]
+        [[name("Light Data")]];
+};
+
+
+// ============================================================
+// Audio-only region
+//
+// These appear after the 12 light-bearing regions.
+// Their audio_size tells us their total size.
+// ============================================================
+
+struct AudioOnlyRegion {
+
+    u32 audio_size
+        [[name("Audio Size")]];
+
+    u16 hz
+        [[name("Frequency")]];
+
+    u8 audio_data[audio_size - 2]
+        [[name("Audio Data")]];
+};
+
+
+// ============================================================
+// Top-level structures
+// ============================================================
+
+Header header @ 0x00
+    [[color(COLOR_HEADER)]];
+
+PointerEntry pointers[24] @ 0x0C
+    [[color(COLOR_TOC), name("Pointer Table")]];
+
+
+// ============================================================
+// Constant segments
+// ============================================================
+
+ConstantRegion segment_2_1
+    @ header.segment_2_1_address
+    [[color(COLOR_AUDIO), name("Segment 2.1")]];
+
+ConstantRegion segment_2_2
+    @ header.segment_2_2_address
+    [[color(COLOR_AUDIO), name("Segment 2.2")]];
+
+
+// ============================================================
+// 12 audio + light regions
+// ============================================================
+
+Region<pointers[1].address - pointers[0].address>
+    region_0 @ pointers[0].address
+    [[color(COLOR_AUDIO), name("Region 0")]];
+
+Region<pointers[2].address - pointers[1].address>
+    region_1 @ pointers[1].address
+    [[color(COLOR_AUDIO), name("Region 1")]];
+
+Region<pointers[3].address - pointers[2].address>
+    region_2 @ pointers[2].address
+    [[color(COLOR_AUDIO), name("Region 2")]];
+
+Region<pointers[4].address - pointers[3].address>
+    region_3 @ pointers[3].address
+    [[color(COLOR_AUDIO), name("Region 3")]];
+
+Region<pointers[5].address - pointers[4].address>
+    region_4 @ pointers[4].address
+    [[color(COLOR_AUDIO), name("Region 4")]];
+
+Region<pointers[6].address - pointers[5].address>
+    region_5 @ pointers[5].address
+    [[color(COLOR_AUDIO), name("Region 5")]];
+
+Region<pointers[7].address - pointers[6].address>
+    region_6 @ pointers[6].address
+    [[color(COLOR_AUDIO), name("Region 6")]];
+
+Region<pointers[8].address - pointers[7].address>
+    region_7 @ pointers[7].address
+    [[color(COLOR_AUDIO), name("Region 7")]];
+
+Region<pointers[9].address - pointers[8].address>
+    region_8 @ pointers[8].address
+    [[color(COLOR_AUDIO), name("Region 8")]];
+
+Region<pointers[10].address - pointers[9].address>
+    region_9 @ pointers[9].address
+    [[color(COLOR_AUDIO), name("Region 9")]];
+
+Region<pointers[11].address - pointers[10].address>
+    region_10 @ pointers[10].address
+    [[color(COLOR_AUDIO), name("Region 10")]];
+
+Region<pointers[12].address - pointers[11].address>
+    region_11 @ pointers[11].address
+    [[color(COLOR_AUDIO), name("Region 11")]];
+
+
+// ============================================================
+// Audio-only regions
+// ============================================================
+
+AudioOnlyRegion audio_0
+    @ pointers[12].address
+    [[color(COLOR_AUDIO), name("Audio-only 0")]];
+
+AudioOnlyRegion audio_1
+    @ pointers[13].address
+    [[color(COLOR_AUDIO), name("Audio-only 1")]];
+
+AudioOnlyRegion audio_2
+    @ pointers[14].address
+    [[color(COLOR_AUDIO), name("Audio-only 2")]];
+
+AudioOnlyRegion audio_3
+    @ pointers[15].address
+    [[color(COLOR_AUDIO), name("Audio-only 3")]];
+
+AudioOnlyRegion audio_4
+    @ pointers[16].address
+    [[color(COLOR_AUDIO), name("Audio-only 4")]];
+
+AudioOnlyRegion audio_5
+    @ pointers[17].address
+    [[color(COLOR_AUDIO), name("Audio-only 5")]];
+
+AudioOnlyRegion audio_6
+    @ pointers[18].address
+    [[color(COLOR_AUDIO), name("Audio-only 6")]];
+
+AudioOnlyRegion audio_7
+    @ pointers[19].address
+    [[color(COLOR_AUDIO), name("Audio-only 7")]];
+
+AudioOnlyRegion audio_8
+    @ pointers[20].address
+    [[color(COLOR_AUDIO), name("Audio-only 8")]];
+
+AudioOnlyRegion audio_9
+    @ pointers[21].address
+    [[color(COLOR_AUDIO), name("Audio-only 9")]];
+
+AudioOnlyRegion audio_10
+    @ pointers[22].address
+    [[color(COLOR_AUDIO), name("Audio-only 10")]];
+
+AudioOnlyRegion audio_11
+    @ pointers[23].address
+    [[color(COLOR_AUDIO), name("Audio-only 11")]];
