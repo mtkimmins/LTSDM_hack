@@ -40,7 +40,7 @@
   <br><br><br>
   
   ## ⚠️ DISCLAIMER ⚠️ 
-  This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized copyright products.
+  This repository is for <b>educational use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized copyright products.
 </div>
 
 <br><br><br>
