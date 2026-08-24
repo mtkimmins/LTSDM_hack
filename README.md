@@ -30,7 +30,7 @@
   ~~Construct an encoder/decoder~~  
   ~~Package encoder/decoder~~  
   ~~Upload custom data~~  
-  Make reliable production line for compatible audio  
+  Make reliable audio production line  
   Print custom film reel  
   Develop 3D cartridge case model  
   Develop case cover sticker template  
