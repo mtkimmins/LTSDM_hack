@@ -11,7 +11,7 @@
   ![Status](https://img.shields.io/badge/Status-Data_MVP_Achieved-green)
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
-  <h2>As of 16 August 2026, the first custom cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
+  <h2>As of 16 August 2026, the first blank cartridge data template was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>Frontier of progress of custom cartridges:</p>
   
