@@ -11,7 +11,7 @@
   ![Status](https://img.shields.io/badge/Status-Data_MVP_Achieved-green)
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
-  <h2>As of 16 August 2026, the first custom cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
+  <h2>As of 16 August 2026, the first blank cartridge data template was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>Frontier of progress of custom cartridges:</p>
   
@@ -30,6 +30,7 @@
   ~~Construct an encoder/decoder~~  
   ~~Package encoder/decoder~~  
   ~~Upload custom data~~  
+  Make reliable audio production line  
   Print custom film reel  
   Develop 3D cartridge case model  
   Develop case cover sticker template  
@@ -39,7 +40,7 @@
   <br><br><br>
   
   ## ⚠️ DISCLAIMER ⚠️ 
-  This repository is for <b>educational, non-commercial use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to create or sell unauthorized copyright products.
+  This repository is for <b>educational use only</b>. The scripts and tools provided here are intended to support legal reverse engineering and modding of content already owned by the user. Please do not use this information to distribute unauthorized copyright products.
 </div>
 
 <br><br><br>
