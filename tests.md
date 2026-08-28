@@ -30,4 +30,4 @@ Isolate an incompatible a1800-codec "frame". A frame is a 40-byte block that fol
 ### Conclusions
 * The appearance of a string of `00` does not mandate an error.
 * Corrupted audio can be isolated to a single Frame.
-* Frame 46 of Region 1 of `ratadon3.bin` is corrupted and causes a crash.
+* Frame 46 of Region 1 of `ratadon3.bin` causes a projector crash.
