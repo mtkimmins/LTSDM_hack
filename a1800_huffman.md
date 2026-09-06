@@ -1,5 +1,5 @@
 # Huffman Trees 
-Data from [tables.rs](https://github.com/John-K/a1800_codec/blob/main/src/tables.rs))
+Data from [tables.rs](https://github.com/John-K/a1800_codec/blob/main/src/tables.rs)
 |Group (#)|Lines (#)|Huffman Tree|
 |:-:|:-:|:-:|
 |1|49 - 71|=BLANK=|
@@ -124,7 +124,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 3
 
 ```mermaid
 graph TD
@@ -176,7 +176,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 4
 
 ```mermaid
 graph TD
@@ -228,7 +228,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 5
 
 ```mermaid
 graph TD
@@ -280,7 +280,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 6
 
 ```mermaid
 graph TD
@@ -332,7 +332,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 7
 
 ```mermaid
 graph TD
@@ -384,7 +384,7 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 8
 
 ```mermaid
 graph TD
@@ -436,8 +436,267 @@ graph TD
     N22-->
 ```
 
-## Subband 2
+## Subband 9
 
+```mermaid
+graph TD
+    N0-->N1
+    N0-->N2
+    N1-->N3
+    N1-->N4
+    N2-->N5
+    N2-->N6
+    N3-->N7
+    N3-->N8
+    N4-->L0{10}
+    N4-->L1{9}
+    N5-->L2{8}
+    N5-->L3{11}
+    N6-->L4{8}
+    N6-->L5{11}
+    N7-->L6{7}
+    N7-->L7{6}
+    N8-->N9
+    N8-->L8{5}
+    N9-->N10
+    N9-->
+    N10-->
+    N10-->
+    N11-->
+    N11-->
+    N12-->
+    N12-->
+    N13-->
+    N13-->
+    N14-->
+    N14-->
+    N15-->
+    N15-->
+    N16-->
+    N16-->
+    N17-->
+    N17-->
+    N18-->
+    N18-->
+    N19-->
+    N19-->
+    N20-->
+    N20-->
+    N21-->
+    N21-->
+    N22-->
+    N22-->
+```
+
+
+## Subband 10
+```mermaid
+graph TD
+    N0-->N1
+    N0-->N2
+    N1-->N3
+    N1-->N4
+    N2-->N5
+    N2-->N6
+    N3-->N7
+    N3-->N8
+    N4-->L0{10}
+    N4-->L1{9}
+    N5-->L2{8}
+    N5-->L3{11}
+    N6-->L4{8}
+    N6-->L5{11}
+    N7-->L6{7}
+    N7-->L7{6}
+    N8-->N9
+    N8-->L8{5}
+    N9-->N10
+    N9-->
+    N10-->
+    N10-->
+    N11-->
+    N11-->
+    N12-->
+    N12-->
+    N13-->
+    N13-->
+    N14-->
+    N14-->
+    N15-->
+    N15-->
+    N16-->
+    N16-->
+    N17-->
+    N17-->
+    N18-->
+    N18-->
+    N19-->
+    N19-->
+    N20-->
+    N20-->
+    N21-->
+    N21-->
+    N22-->
+    N22-->
+```
+
+## Subband 11
+```mermaid
+graph TD
+    N0-->N1
+    N0-->N2
+    N1-->N3
+    N1-->N4
+    N2-->N5
+    N2-->N6
+    N3-->N7
+    N3-->N8
+    N4-->L0{10}
+    N4-->L1{9}
+    N5-->L2{8}
+    N5-->L3{11}
+    N6-->L4{8}
+    N6-->L5{11}
+    N7-->L6{7}
+    N7-->L7{6}
+    N8-->N9
+    N8-->L8{5}
+    N9-->N10
+    N9-->
+    N10-->
+    N10-->
+    N11-->
+    N11-->
+    N12-->
+    N12-->
+    N13-->
+    N13-->
+    N14-->
+    N14-->
+    N15-->
+    N15-->
+    N16-->
+    N16-->
+    N17-->
+    N17-->
+    N18-->
+    N18-->
+    N19-->
+    N19-->
+    N20-->
+    N20-->
+    N21-->
+    N21-->
+    N22-->
+    N22-->
+```
+
+
+## Subband 12
+```mermaid
+graph TD
+    N0-->N1
+    N0-->N2
+    N1-->N3
+    N1-->N4
+    N2-->N5
+    N2-->N6
+    N3-->N7
+    N3-->N8
+    N4-->L0{10}
+    N4-->L1{9}
+    N5-->L2{8}
+    N5-->L3{11}
+    N6-->L4{8}
+    N6-->L5{11}
+    N7-->L6{7}
+    N7-->L7{6}
+    N8-->N9
+    N8-->L8{5}
+    N9-->N10
+    N9-->
+    N10-->
+    N10-->
+    N11-->
+    N11-->
+    N12-->
+    N12-->
+    N13-->
+    N13-->
+    N14-->
+    N14-->
+    N15-->
+    N15-->
+    N16-->
+    N16-->
+    N17-->
+    N17-->
+    N18-->
+    N18-->
+    N19-->
+    N19-->
+    N20-->
+    N20-->
+    N21-->
+    N21-->
+    N22-->
+    N22-->
+```
+
+
+## Subband 13
+```mermaid
+graph TD
+    N0-->N1
+    N0-->N2
+    N1-->N3
+    N1-->N4
+    N2-->N5
+    N2-->N6
+    N3-->N7
+    N3-->N8
+    N4-->L0{10}
+    N4-->L1{9}
+    N5-->L2{8}
+    N5-->L3{11}
+    N6-->L4{8}
+    N6-->L5{11}
+    N7-->L6{7}
+    N7-->L7{6}
+    N8-->N9
+    N8-->L8{5}
+    N9-->N10
+    N9-->
+    N10-->
+    N10-->
+    N11-->
+    N11-->
+    N12-->
+    N12-->
+    N13-->
+    N13-->
+    N14-->
+    N14-->
+    N15-->
+    N15-->
+    N16-->
+    N16-->
+    N17-->
+    N17-->
+    N18-->
+    N18-->
+    N19-->
+    N19-->
+    N20-->
+    N20-->
+    N21-->
+    N21-->
+    N22-->
+    N22-->
+```
+
+
+## Subband 14
 ```mermaid
 graph TD
     N0-->N1
