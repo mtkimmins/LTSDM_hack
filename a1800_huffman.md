@@ -24,7 +24,7 @@ Blank table. This gain value is assigned from directly decoding the first 5 bits
 
 ```mermaid
 graph TD;
-    0-->1;
+        0-->1;
     0-->2;
     1-->3;
     1-->4;
