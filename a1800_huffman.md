@@ -24,10 +24,10 @@ Blank table. This gain value is assigned from directly decoding the first 5 bits
 
 ```mermaid
 graph TD;
-    N0-->N1;
-    N0-->N2;
-    N1-->N3;
-    N1-->N4;
-    N2-->N5;
-    N2-->N6;
+    0-->1;
+    0-->2;
+    1-->3;
+    1-->4;
+    2-->5;
+    2-->6;
 ```
