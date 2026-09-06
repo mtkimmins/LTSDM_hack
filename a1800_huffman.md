@@ -23,10 +23,10 @@ Blank table. This gain value is assigned from directly decoding the first 5 bits
 ## Subband 1
 ```mermaid
 graph TD;
-    N0 --> N1;
-    N0 --> N2;
-    N1 --> N3;
-    N1 --> N4;
-    N2 --> N5;
-    N2 --> N6;
+    N0-->N1;
+    N0-->N2;
+    N1-->N3;
+    N1-->N4;
+    N2-->N5;
+    N2-->N6;
 ```
