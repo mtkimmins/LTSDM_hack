@@ -21,7 +21,7 @@ Data from [tables.rs](https://github.com/John-K/a1800_codec/blob/main/src/tables
 Blank table. This gain value is assigned from directly decoding the first 5 bits of the frame's bitstream into decimal.
 
 ## Subband 1
-’‘‘mermaid
+```mermaid
 flowchart TD
     N0 --> N1
     N0 --> N2
@@ -29,3 +29,4 @@ flowchart TD
     N1 --> N4
     N2 --> N5
     N2 --> N6
+```
