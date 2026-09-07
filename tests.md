@@ -20,7 +20,7 @@ Isolate an incompatible a1800-codec "frame". A frame is a 40-byte block that fol
 |2||
 |...|...skipping to about 1 second where it crashed...|
 |45|Ran fine on projector.|
-|46|CRASHED!!! No sound, just a light projected first frame then crash.|
+|46|CRASHED!!! <br>No sound, just a light projected first frame then crash.|
 |47|Binary looks suspicious as there are a string of `00`s at the end of this Frame... <br>No, it ran without error.|
 |48||
 |49||
@@ -29,5 +29,5 @@ Isolate an incompatible a1800-codec "frame". A frame is a 40-byte block that fol
 
 ### Conclusions
 * The appearance of a string of `00` does not mandate an error.
-* Corrupted audio can be isolated to a single Frame.
-* Frame 46 of Region 1 of `ratadon3.bin` is corrupted and causes a crash.
+* Erroneous audio can be isolated to a single Frame.
+* Frame 46 of Region 1 of `ratadon3.bin` causes a projector crash.
