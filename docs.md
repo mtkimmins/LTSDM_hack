@@ -7,6 +7,7 @@
 ```mermaid
 graph LR
 	A(LTSDM Cartridge)-->B(Segment 1)
+	A-->|1MiB|
 	A-->C(Segment 2)
 	A-->D(Segment 3)
 	A-->E(Segment 4)
