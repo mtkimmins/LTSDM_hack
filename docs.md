@@ -17,6 +17,7 @@ graph LR
 	B-->BA(Magic Numbers)
 	B-->BB(Pointer Table)
 	BA-->BAA{non-essential}
+	Note right of BA: non-essential
 	BB-->BBA(4-byte address x 26)
 	BBA-->BBAA{essential}
 ```
