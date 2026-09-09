@@ -16,6 +16,6 @@ graph LR
 	A-->H(Segment 7)
 	B-->BA(Magic Numbers)
 	B-->BB(Pointer Table)
-	BA-->BAA-->(2-byte sequence x 2 <br> *non-essential*)
+	BA-->BAA(2-byte sequence x 2 <br> *non-essential*)
 	BB-->BBA(4-byte address x 26 <br> *essential*)
 ```
