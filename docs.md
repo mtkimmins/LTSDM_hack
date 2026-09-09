@@ -6,7 +6,7 @@
 **Graphical Depiction of Official LTSDM Data Structure**
 ```mermaid
 graph LR
-	i1(LTSDM Cartridge)-->|1MiB| A(())
+	i1(LTSDM Cartridge)-->|1MiB|A(())
 	A-->B(Segment 1)
 	A-->C(Segment 2)
 	A-->D(Segment 3)
