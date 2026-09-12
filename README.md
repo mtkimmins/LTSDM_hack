@@ -1,33 +1,5 @@
 <!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format ADPCM audio extraction embedded Arduino -->
 
-<svg fill="none" viewBox="0 0 800 200" width="100%" xmlns="http://www.w3.org/2000/svg">
-  <path fill="url(#bg-grad)" d="M0 0h800v200H0z"/>
-  <defs>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="50%" stop-color="#161b22"/>
-      <stop offset="100%" stop-color="#090d16"/>
-    </linearGradient>
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7928CA"/>
-      <stop offset="50%" stop-color="#FF0080"/>
-      <stop offset="100%" stop-color="#00DFD8"/>
-    </linearGradient>
-  </defs>
-  
-  <!-- Subtle Background Grid -->
-  <path stroke="#30363d" stroke-width="0.5" stroke-dasharray="4 4" d="M0 50h800M0 100h800M0 150h800M200 0v200M400 0v200M600 0v200"/>
-  
-  <!-- Glowing Latent Wave -->
-  <path d="M 0 140 Q 200 40 400 120 T 800 80" stroke="url(#accent-grad)" stroke-width="4" fill="none"/>
-  
-  <!-- Main Title & Subtitle -->
-  <text x="50" y="100" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="40" letter-spacing="2">LTSDM_HACK</text>
-  <text x="52" y="130" fill="#8b949e" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="15" letter-spacing="1">Latent Space Diffusion & Modeling Framework</text>
-</svg>
-
-
-
 <h1 align="center">
   Little Tikes Story Dream Machine (LTSDM)
   <br>
