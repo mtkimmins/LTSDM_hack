@@ -9,16 +9,18 @@
   Creating custom stories for Little Tikes Story Dream Machine
   <br><br>
   
-  ![Status](https://img.shields.io/badge/Status-Data_MVP_Achieved-green)
+  ![Status](https://img.shields.io/badge/Status-Custom_Audio_Achieved-green)
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
-  <h2>As of 16 August 2026, the first blank cartridge data template was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 15.5 months.</h2>
+  <h2>As of 19 September 2026, the first custom audio cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 16.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>Frontier of progress of custom cartridges:</p>
   
   [![Devlog](https://img.shields.io/badge/Devlog-green)](https://github.com/mtkimmins/LTSDM_hack/wiki/Working-Developer-Log)
+
+  *see [19 September](https://github.com/mtkimmins/LTSDM_hack/wiki/19-September-2026)*
   
-  [![YouTube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/1mn6X2Hxlck)
+  [![YouTube](https://img.shields.io/badge/YouTube-red)](https://youtu.be/TxU2IYq_FqY)
   <br><br><br>
   
   <h2>Project Roadmap</h2>
