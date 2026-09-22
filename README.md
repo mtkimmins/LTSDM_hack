@@ -1,16 +1,14 @@
-<!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format ADPCM audio extraction embedded Arduino -->
+<!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format PCM audio extraction embedded Arduino a1800 codec general plus collection imhex hack .a18 .wav 16 khz 16-bit signed mono -->
 
 <h1 align="center">
-  Little Tikes Story Dream Machine (LTSDM)
+  Custom Stories for the
   <br>
-  Cartridge Reverse Engineering
+  Little Tikes Story Dream Machine (LTSDM)
 </h1>
-<div align="center">
-  Creating custom stories for Little Tikes Story Dream Machine
-  <br><br>
-  
-  ![Status](https://img.shields.io/badge/Status-Custom_Audio_Achieved-green)
+<br><br>
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
+
+[![milestone]
 
   <h2>As of 19 September 2026, the first custom audio cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 16.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
