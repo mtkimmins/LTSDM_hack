@@ -57,6 +57,16 @@ D-->DC[Determine all components on official PCBs]
 
 E-->EA[Measure dimensions of film components]
 E-->EB[design test images]
+
+%% STYLE DEFINITIONS
+classDef done fill:#00ff00
+classDef prog fill:#888800
+classDef lock fill:#ff0000
+
+%% STYLE ASSIGNMENTS
+class A,BA done;
+class B,C,D,E prog;
+class EB lock;
 ```
 
 
