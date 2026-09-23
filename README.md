@@ -41,8 +41,7 @@
 
 ```mermaid
 graph TD
-title: LTSDM Progress
-A[Dissect LTSDM]-->B[Data]
+A[Dissect LTSDM hardware]-->B[Data]
 A-->C[Case]
 A-->D[Circuitry]
 A-->E[Film]
