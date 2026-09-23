@@ -1,6 +1,6 @@
 <!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format PCM audio extraction embedded Arduino a1800 codec general plus collection imhex hack .a18 .wav 16 khz 16-bit signed mono -->
 
-# :construction:Under Construction:construction:
+<h1 align="center">:construction:Under Construction:construction:</h1>
 
 <h1 align="center">
   Custom Stories for the
@@ -8,6 +8,7 @@
   Little Tikes Story Dream Machine (LTSDM)
 </h1>
 <br><br>
+
   ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 
 [![milestone]
