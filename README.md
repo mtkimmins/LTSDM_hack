@@ -1,5 +1,4 @@
-<!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format PCM audio extraction embedded Arduino a1800 codec general plus collection imhex hack .a18 .wav 16 khz 16-bit signed mono -->
-
+<!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format PCM audio extraction embedded Arduino a1800 codec general plus collection imhex hack .a18 .wav 16khz 16-bit signed mono -->
 <h1 align="center">:construction:Under Construction:construction:</h1>
 
 <h1 align="center">
@@ -7,13 +6,45 @@
   <br>
   Little Tikes Story Dream Machine (LTSDM)
 </h1>
-<br><br>
 
-  ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
+![License](https://img.shields.io/badge/License-GPL--3.0-blue)
+[![YT](https://img.shields.io/badge/YouTube-red?logo=youtube)](https://youtu.be/TxU2IYq_FqY)
 
-[![milestone]
+[![headline](./headline.svg)](https://github.com/mtkimmins/LTSDM_hack/wiki/19-September-2026)
 
-  <h2>As of 19 September 2026, the first custom audio cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 16.5 months.</h2>
+🔜 ![byos](https://img.shields.io/badge/Build_My_Own_story-grey?style=for-the-badge)
+  
+<h1 align="center">What Is This?</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6T85_2Bq7C5ENhbM_02QsqHP0uwPh_4JUz7wYPDEt2z_kRJ-Nr4eMbuc-&s=10" alt="Little Tikes Story Dream Machine Projector & Cartridges">
+<body>
+  The <a href="https://www.littletikes.com/collections/story-dream-machine?srsltid=AU7gw4WqiQ8R5CqPzf9FcHDLHLqfhu1rZ22Jz5EO_xHfze3l0G6kVn3B">Little Tikes Story Dream Machine (LTSDM)</a> is a toy projector geared towards young children. Each story is kept in a cartridge, or "book," that is physically inserted into the projector. Inside, the cartridge holds the following:
+  
+  1) audio data to be played on the projector's speakers
+  2) digital instructions for the projector's rear light display
+  3) twelve film slides depicting the pages of the book which the projector shines out
+
+  Despite the appeal, the LTSDM has a few notable drawbacks:
+  * Stories are highly condensed narrations spanning only about 2-3 minutes per cartridge
+  * Little Tikes currently offers stories in a limited number of languages, namely: English, French, and Spanish
+  * Although Little Tikes offers quite a decent collection of stories, they must be purchased in fixed bulk quantities for roughly $24 CAD per triple set. This works out to about $8 per cartridge
+  * Custom stories personalized to one's own children are not officially supported
+
+  These drawbacks have led to many parents abandoning or returning the LTSDM for other audiovisual products, like [Yoto](https://ca.yotoplay.com/).
+
+  I aim to allow any parent, caregiver, or individual to design and build their own custom cartridges compatible with the LTSDM, permitting personalized audiovisual media to be depicted by their projector.
+</body>
+
+<h1 align="center">Where Are We At?</h1>
+
+
+
+
+
+
+
+
+
+<h2>As of 19 September 2026, the first custom audio cartridge data was successfully ran on the LTSDM! A huge thank-you to the community of followers for assistance and encouragement over the past 16.5 months.</h2>
   <p>This repository documents the holistic process of hacking the Little Tikes Story Dream Machine.</p>
   <p>Frontier of progress of custom cartridges:</p>
   
