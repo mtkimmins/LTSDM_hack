@@ -28,7 +28,8 @@
   Despite the appeal, the LTSDM has a few notable drawbacks:
   * Stories are highly condensed narrations spanning only about 2-3 minutes per cartridge
   * Little Tikes currently offers stories in a limited number of languages, namely: English, French, and Spanish
-  * Although Little Tikes offers quite a decent collection of stories, they must be purchased in fixed bulk quantities for roughly $24 CAD per triple set. This works out to about $8 per cartridge
+  * Although Little Tikes offers quite a decent collection of stories, they must be purchased in fixed bundles. This restricts the amount of freedom consumers have over story collection
+  * Triple-set bundles cost roughly $24 CAD per set. This works out to about $8 per cartridge. I wonder if these could be modded for cheaper
   * Custom stories personalized to one's own children are not officially supported
 
   These drawbacks have led to many parents abandoning or returning the LTSDM for other audiovisual products, like [Yoto](https://ca.yotoplay.com/).
@@ -37,7 +38,26 @@
 </body>
 
 <h1 align="center">Where Are We At?</h1>
+```mermaid
+graph TD
+title: LTSDM Progress
+A[Dissect LTSDM]-->B[Data]
+A-->C[Case]
+A-->D[Circuitry]
+A-->E[Film]
 
+B-->BA[Dump existing data off official cartridges]
+BA-->BB[Determine data structure]
+
+C-->CA[Measure dimensions of case parts]
+
+D-->DA[Source P25D80SH chips or similar]
+D-->DB[Design modded PCB]
+D-->DC[Determine all components on official PCBs]
+
+E-->EA[Measure dimensions of film components]
+E-->EB[design test images]
+```
 
 
 
