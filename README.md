@@ -38,6 +38,7 @@
 </body>
 
 <h1 align="center">Where Are We At?</h1>
+
 ```mermaid
 graph TD
 title: LTSDM Progress
