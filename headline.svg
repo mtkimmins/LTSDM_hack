@@ -35,7 +35,7 @@
   
   <!-- 4. xml:space="preserve" is critical here, otherwise SVG will delete the spaces around your <tspan> tags -->
   <text x="0" y="31" class="text" xml:space="preserve">
-    ⚠️<tspan class="colour-bang">:Latest Milestone!</tspan>⚠️ <tspan class="colour-date">19 September 2026:</tspan> Custom narration successfully played on a single page
+    ⚠️<tspan class="colour-bang">Latest Milestone</tspan>⚠️ <tspan class="colour-date">19 September 2026:</tspan> Custom narration successfully played on a single page
   </text>
 </svg>
 
