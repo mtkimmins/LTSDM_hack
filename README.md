@@ -39,6 +39,14 @@
 
 <h1 align="center">Where Are We At?</h1>
 
+![data](https://img.shields.io/badge/Data-Custom_audio_playable)
+
+![case](https://img.shields.io/badge/Case-Deconstructed)
+
+![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped)
+
+![film](https://img.shields.io/badge/Film-Story_brainstorm)
+
 ```mermaid
 graph TD
 A[Dissect LTSDM hardware]-->B[Data]
