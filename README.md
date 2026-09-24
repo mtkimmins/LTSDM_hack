@@ -62,9 +62,22 @@ A-->D[Circuitry]
 A-->E[Film]
 
 B-->BA[Dump existing data off official cartridges]
+BA-->BE[Find a way to keep<br>cartridge intact for<br>dumps/re-uploads]
 BA-->BB[Determine data structure]
+BB-->BBA[Compare data dumps]
+BB-->BBB[Locate conserved data regions]
+BB-->BBC[Locate audio data]
+BB-->BBD[Locate light display data]
+BA-->BC[Modify data]
+BC-->BD[Re-upload data onto intact cartridge]
+BE-->BD
+BD-->BF[Make data compiler]
+BF-->BFA[UI interface]
+BF-->BFB[Write 1 byte to new file]
+BF-->BFC[Load & write/insert binary payloads into custom data file
 
-C-->CA[Measure dimensions of case parts]
+C-->CA[Crack open an official cartridge]
+CA-->CB[Measure dimensions of case parts]
 
 D-->DA[Source P25D80SH chips or similar🔒]
 D-->DB[Design modded PCB🔒]
