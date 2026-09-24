@@ -74,7 +74,7 @@ BE-->BD
 BD-->BF[Make data compiler]
 BF-->BFA[UI interface]
 BF-->BFB[Write 1 byte to new file]
-BF-->BFC[Load & write/insert binary payloads into custom data file
+BF-->BFC[Load & write/insert binary payloads into custom data file]
 
 C-->CA[Crack open an official cartridge]
 CA-->CB[Measure dimensions of case parts]
