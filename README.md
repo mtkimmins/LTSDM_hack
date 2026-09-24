@@ -28,6 +28,7 @@
   Despite the appeal, the LTSDM has a few notable drawbacks:
   * Stories are highly condensed narrations spanning only about 2-3 minutes per cartridge
   * Little Tikes currently offers stories in a limited number of languages, namely: English, French, and Spanish
+  * Younger children may find that the official cartridges are difficult to remove from the projector without adult assistance despite the ejection button
   * Although Little Tikes offers quite a decent collection of stories, they must be purchased in fixed bundles. This restricts the amount of freedom consumers have over story collection
   * Triple-set bundles cost roughly $24 CAD per set. This works out to about $8 per cartridge. I wonder if these could be modded for cheaper
   * Custom stories personalized to one's own children are not officially supported
