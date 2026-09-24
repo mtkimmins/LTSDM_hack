@@ -7,18 +7,15 @@
   Little Tikes Story Dream Machine (LTSDM)
 </h1>
 
-![License](https://img.shields.io/badge/License-GPL--3.0-blue)
-[![YT](https://img.shields.io/badge/YouTube-red?logo=youtube)](https://youtu.be/TxU2IYq_FqY)
-[![wiki](https://img.shields.io/badge/Wiki-blue?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
-[![devlog](https://img.shields.io/badge/Devlog-yellow?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
-
-
-Links to Related Projects and Forums:
-
 [![r/toddlers](https://img.shields.io/badge/r%2Ftoddlers-first_post-092328?logo=reddit)](https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
 [![GainSec](https://img.shields.io/badge/GainSec-dreamprojector-12544F?logo=github)](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
 [![JK-dream](https://img.shields.io/badge/John--K-dreamsmith-2A835F?logo=github)](https://github.com/John-K/LittleTikesDreamProjector)
 [![JK-codec](https://img.shields.io/badge/John--K-a1800--codec-2A835F?logo=github)](https://github.com/John-K/a1800_codec)
+
+![License](https://img.shields.io/badge/License-GPL--3.0-blue)
+[![YT](https://img.shields.io/badge/YouTube-red?logo=youtube)](https://youtu.be/TxU2IYq_FqY)
+[![wiki](https://img.shields.io/badge/Wiki-blue?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
+[![devlog](https://img.shields.io/badge/Devlog-yellow?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
 
 [![headline](./headline.svg)](https://github.com/mtkimmins/LTSDM_hack/wiki/19-September-2026)
 
