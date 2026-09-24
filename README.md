@@ -55,7 +55,7 @@ The project consists of reverse engineering all aspects of an LTSDM cartridge to
 
 ![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped-2A835F)
 
-![film](https://img.shields.io/badge/Film-Story_brainstorm-8BBB92)
+![film](https://img.shields.io/badge/Film-Story_brainstormed-8BBB92)
 
 ```mermaid
 graph TD
