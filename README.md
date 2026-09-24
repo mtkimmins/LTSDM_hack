@@ -9,6 +9,9 @@
 
 ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 [![YT](https://img.shields.io/badge/YouTube-red?logo=youtube)](https://youtu.be/TxU2IYq_FqY)
+[![wiki](https://img.shields.io/badge/Wiki-blue?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
+[![devlog](https://img.shields.io/badge/Devlog-yellow?logo=github)](https://github.com/mtkimmins/LTSDM_hack/wiki)
+
 
 Links to Related Projects and Forums:
 
