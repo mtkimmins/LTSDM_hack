@@ -47,13 +47,13 @@ Links to Related Projects and Forums:
 
 <h1 align="center">Where Are We At?</h1>
 
-The project consists of reverse engineering all aspects of an LTSDM cartridge to allow for fully customizable narratives. These aspects are namely: 
+The project consists of reverse engineering all aspects of an LTSDM cartridge to allow for fully customizable narratives. These aspects are divided into **Data**, **Case**, **Circuitry**, and **Film**.
 
-![data](https://img.shields.io/badge/Data-Custom_audio_playable-8BBB92)
+![data](https://img.shields.io/badge/Data-Custom_audio_playable-092328)
 
-![case](https://img.shields.io/badge/Case-Deconstructed-8BBB92)
+![case](https://img.shields.io/badge/Case-Deconstructed-12544F)
 
-![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped-8BBB92)
+![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped-2A835F)
 
 ![film](https://img.shields.io/badge/Film-Story_brainstorm-8BBB92)
 
