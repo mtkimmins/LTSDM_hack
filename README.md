@@ -10,6 +10,13 @@
 ![License](https://img.shields.io/badge/License-GPL--3.0-blue)
 [![YT](https://img.shields.io/badge/YouTube-red?logo=youtube)](https://youtu.be/TxU2IYq_FqY)
 
+Links to Related Projects and Forums:
+
+[![r/toddlers](https://img.shields.io/badge/r%2Ftoddlers-first_post-8BBB92?logo=reddit)](https://www.reddit.com/r/toddlers/comments/1hm9kzs/hack_the_little_tikes_dream_machine/)
+[![GainSec](https://img.shields.io/badge/GainSec-dreamprojector-12544F?logo=github)](https://github.com/GainSec/Little-Tikes-DreamProjector-Reverse-Engineering)
+[![JK-dream](https://img.shields.io/badge/John--K-dreamsmith-2A835F?logo=github)](https://github.com/John-K/LittleTikesDreamProjector)
+[![JK-codec](https://img.shields.io/badge/John--K-a1800--codec-2A835F?logo=github)](https://github.com/John-K/a1800_codec)
+
 [![headline](./headline.svg)](https://github.com/mtkimmins/LTSDM_hack/wiki/19-September-2026)
 
 🔜 ![byos](https://img.shields.io/badge/Build_My_Own_story-grey?style=for-the-badge)
@@ -42,13 +49,13 @@
 
 The project consists of reverse engineering all aspects of an LTSDM cartridge to allow for fully customizable narratives. These aspects are namely: 
 
-![data](https://img.shields.io/badge/Data-Custom_audio_playable)
+![data](https://img.shields.io/badge/Data-Custom_audio_playable-8BBB92)
 
-![case](https://img.shields.io/badge/Case-Deconstructed)
+![case](https://img.shields.io/badge/Case-Deconstructed-8BBB92)
 
-![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped)
+![circuitry](https://img.shields.io/badge/Circuitry-PCB_mapped-8BBB92)
 
-![film](https://img.shields.io/badge/Film-Story_brainstorm)
+![film](https://img.shields.io/badge/Film-Story_brainstorm-8BBB92)
 
 ```mermaid
 graph TD
