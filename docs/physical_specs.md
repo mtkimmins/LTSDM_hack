@@ -6,7 +6,7 @@ This document will house the numerical values of dimensional measurements for th
 * Diameter of big nubs = 2.2mm
 * Diameter of small nubs = 1.9mm
 > [!Note]
-> Carousel-film mounting becomes arbitrary in a modded cartridge due to its lack of essential functionality interfacing with the projector. As long as the film is fixed to the carousel in the right position, and turns with the carousel, the mounting method can be altered.
+> Carousel-film mounting becomes arbitrary in a modded cartridge due to its lack of interfacing with the projector making it functionally non-critical. As long as the film is fixed to the carousel in the right position, and turns with the carousel, the mounting method can be altered.
 >
 > An aspect of the official mounting method I would like to retain is the forced directionality the mounts impose on the film ensuring it is oriented and faced correctly.
 
