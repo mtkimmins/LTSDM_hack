@@ -12,7 +12,7 @@ This document will house the numerical values of dimensional measurements for th
 ### Back Case
 
 ## Film Components
-> ![Note]
+> [!Note]
 > In official cartridges the film disc is cut in half and mounted separately onto the same carousel. It is unclear as the the purpose of the division, but it can be speculated that the mass production process favoured it.
 
 ## PCB Components
