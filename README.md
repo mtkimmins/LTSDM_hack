@@ -1,5 +1,5 @@
 <!-- Little Tikes Story Dream Machine LTSDM custom cartridge SPI flash P25D80SH reverse engineering hex hexadecimal file format PCM audio extraction embedded Arduino a1800 codec general plus collection imhex hack .a18 .wav 16khz 16-bit signed mono -->
-<h1 align="center">:construction:Under Construction:construction:</h1>
+
 
 <h1 align="center">
   Custom Stories for the
