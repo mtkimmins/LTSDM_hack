@@ -37,11 +37,10 @@ This document will house the numerical values of dimensional measurements for th
 
 ## Film Components
 ### Film Disc (Both Halves)
-> [!Note]
-> In official cartridges the film disc is cut in half and mounted separately onto the same carousel. It is unclear as the the purpose of the division, but it can be speculated that the mass production process favoured it.
 * Thickness (uniform across whole film) = 0.1mm
 * Film diameter = 38mm
 > [!Note]
+> In official cartridges the film disc is cut in half and mounted separately onto the same carousel. It is unclear as the the purpose of the division, but it can be speculated that the mass production process favoured it.
 > Film center hole edge borders on the outside of the carousel's central lip.
 > Film background is all black except for the transparent arrows indicating rotation direction for each half
 
