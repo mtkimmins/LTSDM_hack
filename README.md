@@ -78,10 +78,14 @@ BF-->BFC[Load & write/insert binary payloads into custom data file]
 
 C-->CA[Crack open an official cartridge]
 CA-->CB[Measure dimensions of case parts]
+CB-->CBA[Front case dimensions]
+CB-->CBB[Back case dimensions]
+CB-->CBC[Carousel dimensions]
 
 D-->DA[Source P25D80SH chips or similar🔒]
 D-->DB[Design modded PCB🔒]
 D-->DC[Determine all components on official PCBs]
+DB-->DBA[Official PCB dimensions]
 
 E-->EA[Measure dimensions of film components]
 E-->EB[design test images🔒]
