@@ -89,6 +89,11 @@ DB-->DBA[Official PCB dimensions]
 
 E-->EA[Measure dimensions of film components]
 E-->EB[design test images🔒]
+E-->EC[Design film punch die]
+EC-->ECA[Find suitable steel pipe]
+EC-->ECB[Cut pipe to proper length]
+EC-->ECC[sharpen from inside]
+EC-->ECD[Make film en-mass punch]
 
 %% STYLE DEFINITIONS
 classDef done fill:#092328
