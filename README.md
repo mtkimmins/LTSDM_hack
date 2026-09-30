@@ -81,6 +81,16 @@ CA-->CB[Measure dimensions of case parts]
 CB-->CBA[Front case dimensions]
 CB-->CBB[Back case dimensions]
 CB-->CBC[Carousel dimensions]
+CB-->CBD[Label dimensions]
+CB-->CD[Make label template]
+CD-->CDA[Cricut label]
+CB-->CC[Use CAD to model cartridge pieces]
+CC-->CCA[Front case modelled]
+CC-->CCB[Back case modelled]
+CC-->CCC[Carousel modelled]
+CCA-->CCAA[change glue-column mount to screw mounts]
+CCB-->CCAA
+
 
 D-->DA[Source P25D80SH chips or similar🔒]
 D-->DB[Design modded PCB🔒]
