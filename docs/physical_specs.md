@@ -36,6 +36,8 @@ This document will house the numerical values of dimensional measurements for th
 > The black marker that signals when to stop spinning the projector upon cartridge setup is directly opposite (180$^o$) from slide 1.
 >
 > The gear is on the back surface of the carousel.
+>
+> The projected slide is the window to the center-left, at -90$^o$, or at 270$^o$ when looking at the backside (gear side).
 
 ### Front Case
 ### Back Case
