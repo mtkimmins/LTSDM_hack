@@ -93,13 +93,13 @@ CCA-->CCAA[change glue-column mount to screw mounts]
 CCB-->CCAA
 
 
-D-->DA[Source P25D80SH chips or similar🔒]
-D-->DB[Design modded PCB🔒]
+D-->DA[Source P25D80SH chips or similar]
+D-->DB[Design modded PCB]
 D-->DC[Determine all components on official PCBs]
 DB-->DBA[Official PCB dimensions]
 
 E-->EA[Measure dimensions of film components]
-E-->EB[design test images🔒]
+E-->EB[design test images]
 E-->EC[Design film punch die]
 EC-->ECA[Find suitable steel pipe]
 EC-->ECB[Cut pipe to proper length]
@@ -107,14 +107,12 @@ EC-->ECC[sharpen from inside]
 EC-->ECD[Make film en-mass punch]
 
 %% STYLE DEFINITIONS
-classDef done fill:#092328
-classDef prog fill:#12544F
-classDef lock fill:#2A835F
+classDef done fill:#12544F
+classDef prog fill:#2A835F
 
 %% STYLE ASSIGNMENTS
-class A,BA done;
-class B,C,D,E,BB,CA,DC,EA prog;
-class DA,DB,EB lock;
+class B,C,D,E,BB,CA,DC prog;
+class A,BA,BE,EA done;
 ```
 
   ## ⚠️ DISCLAIMER ⚠️ 
