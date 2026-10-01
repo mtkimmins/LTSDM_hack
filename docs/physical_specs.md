@@ -61,6 +61,8 @@ This document will house the numerical values of dimensional measurements for th
 > Our custom film should have "FRONT" and "BACK" printed on it close to the centre of the whole disc. Alternatively, the print "THIS SIDE AWAY FROM CAROUSEL" may be ideal for layman orientation and repeatability.
 > 
 > When deciding how to print the custom film, a decision must be made whether it is best to print it so the ink is smushed against the carousel, or facing away from the carousel.
+>
+> Resolution of each slide is roughly 6:5.
 
 
 ## PCB Components
