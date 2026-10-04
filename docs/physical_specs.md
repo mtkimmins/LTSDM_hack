@@ -77,11 +77,11 @@ This document will house the numerical values of dimensional measurements for th
 * Total PCB height = 19.9mm
 * Rounded corners of Bottom = 7.0mm
 * Small hole diameter = ~2.0mm
-* Small hole-edge top margin = 
-* Small hole-edge left matgin = 
+* Small hole-edge top margin = 2.2mm
+* Small hole-edge left matgin = 1.6mm
 * Large hole diameter = 4.0mm
-* Large hole-edge top margin =
-* Large hole-edge right margin =
+* Large hole-edge top margin = 1.0mm
+* Large hole-edge right margin = 1.8mm
 > [!Note]
 > All gold finger measurements can be assumed also from the socket's dimensions. However, these measurements are from direct caliper measurement.
 * Edge connector pitch (center-to-center between neighbouring gold fingers; as per manufacturer ) = 2.54mm
@@ -96,4 +96,4 @@ This document will house the numerical values of dimensional measurements for th
 * Copper well diameter = ~0.7mm
 * PCB thickness (just board, no components) = 
 1.4mm
-* PCB thickness total (bottom to top surface of P25D80SH
+* PCB thickness total (bottom to top surface of P25D80SH = 2.9mm
