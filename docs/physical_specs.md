@@ -35,11 +35,12 @@ This document will house the numerical values of dimensional measurements for th
 >
 > The black marker that signals when to stop spinning the projector upon cartridge setup is directly opposite (180$^o$) from slide 1.
 >
-> The gear is on the back surface of the carousel.
+> The gear is on the rear surface of the carousel.
 >
 > The projected slide is the window to the center-left, at -90$^o$, or at 270$^o$ when looking at the backside (gear side).
 
 ### Front Case
+* Pillar (PCB) diameter = 3.8mm
 ### Back Case
 
 ## Film Components
@@ -66,3 +67,30 @@ This document will house the numerical values of dimensional measurements for th
 
 
 ## PCB Components
+> [!Note]
+> Dimensions are from the perspective of P25D80SH chip facing toward the viewer with the golden fingers pointed down.
+* Top width = 14.5mm
+* Top side height = 11.1mm
+* Bottom width = 12.1mm
+* Total PCB height = 19.9mm
+* Rounded corners of Bottom = 7.0mm
+* Small hole diameter = ~2.0mm
+* Small hole-edge top margin = 
+* Small hole-edge left matgin = 
+* Large hole diameter = 4.0mm
+* Large hole-edge top margin =
+* Large hole-edge right margin =
+> [!Note]
+> All gold finger measurements can be assumed also from the socket's dimensions. However, these measurements are from direct caliper measurement.
+* Gold finger width = 1.5mm
+* Gold finger height = 7.4mm
+* Gold finger margin between fingers = 0.4mm
+* Gold finger-exge margin left = ~1.4mm
+* Gold ginger-edge margin right = 1.6mm
+* P25D80SH pin wolder length = 2.5mm
+* Copper well x from left edge to well center = 5.6mm
+* Copper well y from too edge to well center = 1.5mm
+* Copper well diameter = ~0.7mm
+* PCB thickness (just board, no components) = 
+1.4mm
+* PCB thickness total (bottom to too of P25D80SH
