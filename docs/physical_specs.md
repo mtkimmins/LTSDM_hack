@@ -93,4 +93,4 @@ This document will house the numerical values of dimensional measurements for th
 * Copper well diameter = ~0.7mm
 * PCB thickness (just board, no components) = 
 1.4mm
-* PCB thickness total (bottom to too of P25D80SH
+* PCB thickness total (bottom to top surface of P25D80SH
