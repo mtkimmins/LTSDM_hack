@@ -84,12 +84,13 @@ This document will house the numerical values of dimensional measurements for th
 * Large hole-edge right margin =
 > [!Note]
 > All gold finger measurements can be assumed also from the socket's dimensions. However, these measurements are from direct caliper measurement.
+* Edge connector pitch (center-to-center between neighbouring gold fingers; as per manufacturer ) = 2.54mm
 * Gold finger width = 1.5mm
 * Gold finger height = 7.4mm
 * Gold finger margin between fingers = 0.4mm
 * Gold finger-exge margin left = ~1.4mm
 * Gold ginger-edge margin right = 1.6mm
-* P25D80SH pin wolder length = 2.5mm
+* P25D80SH pin solder length = 2.5mm
 * Copper well x from left edge to well center = 5.6mm
 * Copper well y from too edge to well center = 1.5mm
 * Copper well diameter = ~0.7mm
