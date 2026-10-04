@@ -22,8 +22,8 @@ This document will house the numerical values of dimensional measurements for th
 * Depth of black window = 0.4mm
 * Margin thickness between black window and bottom of film window = 0.6mm
 * Height from back of disc (no nub) to top of gear teeth = 4.7mm
-* Height from back of disc (no nub) to bottom groove of gear teeth = ~
-* Height of gear teeth =
+* Height from back of disc (no nub) to bottom groove of gear teeth = ~3.4mm
+* Height of gear teeth (calculated) = 1.3mm
 * Number of gear teeth = 12
 * Number of film windows = 12
 > [!Note]
