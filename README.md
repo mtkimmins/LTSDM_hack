@@ -97,6 +97,10 @@ CC-->CCB[Back case modelled]
 CC-->CCC[Carousel modelled]
 CCA-->CCAA[change glue-column mount to screw mounts]
 CCB-->CCAA
+CCC-->CE[Print case components]
+CCAA-->CE
+CE-->CF[Assemble handmade cartridge]
+CF-->CG[Test physically in projector]
 
 
 D-->DA[Source P25D80SH chips or similar]
