@@ -81,6 +81,8 @@ BFDA-->BFDB[Convert 16-bit WAV to a1800]
 BFDB-->BFDC[Calculate addresses]
 BFDC-->BFDD[Populate Segment 1]
 BFDD-->BFDE[Compile]
+BFDE-->BFDF[Export to .BIN]
+BFDF-->BG[Validate export using official cartridge]
 
 C-->CA[Crack open an official cartridge]
 CA-->CB[Measure dimensions of case parts]
@@ -97,16 +99,22 @@ CC-->CCB[Back case modelled]
 CC-->CCC[Carousel modelled]
 CCA-->CCAA[change glue-column mount to screw mounts]
 CCB-->CCAA
-CCC-->CE[Print case components]
+CCC-->CE[OnShape model]
 CCAA-->CE
-CE-->CF[Assemble handmade cartridge]
-CF-->CG[Test physically in projector]
-
+CE-->CF[Print cartridge pieces]
+CF-->CG[Assemble cartridge pieces]
+CG-->CH[Test fit in projector]
+CH-->CI[Insert film]
+CH-->CJ[Insert PCB and check fit]
+CJ-->CK[Check PCB-projector functionality]
+CH-->CL[Check carousel functionality]
 
 D-->DA[Source P25D80SH chips or similar]
 D-->DB[Design modded PCB]
 D-->DC[Determine all components on official PCBs]
 DB-->DBA[Official PCB dimensions]
+DBA-->DBB[KiCAD model]
+DBB-->DBC[PCBWay or JLCPCB manufacture x10]
 
 E-->EA[Measure dimensions of film components]
 E-->EB[design test images]
@@ -115,6 +123,19 @@ EC-->ECA[Find suitable steel pipe]
 EC-->ECB[Cut pipe to proper length]
 EC-->ECC[sharpen from inside]
 EC-->ECD[Make film en-mass punch]
+EB-->EBB[Design film circle arrangement]
+EB-->EBA[Resize images appropriately]
+EBB-->EBBA[Design mount hole placements]
+EBB-->EBBB[Design orientation markers]
+EB-->EBC[Design die guides]
+EBA-->EBAA[Place images around film circle in correct orientation and order]
+EBBA-->ED[Print on transparent sheet]
+EBBB-->ED
+EBC-->ED
+EBAA-->ED
+ED-->EF[Cut out first film]
+EF-->EG[Reliably cut films with die]
+
 
 %% STYLE DEFINITIONS
 classDef done fill:#12544F
