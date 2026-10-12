@@ -97,3 +97,9 @@ This document will house the numerical values of dimensional measurements for th
 * PCB thickness (just board, no components) = 
 1.4mm
 * PCB thickness total (bottom to top surface of P25D80SH = 2.9mm
+> [!Note]
+> There is one capacitor adjacent to the P25D80SH chip on the PCB. Read value with multimeter with capacitance setting.
+* Capacitor value = 20 uF
+* Capacitor length = 2.2mm
+* Capacitor width = 1.3mm
+* Capacitor height = 0.7mm
