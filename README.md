@@ -142,8 +142,8 @@ classDef done fill:#12544F
 classDef prog fill:#2A835F
 
 %% STYLE ASSIGNMENTS
-class B,C,D,E,BB,CA,DC prog;
-class A,BA,BE,EA done;
+class B,BF,C,CB,D,DC,E prog;
+class A,BA,BB,BBA,BBB,BBC,BBD,BC,BD,BE,CA,CBC,DBA,DC,EA done;
 ```
 
   ## ⚠️ DISCLAIMER ⚠️ 
