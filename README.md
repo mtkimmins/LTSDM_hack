@@ -19,7 +19,7 @@
 
 [![headline](./headline.svg)](https://github.com/mtkimmins/LTSDM_hack/wiki/19-September-2026)
 
-🔜 ![byos](https://img.shields.io/badge/Build_My_Own_story-grey?style=for-the-badge)
+🔜 [![byos](https://img.shields.io/badge/Build_My_Own_story-grey?style=for-the-badge)](https://github.com/mtkimmins/LTSDM-modder)
   
 <h1 align="center">What Is This?</h1>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6T85_2Bq7C5ENhbM_02QsqHP0uwPh_4JUz7wYPDEt2z_kRJ-Nr4eMbuc-&s=10" alt="Little Tikes Story Dream Machine Projector & Cartridges"> <i>not my image</i><br><br><br>
