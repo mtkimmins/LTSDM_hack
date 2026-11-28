@@ -44,7 +44,7 @@
 
   I aim to allow any parent, caregiver, or individual to design and build their own custom cartridges compatible with the LTSDM, permitting personalized audiovisual media to be depicted by their projector.
 </body>
-<img src="https://github.com/mtkimmins/LTSDM_hack/blob/main/data/devlog/images/shield/final/final.jpg">
+<img src="https://github.com/mtkimmins/LTSDM_hack/blob/main/devlog/images/shield/final/final.jpg">
 <i>The final arduino shield I made to flash custom data onto existing cartridges</i><br><br><br>
 
 
